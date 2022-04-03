@@ -317,5 +317,52 @@
         </div>
       </div>
     </footer>
+    <div class="modal modal-window">
+      <div class="modal-window__modal modal-window__modal-wrapper">
+        <section class="modal-window__modal-content">
+          <h2 class="modal-window__title">Добавить в корзину</h2>
+          <form
+            class="modal-window__size-product size-product"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <fieldset class="size-product__title">
+              <ul class="size-product__list">
+                <li class="size-product__item">
+                  <input
+                    class="size-product__button-size"
+                    type="checkbox"
+                    name="size"
+                    value="S"
+                  />
+                  <span class="visually-hidden">Размер S</span>
+                </li>
+                <li class="size-product__item">
+                  <input
+                    class="size-product__button-size"
+                    type="checkbox"
+                    name="size"
+                    value="M"
+                  />
+                  <span class="visually-hidden">Размер M</span>
+                </li>
+                <li class="size-product__item">
+                  <input
+                    class="size-product__button-size"
+                    type="checkbox"
+                    name="size"
+                    value="L"
+                  />
+                  <span class="visually-hidden">Размер L</span>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="size-product__button button" type="submit">
+              Добавить
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
