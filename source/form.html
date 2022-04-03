@@ -197,19 +197,60 @@
             <li class="data-users__item">
               <lable class="data-users__user-title">
                 <span class="data-users__title-name">Имя:</span>
-                <input type="text" placeholder="Введите ваше имя" required />
+                <input
+                  class="data-users__field-name"
+                  type="text"
+                  placeholder="Введите ваше имя*"
+                  required
+                />
               </lable>
             </li>
             <li class="data-users__item">
               <lable class="data-users__user-title">
                 <span class="data-users__title-name">Фамилия:</span>
-                <input type="text" placeholder="Фамилия" required />
+                <input
+                  class="data-users__field-name"
+                  type="text"
+                  placeholder="Укажите фамилию*"
+                  required
+                />
               </lable>
             </li>
             <li class="data-users__item">
               <lable class="data-users__user-title">
                 <span class="data-users__title-name">Отчество:</span>
-                <input type="text" placeholder="Отчество, если желаете" />
+                <input
+                  class="data-users__field-name"
+                  type="text"
+                  placeholder="Отчество, если желаете"
+                />
+              </lable>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="service__form-contacts form-contacts">
+          <legend class="visually-hidden">Контакты</legend>
+          <ul class="form-contacts__list">
+            <li class="form-contacts__item">
+              <lable class="form-contacts__title">
+                <span class="form-contacts__title-name">тел</span>
+                <input
+                  class="form-contacts__field-phone form-contacts__field-phone--phone"
+                  type="text"
+                  placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+                  required
+                />
+              </lable>
+            </li>
+            <li class="form-contacts__item">
+              <lable class="form-contacts__title">
+                <span class="form-contacts__title-name">E-mail</span>
+                <input
+                  class="form-contacts__field-email form-contacts__field-phone--email"
+                  type="email"
+                  placeholder="Ваш Email*"
+                  required
+                />
               </lable>
             </li>
           </ul>
