@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html class="page" lang="en">
+<html class="page" lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Мишка</title>
   </head>
   <body class="page-body">
-    <header class="main-header">
-      <a class="main-header__link logo" href="index.html">
+    <header class="header">
+      <a class="header__link-logo logo" href="index.html">
         <img
-          class="logo-image"
-          src="img/logo/mishka-logo-mobile.svg.svg"
+          class="logo__image"
+          src="img/logo/mishka-logo-mobile.svg"
           width="86"
           height="35"
           alt="Логотип"
         />
       </a>
-      <button class="main-header__toggle main-header__toggle--close">
+      <button class="header__toggle-button header__toggle-button--close">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <nav class="main-nav">
@@ -81,22 +79,24 @@
         </div>
       </nav>
     </header>
-    <main class="main-wrapper">
-      <section class="products-catalog">
-        <header class="products-catalog__heading-title header-wrapper">
-          <h1 class="header-wrapper__title">Каталог товаров</h1>
+    <main class="main">
+      <section class="main__products-catalog heading-container">
+        <header class="heading-container__heading-title heading-wrapper">
+          <h1 class="heading-wrapper__title">Каталог товаров</h1>
         </header>
-        <div class="products-catalog__wrapper product-card">
+        <div class="main__products-catalog product-card">
           <ul class="product-card__list card-list">
             <li class="card-list__item">
-              <img
-                class="card-list__image"
-                src="img/Content/products-cards/photo-1-mobile-1.jpg"
-                width="265"
-                height="195"
-                alt="Зайчик-попрыгайчик"
-              />
-              <h2 class="card-list__title">Зайчик-попрыгайчик</h2>
+              <a class="card-list__link" href="#">
+                <img
+                  class="card-list__image"
+                  src="img/Content/products-cards/photo-1-mobile-1.jpg"
+                  width="265"
+                  height="195"
+                  alt="Зайчик-попрыгайчик"
+                />
+                <h2 class="card-list__title">Зайчик-попрыгайчик</h2>
+              </a>
               <dl class="card-list__stats stats-product">
                 <div class="stats-product__item">
                   <dt class="stats-product__lable">Рост</dt>
@@ -108,7 +108,7 @@
                 </div>
               </dl>
               <footer class="card-list__card-footer">
-                <b class="card-list__price">1 200 руб.</b>
+                <p class="card-list__price">1 200 руб.</p>
                 <div class="site-basket">
                   <a class="site-basket__link-backet" href="#">
                     <svg
@@ -129,14 +129,16 @@
               </footer>
             </li>
             <li class="card-list__item">
-              <img
-                class="product-card__image"
-                src="img/Content/products-cards/photo-2-mobile-1.jpg"
-                width="265"
-                height="195"
-                alt="Корзина для белья"
-              />
-              <h2 class="card-list__title">Корзина для белья</h2>
+              <a class="card-list__link" href="#">
+                <img
+                  class="card-list__image"
+                  src="img/Content/products-cards/photo-2-mobile-1.jpg"
+                  width="265"
+                  height="195"
+                  alt="Корзина для белья"
+                />
+                <h2 class="card-list__title">Корзина для белья</h2>
+              </a>
               <dl class="card-list__stats stats-product">
                 <div class="stats-product__item">
                   <dt class="stats-product__lable">Диаметр</dt>
@@ -148,7 +150,7 @@
                 </div>
               </dl>
               <footer class="card-list__card-footer">
-                <b class="card-list__price">690 руб.</b>
+                <p class="card-list__price">690 руб.</p>
                 <div class="site-basket">
                   <a class="site-basket__link-backet" href="#">
                     <svg
@@ -169,14 +171,16 @@
               </footer>
             </li>
             <li class="card-list__item">
-              <img
-                class="card-list__image"
-                src="img/Content/products-cards/photo-3-mobile-1.jpg"
-                width="265"
-                height="195"
-                alt="Большая корзинка для игрушек"
-              />
-              <h2 class="card-list__title">Большая корзинка для игрушек</h2>
+              <a class="card-list__link" href="#">
+                <img
+                  class="card-list__image"
+                  src="img/Content/products-cards/photo-3-mobile-1.jpg"
+                  width="265"
+                  height="195"
+                  alt="Большая корзинка для игрушек"
+                />
+                <h2 class="card-list__title">Большая корзинка для игрушек</h2>
+              </a>
               <dl class="card-list__stats stats-product">
                 <div class="stats-product__item">
                   <dt class="stats-product__lable">Диаметр</dt>
@@ -188,7 +192,7 @@
                 </div>
               </dl>
               <footer class="card-list__card-footer">
-                <b class="card-list__price">1 500 руб.</b>
+                <p class="card-list__price">1 500 руб.</p>
                 <div class="site-basket">
                   <a class="site-basket__link-backet" href="#">
                     <svg
@@ -235,9 +239,18 @@
         </div>
       </section>
     </main>
-    <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <div class="main-footer__social social">
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <a class="footer__link-logo logo logo--footer-logo" href="index.html">
+          <img
+            class="logo__image"
+            src="img/logo/logo-footer.svg"
+            width="101"
+            height="34"
+            alt="Логотип"
+          />
+        </a>
+        <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a
@@ -300,7 +313,7 @@
             </li>
           </ul>
         </div>
-        <div class="main-footer__copyright copyright">
+        <div class="footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
           <a
             class="copyright__link"
@@ -317,5 +330,52 @@
         </div>
       </div>
     </footer>
+    <div class="modal modal-window">
+      <div class="modal-window__modal modal-window__modal-wrapper">
+        <section class="modal-window__modal-content">
+          <h2 class="modal-window__title">Добавить в корзину</h2>
+          <form
+            class="modal-window__size-product size-product"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <fieldset class="size-product__title">
+              <ul class="size-product__list">
+                <li class="size-product__item">
+                  <input
+                    class="size-product__button-size"
+                    type="checkbox"
+                    name="size"
+                    value="S"
+                  />
+                  <span class="visually-hidden">Размер S</span>
+                </li>
+                <li class="size-product__item">
+                  <input
+                    class="size-product__button-size"
+                    type="checkbox"
+                    name="size"
+                    value="M"
+                  />
+                  <span class="visually-hidden">Размер M</span>
+                </li>
+                <li class="size-product__item">
+                  <input
+                    class="size-product__button-size"
+                    type="checkbox"
+                    name="size"
+                    value="L"
+                  />
+                  <span class="visually-hidden">Размер L</span>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="size-product__button button" type="submit">
+              Добавить
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>

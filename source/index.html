@@ -5,17 +5,17 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body class="page-body">
-    <header class="main-header">
-      <a class="main-header__link logo" href="index.html">
+    <header class="header">
+      <a class="header__link-logo logo" href="index.html">
         <img
-          class="logo-image"
-          src="img/logo/mishka-logo-mobile.svg.svg"
+          class="logo__image"
+          src="img/logo/mishka-logo-mobile.svg"
           width="86"
           height="35"
           alt="Логотип"
         />
       </a>
-      <button class="main-header__toggle main-header__toggle--close">
+      <button class="header__toggle-button header__toggle-button--close">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <nav class="main-nav">
@@ -79,10 +79,8 @@
         </div>
       </nav>
     </header>
-    <main class="main-wrapper">
-      <h1 class="main-wrapper__promo-title">
-        Милые штуки ручной работы для дома
-      </h1>
+    <main class="main">
+      <h1 class="main__promo-title">Милые штуки ручной работы для дома</h1>
       <section class="catalog">
         <div class="catalog__wrapper">
           <h2 class="visualli-hiden">Разделы товаров</h2>
@@ -185,7 +183,7 @@
                 фотографии сразу стали более стильными, а также набирают больше
                 лайков!
               </p>
-              <b class="reviews__autor-name"> Анастасия Красильникова </b>
+              <p class="reviews__autor-name"> Анастасия Красильникова </p>
               <a class="reviews__autor-link" href="#"> @misssssiskras </a>
             </blockquote>
             <p class="reviews__toggle slider__toggles">
@@ -239,9 +237,18 @@
         <button class="button" type="button">Напишите нам</button>
       </section>
     </main>
-    <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <div class="main-footer__social social">
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <a class="footer__link-logo logo logo--footer-logo" href="index.html">
+          <img
+            class="logo__image"
+            src="img/logo/logo-footer.svg"
+            width="101"
+            height="34"
+            alt="Логотип"
+          />
+        </a>
+        <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a
@@ -304,8 +311,8 @@
             </li>
           </ul>
         </div>
-        <div class="main-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
+        <div class="footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
           <a
             class="copyright__link"
             href="https://htmlacademy.ru/intensive/adaptive"
@@ -321,5 +328,52 @@
         </div>
       </div>
     </footer>
+    <div class="modal modal-window">
+      <div class="modal-window__modal modal-window__modal-wrapper">
+        <section class="modal-window__modal-content">
+          <h2 class="modal-window__title">Добавить в корзину</h2>
+          <form
+            class="modal-window__size-product size-product"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <fieldset class="size-product__title">
+              <ul class="size-product__list">
+                <li class="size-product__item">
+                  <input
+                    class="size-product__button-size"
+                    type="checkbox"
+                    name="size"
+                    value="S"
+                  />
+                  <span class="visually-hidden">Размер S</span>
+                </li>
+                <li class="size-product__item">
+                  <input
+                    class="size-product__button-size"
+                    type="checkbox"
+                    name="size"
+                    value="M"
+                  />
+                  <span class="visually-hidden">Размер M</span>
+                </li>
+                <li class="size-product__item">
+                  <input
+                    class="size-product__button-size"
+                    type="checkbox"
+                    name="size"
+                    value="L"
+                  />
+                  <span class="visually-hidden">Размер L</span>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="size-product__button button" type="submit">
+              Добавить
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
