@@ -4,4 +4,18 @@
 
 .main-page__promo-title {
   margin: 0;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.main-page__wrapper-promo {
+  margin: 0 auto;
+  max-width: 320px;
+}
+
+.main-page__inner {
+  width: 260px;
 }
