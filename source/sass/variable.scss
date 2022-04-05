@@ -1,0 +1,11 @@
+$colorb:"#000000";
+$colors:"#444444";
+$fs:"17px";
+$fw:"700";
+
+@mixin font-title($size: 17px) {
+  font-family: "Open Sans", sans-serif;
+  font-weight: $fw;
+  color: $colorb;
+  font-size: $size;
+}

@@ -1,4 +1,5 @@
 @use "../sass/fonts.scss";
+@use "../sass/variable.scss";
 @use "../sass/general-style.scss";
 @use "../sass/block/header.scss";
 @use "../sass/block/main-nav.scss";
@@ -12,6 +13,7 @@
 @use "../sass/block/product-weeks.scss";
 @use "../sass/block/top-product.scss";
 @use "../sass/block/button.scss";
+@use "../sass/block/advantages.scss";
 
 
 html {

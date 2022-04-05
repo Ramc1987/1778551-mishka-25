@@ -1,3 +1,5 @@
+@import "variable";
+
 .main-nav__list {
   list-style: none;
   margin: 0;
@@ -9,9 +11,7 @@
 }
 
 .menu-list__link {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
+  @include font-title;
   line-height: 24px;
   text-decoration: none;
   color: #000000;
