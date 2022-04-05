@@ -9,3 +9,8 @@ $fw:"700";
   color: $colorb;
   font-size: $size;
 }
+
+@mixin text-dec() {
+  text-decoration: none;
+  color: $colorb;
+}
