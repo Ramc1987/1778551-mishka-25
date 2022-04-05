@@ -9,11 +9,14 @@
   font-size: 27px;
   line-height: 30px;
   text-align: center;
+  padding: 100px 0 100px 0;
 }
 
 .main-page__wrapper-promo {
   margin: 0 auto;
   max-width: 320px;
+  background: url("/source/img/Content/main-promo.jpg") center no-repeat;
+  background-attachment: fixed;
 }
 
 .main-page__inner {
