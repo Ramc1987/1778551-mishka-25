@@ -1,0 +1,25 @@
+.address {
+  display: flex;
+  justify-content: space-between;
+}
+
+.address__company {
+  width: 183px;
+}
+
+
+.address-text {
+  margin: 0;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #444444;
+  text-decoration: none;
+}
+
+.button--write {
+  width: 260px;
+  margin: 0 auto;
+}

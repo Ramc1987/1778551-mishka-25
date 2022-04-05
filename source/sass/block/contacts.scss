@@ -1,0 +1,51 @@
+.contacts {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.contacts__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.contacts__title {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0 0 28px 0;
+  padding-top: 38px;
+}
+
+.contacts__legend-link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__legend-title {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.contacts__email-link {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #444444;
+  text-decoration: none;
+  width: 183px;
+  margin-bottom: 30px;
+}
+
+.contacts__address {
+  margin-bottom: 62px;
+}
+
+.contact__map {
+  border: none;
+  margin-bottom: 48px;
+}
