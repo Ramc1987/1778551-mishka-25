@@ -1,0 +1,47 @@
+.top-product__title {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0 0 3.5px 0;
+}
+
+.top-product__legend {
+  margin: 0 0 17.5px 0;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  color: hsl(168, 54%, 60%);
+  text-transform: uppercase;
+}
+
+.top-product__description {
+  margin: 0 0 28px 0;
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.top-product__stats-list .top-product__stats-description {
+  margin: 0;
+}
+
+.top-product__stats-number .top-product__stats-description {
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.top-product__price {
+  text-align: center;
+  margin: 0 0 24.5px 0;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: 24px;
+  color: #444444;
+}
