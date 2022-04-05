@@ -1,13 +1,14 @@
-.slider {}
-
-.slider-list {}
-
-.slider-item {}
-
-.slider__toggles {}
-
-.slider__toggle {}
-
-.slider__toggle-icon {}
 
 
+.slider__toggle {
+  width: 130px;
+  padding: 12px 0 12px 0;
+  background: hsl(0, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 93%);
+  box-sizing: border-box;
+}
+
+.slider__toggle-icon {
+  display: block;
+  margin: 0 auto;
+}
