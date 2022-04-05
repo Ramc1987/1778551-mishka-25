@@ -1,0 +1,29 @@
+.catalog-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-menu__item {
+  padding: 24px 0 31px 0;
+}
+
+.catalog-menu__item--interior {
+  background: hsl(168, 54%, 60%);
+}
+
+.catalog-menu__item--toys {
+  background: hsl(171, 48%, 55%);
+}
+
+.catalog-menu__link {
+  display: block;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 19px;
+  line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 0 0 30px;
+  width: 130px;
+}
