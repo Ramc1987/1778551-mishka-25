@@ -41,8 +41,9 @@
 .top-product__stats-description {
   margin: 0;
 
-  @include font-title(15px, 15px, 400);
+  @include font-title(15px, 400);
   color: $color-second;
+  line-height: 20px;
 }
 
 .top-product__price {

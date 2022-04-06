@@ -1,7 +1,7 @@
 $color-base:#000000;
 $color-second: #444444;
 
-@mixin font-title($fs: 17px, $lh: $fs * 1.2, $fw: 700) {
+@mixin font-title($fs: 17px, $fw: 700, $lh: $fs * 1.2) {
   font-family: "Open Sans", sans-serif;
   font-weight: $fw;
   font-size: $fs;
