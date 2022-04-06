@@ -1,0 +1,45 @@
+.promo-video {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.promo-video__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.promo-video__title {
+  margin: 0;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  text-align: center;
+  padding: 21.5px 0 26.5px 0;
+}
+
+.promo-video__title--icon-camera {
+  background: url("../img/icon/video/video-camera.svg");
+  background-repeat: no-repeat;
+}
+
+.promo-video__image {}
+
+.promo-video__description {}
+
+.description-text {
+  margin: 0;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444;
+}
+
+.button--make-order {
+  font-size: 18px;
+  line-height: 16px;
+  width: 260px;
+  padding: 18px 0;
+}
