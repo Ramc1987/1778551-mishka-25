@@ -23,7 +23,7 @@
 }
 
 .advantages__item {
-  @include font-title;
+
 
   line-height: 20px;
 }
@@ -39,6 +39,8 @@
 
 .advantages__description {
   margin: 0;
+
+  @include font-title;
 }
 
 .advantages__item--advantages-financial {
@@ -66,4 +68,3 @@
   background: url("../img/icon/advantages/icon-6.svg");
   background-repeat: no-repeat;
 }
-
