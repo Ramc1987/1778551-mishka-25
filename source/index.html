@@ -351,38 +351,39 @@
             action="https://echo.htmlacademy.ru/"
             method="post"
           >
-            <fieldset class="size-product__title">
+            <fieldset class="size-product__group-button">
+              <legend class="size-product__legend-title">Выберите размер:</legend>
               <ul class="size-product__list">
                 <li class="size-product__item">
                   <input
                     class="size-product__button-size"
-                    type="checkbox"
+                    type="radio"
                     name="size"
                     value="S"
                   />
-                  <span class="visually-hidden">Размер S</span>
+                  <span class="size-product__legend-size"> S</span>
                 </li>
                 <li class="size-product__item">
                   <input
                     class="size-product__button-size"
-                    type="checkbox"
+                    type="radio"
                     name="size"
                     value="M"
                   />
-                  <span class="visually-hidden">Размер M</span>
+                  <span class="size-product__legend-size"> M</span>
                 </li>
                 <li class="size-product__item">
                   <input
                     class="size-product__button-size"
-                    type="checkbox"
+                    type="radio"
                     name="size"
                     value="L"
                   />
-                  <span class="visually-hidden">Размер L</span>
+                  <span class="size-product__legend-size"> L</span>
                 </li>
               </ul>
             </fieldset>
-            <button class="size-product__button button" type="submit">
+            <button class="size-product__button button button--button-add" type="submit">
               Добавить
             </button>
           </form>

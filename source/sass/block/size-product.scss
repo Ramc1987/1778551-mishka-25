@@ -1,0 +1,43 @@
+.size-product {}
+
+.size-product__group-button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.size-product__legend-title {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.size-product__list {
+  list-style: none;
+}
+
+.size-product__item {}
+
+.size-product__button-size {}
+
+.size-product__legend-size {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 16px;
+  line-height: 17px;
+  color: #444444;
+}
+
+.size-product__button {
+  border: none;
+  width: 260px;
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 16px;
+}
+
+.button--button-add {
+  background: hsl(168, 54%, 60%);
+}
