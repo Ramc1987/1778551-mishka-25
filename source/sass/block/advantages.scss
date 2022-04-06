@@ -11,8 +11,8 @@
 }
 
 .advantages__title {
-  @include font-title($size: 25px);
-  line-height: 30px;
+  @include font-title($fs: 25px);
+
   margin: 0 0 28px 0;
 }
 
@@ -24,6 +24,7 @@
 
 .advantages__item {
   @include font-title;
+
   line-height: 20px;
 }
 
