@@ -1,5 +1,35 @@
 @import "variable.scss";
 
+.form-color {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 .form-color__title {
-  
+  padding: 0;
+
+  @include font-title;
+  line-height: 16px;
+  color: $decor-color;
+}
+
+.form-color__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.form-color__item {}
+
+.form-color__custom-checkbox {}
+
+.form-color__control-input {
+  margin: 0;
+}
+
+.form-color__checkbox {
+  @include font-title;
+  line-height: 18px;
+  color: $color-base;
 }
