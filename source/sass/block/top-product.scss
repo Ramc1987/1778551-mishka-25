@@ -1,29 +1,25 @@
 @import "variable.scss";
 
 .top-product__title {
-  font-family: inherit;
-  font-weight: inherit;
-  font-size: 24px;
+  @include font-title(24px);
   line-height: 30px;
   margin: 0 0 3.5px 0;
 }
 
 .top-product__legend {
   margin: 0 0 17.5px 0;
-  font-size: inherit;
-  font-family: inherit;
-  font-weight: inherit;
+
+  @include font-title;
   color: hsl(168, 54%, 60%);
   text-transform: uppercase;
 }
 
 .top-product__description {
   margin: 0 0 28px 0;
-  font-family: inherit;
-  font-size: 15px;
+
+  @include font-title(15px, 400);
   line-height: 24px;
-  font-weight: 400;
-  color: #444444;
+  color: $color-second;
 }
 
 .top-product__stats-list {
@@ -31,11 +27,9 @@
 }
 
 .top-product__stats-number {
-  font-family: inherit;
-  font-size: 15px;
+  @include font-title(15px, 400);
   line-height: 20px;
-  font-weight: 400;
-  color: #444444;
+  color: $color-second;
 }
 
 .top-product__stats-description {

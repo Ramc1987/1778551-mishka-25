@@ -18,6 +18,7 @@
   @include font-title;
   line-height: 16px;
   color: $decor-color;
+  text-transform: uppercase;
 }
 
 .form-contacts__field-phone {

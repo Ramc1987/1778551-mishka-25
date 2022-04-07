@@ -1,3 +1,5 @@
+@import "variable";
+
 .modal {}
 
 .modal-window {}
@@ -10,10 +12,21 @@
 
 .modal-window__title {
   margin: 0;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 30px;
+
+  @include font-title(25px, 700, 25px);
+  color: $color-base;
 }
 
-.modal-window__size-product {}
+.modal-window__size-product {
+  padding: 0;
+  margin: 0;
+}
+
+.size-product__legend-title {
+  padding: 0;
+}
+
+.size-product__list {
+  margin: 0;
+  padding: 0;
+}

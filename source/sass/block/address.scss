@@ -1,3 +1,5 @@
+@import "variable.scss";
+
 .address {
   display: flex;
   justify-content: space-between;
@@ -10,12 +12,11 @@
 
 .address-text {
   margin: 0;
-  font-family: inherit;
+
+  @include font-title(14px, 400);
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 30px;
-  color: #444444;
+  color: $color-second;
   text-decoration: none;
 }
 

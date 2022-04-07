@@ -1,3 +1,5 @@
+@import "variable";
+
 .main-page {
   flex-grow: 1;
   width: 320px;
@@ -16,9 +18,8 @@
 
 .main-page__promo-title {
   margin: 0;
-  font-family: inherit;
-  font-weight: inherit;
-  font-size: 27px;
+
+  @include font-title(27px);
   line-height: 30px;
   text-align: center;
   padding: 100px 0 100px 0;
@@ -27,11 +28,10 @@
 .main-page__service-promo-text {
   width: 260px;
   margin: 0 auto;
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 13px;
+
+  @include font-title(14px, 400);
   line-height: 24px;
-  color: #444444;
+  color: $color-second;
 }
 
 .main-page__wrapper-promo {

@@ -1,15 +1,15 @@
+@import "variable";
+
 .stats-product {
   display: flex;
   margin: 0;
 }
 
 .stats-product__item {
+  @include font-title(13px, 400);
   display: flex;
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 13px;
   line-height: 30px;
-  color: #444444;
+  color: $color-second;
 }
 
 .stats-product__lable {}
