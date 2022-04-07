@@ -1,5 +1,3 @@
-@import "variable";
-
 .stats-product {
   display: flex;
   margin: 0;
@@ -11,8 +9,6 @@
   line-height: 30px;
   color: $color-second;
 }
-
-.stats-product__lable {}
 
 .stats-product__desription {
   margin: 0;

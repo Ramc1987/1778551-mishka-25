@@ -1,5 +1,3 @@
-@import "variable.scss";
-
 .form-contacts {
   @include zero-fieldset;
 }
@@ -24,17 +22,17 @@
 .form-contacts__field-phone {
   padding: 0;
   border: none;
-}
 
-.form-contacts__field-phone--phone {
-  background: url("../img/icon/phone.svg") no-repeat center;
+  &.form-contacts__field-phone--phone {
+    background: url("../img/icon/phone.svg") no-repeat center;
+  }
 }
 
 .form-contacts__field-email {
   padding: 0;
   border: none;
-}
 
-.form-contacts__field-email--email {
-  background: url("../img/icon/mail.svg") no-repeat center;
+  &.form-contacts__field-email--email {
+    background: url("../img/icon/mail.svg") no-repeat center;
+  }
 }

@@ -1,12 +1,12 @@
 $color-base:#000000;
 $color-second: #444444;
-$decor-color: hsl(168, 54%, 60%);
+$decor-color: #63d1bb;
 
 @mixin font-title($fs: 17px, $fw: 700, $lh: $fs * 1.2) {
   font-family: "Open Sans", sans-serif;
   font-weight: $fw;
   font-size: $fs;
-  line-height: $fs * 1.2;
+  line-height: $lh;
 }
 
 @mixin zero-fieldset() {

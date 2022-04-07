@@ -1,8 +1,5 @@
-@import "variable";
-
 .reviews {
   width: 320px;
-  margin: 0 auto;
 }
 
 .reviews__wrapper {
@@ -46,8 +43,4 @@
   margin: 0 0 38px 0;
   display: flex;
   justify-content: space-between;
-}
-
-.button--write {
-  width: 260px;
 }
