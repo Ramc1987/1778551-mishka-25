@@ -1,0 +1,39 @@
+@import "variable.scss";
+
+.form-contacts {
+  @include zero-fieldset;
+}
+
+.form-contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.form-contacts__item {}
+
+.form-contacts__title {}
+
+.form-contacts__title-name {
+  @include font-title;
+  line-height: 16px;
+  color: $decor-color;
+}
+
+.form-contacts__field-phone {
+  padding: 0;
+  border: none;
+}
+
+.form-contacts__field-phone--phone {
+  background: url("../img/icon/phone.svg") no-repeat center;
+}
+
+.form-contacts__field-email {
+  padding: 0;
+  border: none;
+}
+
+.form-contacts__field-email--email {
+  background: url("../img/icon/mail.svg") no-repeat center;
+}

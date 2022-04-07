@@ -9,7 +9,8 @@ $decor-color: hsl(168, 54%, 60%);
   line-height: $fs * 1.2;
 }
 
-@mixin text-dec() {
-  text-decoration: none;
-  color: $colorb;
+@mixin zero-fieldset() {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
