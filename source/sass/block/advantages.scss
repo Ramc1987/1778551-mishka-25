@@ -22,8 +22,34 @@
 .advantages__item {
   line-height: 20px;
 
-  &.advantages__item--eco-material {
+  &--eco-material {
     background: url("../img/icon/advantages/icon-1.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--advantages-financial {
+    background: url("../img/icon/advantages/icon-2.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--like-photo {
+    background: url("../img/icon/advantages/icon-3.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--handwork {
+    background: url("../img/icon/advantages/icon-4.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--local-support {
+    background: url("../img/icon/advantages/icon-5.svg");
+    background-repeat: no-repeat;
+  }
+
+
+  &--gift-wrap {
+    background: url("../img/icon/advantages/icon-6.svg");
     background-repeat: no-repeat;
   }
 }
@@ -36,30 +62,4 @@
   margin: 0;
 
   @include font-title;
-}
-
-.advantages__item--advantages-financial {
-  background: url("../img/icon/advantages/icon-2.svg");
-  background-repeat: no-repeat;
-}
-
-.advantages__item--like-photo {
-  background: url("../img/icon/advantages/icon-3.svg");
-  background-repeat: no-repeat;
-}
-
-.advantages__item--handwork {
-  background: url("../img/icon/advantages/icon-4.svg");
-  background-repeat: no-repeat;
-}
-
-.advantages__item--local-support {
-  background: url("../img/icon/advantages/icon-5.svg");
-  background-repeat: no-repeat;
-}
-
-
-.advantages__item--gift-wrap {
-  background: url("../img/icon/advantages/icon-6.svg");
-  background-repeat: no-repeat;
 }

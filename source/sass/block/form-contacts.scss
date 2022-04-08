@@ -8,10 +8,6 @@
   list-style-type: none;
 }
 
-.form-contacts__item {}
-
-.form-contacts__title {}
-
 .form-contacts__title-name {
   @include font-title;
   line-height: 16px;
@@ -23,7 +19,7 @@
   padding: 0;
   border: none;
 
-  &.form-contacts__field-phone--phone {
+  &--phone {
     background: url("../img/icon/phone.svg") no-repeat center;
   }
 }

@@ -17,15 +17,11 @@
   text-align: center;
   padding: 21.5px 0 26.5px 0;
 
-  &.promo-video__title--icon-camera {
+  &--icon-camera {
     background: url("../img/icon/video/video-camera.svg");
     background-repeat: no-repeat;
   }
 }
-
-.promo-video__image {}
-
-.promo-video__description {}
 
 .description-text {
   margin: 0;
