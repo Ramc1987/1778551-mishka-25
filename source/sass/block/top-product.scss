@@ -1,0 +1,49 @@
+.top-product__title {
+  @include font-title(24px);
+  line-height: 30px;
+  margin: 0 0 3.5px 0;
+}
+
+.top-product__legend {
+  margin: 0 0 17.5px 0;
+
+  @include font-title;
+  color: hsl(168, 54%, 60%);
+  text-transform: uppercase;
+}
+
+.top-product__description {
+  margin: 0 0 28px 0;
+
+  @include font-title(15px, 400);
+  line-height: 24px;
+  color: $color-second;
+}
+
+.top-product__stats-list {
+  margin: 0;
+}
+
+.top-product__stats-number {
+  @include font-title(15px, 400);
+  line-height: 20px;
+  color: $color-second;
+}
+
+.top-product__stats-description {
+  margin: 0;
+
+  @include font-title(15px, 400);
+  color: $color-second;
+  line-height: 20px;
+}
+
+.top-product__price {
+  text-align: center;
+  margin: 0 0 24.5px 0;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: 24px;
+  color: #444444;
+}

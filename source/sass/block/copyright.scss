@@ -1,0 +1,7 @@
+.copyright__text {
+  margin: 0;
+
+  @include font-title(19px);
+  line-height: 18px;
+  color: $color-base;
+}

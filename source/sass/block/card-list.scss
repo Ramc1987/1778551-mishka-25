@@ -1,0 +1,30 @@
+.card-list {
+  list-style: none;
+  width: 260px;
+}
+
+.card-list__link {
+  text-decoration: none;
+  display: block;
+}
+
+.card-list__image {
+  width: 100%;
+  object-fit: contain;
+}
+
+.card-list__title {
+  margin: 0;
+
+  @include font-title;
+  line-height: 24px;
+  color: $color-base;
+}
+
+.card-list__price {
+  margin: 0;
+
+  @include font-title(15px);
+  line-height: 24px;
+  color: $color-base;
+}

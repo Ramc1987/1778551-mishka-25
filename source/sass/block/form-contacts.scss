@@ -1,0 +1,34 @@
+.form-contacts {
+  @include zero-fieldset;
+}
+
+.form-contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.form-contacts__title-name {
+  @include font-title;
+  line-height: 16px;
+  color: $decor-color;
+  text-transform: uppercase;
+}
+
+.form-contacts__field-phone {
+  padding: 0;
+  border: none;
+
+  &--phone {
+    background: url("../img/icon/phone.svg") no-repeat center;
+  }
+}
+
+.form-contacts__field-email {
+  padding: 0;
+  border: none;
+
+  &.form-contacts__field-email--email {
+    background: url("../img/icon/mail.svg") no-repeat center;
+  }
+}

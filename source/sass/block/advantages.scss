@@ -1,0 +1,65 @@
+.advantages {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.advantages__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.advantages__title {
+  @include font-title($fs: 25px);
+  margin: 0 0 28px 0;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__item {
+  line-height: 20px;
+
+  &--eco-material {
+    background: url("../img/icon/advantages/icon-1.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--advantages-financial {
+    background: url("../img/icon/advantages/icon-2.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--like-photo {
+    background: url("../img/icon/advantages/icon-3.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--handwork {
+    background: url("../img/icon/advantages/icon-4.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--local-support {
+    background: url("../img/icon/advantages/icon-5.svg");
+    background-repeat: no-repeat;
+  }
+
+
+  &--gift-wrap {
+    background: url("../img/icon/advantages/icon-6.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages__item:not(:last-child) {
+  margin-bottom: 83px;
+}
+
+.advantages__description {
+  margin: 0;
+
+  @include font-title;
+}

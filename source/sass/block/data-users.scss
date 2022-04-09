@@ -1,0 +1,33 @@
+.data-users {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.data-users__title {
+  padding: 0;
+
+  @include font-title;
+  line-height: 16px;
+  color: $decor-color;
+}
+
+.data-users__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.data-users__title-name {
+  @include font-title;
+  line-height: 18px;
+  color: $color-base;
+}
+
+.data-users__field-name {
+  margin: 0;
+  padding: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}

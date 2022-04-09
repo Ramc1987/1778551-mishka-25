@@ -1,0 +1,44 @@
+.main-page {
+  flex-grow: 1;
+  width: 320px;
+}
+
+.main-page__form-wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.main-page__service {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.main-page__promo-title {
+  margin: 0;
+
+  @include font-title(27px);
+  line-height: 30px;
+  text-align: center;
+  padding: 100px 0 100px 0;
+}
+
+.main-page__service-promo-text {
+  width: 260px;
+  margin: 0 auto;
+
+  @include font-title(14px, 400);
+  line-height: 24px;
+  color: $color-second;
+}
+
+.main-page__wrapper-promo {
+  margin: 0 auto;
+  max-width: 320px;
+  background: url("../img/Content/main-promo.jpg") center no-repeat;
+  background-attachment: fixed;
+}
+
+.main-page__inner {
+  width: 260px;
+  margin: 0 auto;
+}

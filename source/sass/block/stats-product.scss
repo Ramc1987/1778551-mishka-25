@@ -1,0 +1,15 @@
+.stats-product {
+  display: flex;
+  margin: 0;
+}
+
+.stats-product__item {
+  @include font-title(13px, 400);
+  display: flex;
+  line-height: 30px;
+  color: $color-second;
+}
+
+.stats-product__desription {
+  margin: 0;
+}

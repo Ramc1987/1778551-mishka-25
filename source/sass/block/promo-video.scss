@@ -1,0 +1,32 @@
+.promo-video {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.promo-video__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.promo-video__title {
+  margin: 0;
+
+  @include font-title;
+  line-height: 24px;
+  color: $color-base;
+  text-align: center;
+  padding: 21.5px 0 26.5px 0;
+
+  &--icon-camera {
+    background: url("../img/icon/video/video-camera.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.description-text {
+  margin: 0;
+
+  @include font-title(13px, 400);
+  line-height: 24px;
+  color: $color-second;
+}

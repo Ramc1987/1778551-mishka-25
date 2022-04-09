@@ -1,0 +1,28 @@
+.catalog-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-menu__item {
+  padding: 24px 0 31px 0;
+
+  &.catalog-menu__item--interior {
+    background: #63d1bb;
+  }
+
+  &.catalog-menu__item--toys {
+    background: #56c3b2;
+  }
+}
+
+.catalog-menu__link {
+  display: block;
+
+  @include font-title(19px);
+  line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 0 0 30px;
+  width: 130px;
+}
