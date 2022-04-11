@@ -1,5 +1,7 @@
 .main-nav {
-  // display: flex;
+  @media (min-width: $tablet) {
+    width: 100%;
+  }
 }
 
 .main-nav__menu {
@@ -12,12 +14,14 @@
     width: 700px;
     margin: 0 auto;
   }
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+  }
 }
 
 .main-nav__list {
   width: 320px;
-
-  // @media (min-width: $tablet) {
-  //   margin-top: 65px;
-  // }
 }

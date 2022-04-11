@@ -5,7 +5,7 @@
   padding: 0;
 
   @media (min-width: $tablet) {
-    width: 348px;
+    width: 405px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 0;
@@ -14,7 +14,6 @@
 
 .user-list__item {
   background: #ffffff;
-  // padding: 28.5px 0 26.5px 0;
 
   @media (min-width: $tablet) {
     padding: 0;

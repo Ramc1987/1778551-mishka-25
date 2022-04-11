@@ -6,6 +6,10 @@
   &--hidden {
     display: none;
   }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .offer-link {

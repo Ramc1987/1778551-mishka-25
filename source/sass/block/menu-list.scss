@@ -5,20 +5,30 @@
   width: 100%;
 
   @media (min-width: $tablet) {
-    width: 348px;
+    width: 405px;
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    // display: flex;
+    // flex-wrap: wrap;
   }
 }
 
 .menu-list__item {
   background: #ffffff;
-  // padding: 28.5px 0 26.5px 0;
 
   @media (min-width: $tablet) {
     width: 100%;
     padding: 0;
     margin-top: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
   }
 }
 
