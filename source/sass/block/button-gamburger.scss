@@ -1,0 +1,32 @@
+.button-gamburger {
+  width: 20px;
+  height: 14px;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.button-gamburger__line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: $color-base;
+
+  &::before,
+  &::after {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $color-base;
+    content: "";
+  }
+
+  &::before {
+    transform: translate(0, 4px);
+  }
+
+  &::after {
+    transform: translate(0, 6px);
+  }
+}

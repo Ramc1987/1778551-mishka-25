@@ -1,16 +1,23 @@
 .menu-list {
-  outline: 2px solid #ff0000;
-  outline-offset: 2px;
-}
-
-.main-nav__list {
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  width: 260px;
+
+  @media (min-width: $tablet) {
+    width: 348px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .menu-list__item {
-  padding: 28.5px 0 26.5px 46px;
+  background: #ffffff;
+  padding: 28.5px 0 26.5px 0;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
 }
 
 .menu-list__link {

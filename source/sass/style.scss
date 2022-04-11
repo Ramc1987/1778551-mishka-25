@@ -35,6 +35,8 @@
 @import "../sass/block/data-users.scss";
 @import "../sass/block/form-contacts.scss";
 @import "../sass/block/field-additionally.scss";
+@import "../sass/block/button-gamburger.scss";
+@import "../sass/block/offer-list.scss";
 
 
 html {
@@ -50,4 +52,9 @@ body {
   font-weight: 700;
   font-style: normal;
   font-size: 17px;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }

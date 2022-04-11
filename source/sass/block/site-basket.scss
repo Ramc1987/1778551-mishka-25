@@ -1,11 +1,6 @@
 .site-basket__link-backet {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
+  @include font-title;
   line-height: 24px;
   text-decoration: none;
   color: #000000;
-  padding: 0 0 0 25px;
-  outline: 1px solid #2200ff;
-  outline-offset: 2px;
 }
