@@ -2,7 +2,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 260px;
+  width: 100%;
 
   @media (min-width: $tablet) {
     width: 348px;
@@ -13,10 +13,12 @@
 
 .menu-list__item {
   background: #ffffff;
-  padding: 28.5px 0 26.5px 0;
+  // padding: 28.5px 0 26.5px 0;
 
   @media (min-width: $tablet) {
+    width: 100%;
     padding: 0;
+    margin-top: 65px;
   }
 }
 
@@ -25,4 +27,9 @@
 
   text-decoration: none;
   color: $color-base;
+
+  @media (min-width: $tablet) {
+    font-size: 15px;
+    line-height: 24px;
+  }
 }
