@@ -5,4 +5,14 @@
   color: $color-base;
   font-style: inherit;
   line-height: 24px;
+
+  @media (min-width: $tablet) {
+    display: block;
+    padding-top: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    padding-top: 0;
+  }
 }

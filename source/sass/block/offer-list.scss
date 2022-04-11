@@ -2,13 +2,25 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 100%;
+
 
   &--hidden {
     display: none;
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
+    display: flex;
+  }
+}
+
+.offer-item {
+  @media (min-width: $desktop-width) {
+    min-width: 130px;
+
+    &:not(:last-child) {
+      margin-right: 82px;
+    }
   }
 }
 
