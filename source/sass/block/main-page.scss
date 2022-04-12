@@ -1,7 +1,5 @@
 .main-page {
   flex-grow: 1;
-  width: 320px;
-  display: none;
 }
 
 .main-page__form-wrapper {
@@ -15,12 +13,27 @@
 }
 
 .main-page__promo-title {
-  margin: 0;
+  margin: 0 auto;
+  width: 260px;
 
   @include font-title(27px);
   line-height: 30px;
   text-align: center;
   padding: 100px 0 100px 0;
+
+  @media (min-width: $tablet) {
+    width: 668px;
+
+    @include font-title(43px);
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+
+    @include font-title(53px);
+    line-height: 57px;
+  }
 }
 
 .main-page__service-promo-text {
@@ -33,13 +46,33 @@
 }
 
 .main-page__wrapper-promo {
-  margin: 0 auto;
-  max-width: 320px;
-  background: url("../img/Content/main-promo.jpg") center no-repeat;
-  background-attachment: fixed;
+  max-width: 100%;
+  background: url("../img/Content/main-promo.jpg") center 50px no-repeat fixed, #f1f1f184;
+}
+
+.main-page__list {
+  @media (min-width: $mobil-widhts) {
+    margin: 0;
+  }
+
+  @media (min-width: $tablet) {
+    margin: 0 auto;
+  }
 }
 
 .main-page__inner {
   width: 260px;
   margin: 0 auto;
+}
+
+.main-page__wrapper-catalog {
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 39.5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 54px;
+  }
 }
