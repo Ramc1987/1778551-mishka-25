@@ -1,11 +1,24 @@
 .advantages {
-  width: 320px;
-  margin: 0 auto;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+  }
 }
 
 .advantages__wrapper {
   width: 260px;
   margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1052px;
+    margin: 0 auto;
+  }
 }
 
 .advantages__title {
@@ -14,9 +27,20 @@
 }
 
 .advantages__list {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 265px 332px;
+    column-gap: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 70px;
+  }
 }
 
 .advantages__item {
@@ -25,16 +49,31 @@
   &--eco-material {
     background: url("../img/icon/advantages/icon-1.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet) {
+      grid-column: 1;
+      grid-row: 1;
+    }
   }
 
   &--advantages-financial {
     background: url("../img/icon/advantages/icon-2.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet) {
+      grid-column: 1;
+      grid-row: 2;
+    }
   }
 
   &--like-photo {
     background: url("../img/icon/advantages/icon-3.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet) {
+      grid-column: 1;
+      grid-row: 3;
+    }
   }
 
   &--handwork {
@@ -55,11 +94,12 @@
 }
 
 .advantages__item:not(:last-child) {
-  margin-bottom: 83px;
+  margin-bottom: 30px;
 }
 
 .advantages__description {
   margin: 0;
+  padding-top: 47px;
 
   @include font-title;
 }
