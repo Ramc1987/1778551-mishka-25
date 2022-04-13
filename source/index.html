@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
     <title>HTML Academy: Мишка</title>
   </head>
@@ -11,9 +11,15 @@
       <div class="header__wrapper">
         <a class="header__link-logo logo" href="form.html">
           <picture class="header__picture-logo">
-            <source media="(min-width: 1200px)" srcset="../img/logo/mishka-logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="../img/logo/mishka-logo-tablet.svg">
-            <img src="../img/logo/mishka-logo-mobile.svg" alt="Пример">
+            <source
+              media="(min-width: 1200px)"
+              srcset="../img/logo/mishka-logo-desktop.svg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="../img/logo/mishka-logo-tablet.svg"
+            />
+            <img src="../img/logo/mishka-logo-mobile.svg" alt="Пример" />
           </picture>
         </a>
         <button class="button-gamburger button-gamburger--close">
@@ -47,18 +53,16 @@
           </ul>
           <ul class="main-nav__list user-list">
             <li class="user-list__item form-search">
-              <a class="form-search__link-search" href="#">
-                Поиск по сайту
-              </a>
-                <form
-                  class="visually-hidden"
-                  method="post"
-                  action="https://htmlacademy.ru"
-                >
-                  <label class="form-search__name-input">
-                    <input class="form-search__search" type="search" />
-                  </label>
-                </form>
+              <a class="form-search__link-search" href="#"> Поиск по сайту </a>
+              <form
+                class="visually-hidden"
+                method="post"
+                action="https://htmlacademy.ru"
+              >
+                <label class="form-search__name-input">
+                  <input class="form-search__search" type="search" />
+                </label>
+              </form>
             </li>
             <li class="user-list__item site-basket">
               <a class="site-basket__link-backet" href="#">
@@ -116,7 +120,12 @@
             </div>
             <div class="top-product__price-inner">
               <p class="top-product__price">Цена: 990 руб.</p>
-              <button class="top-product__button button button--order" type="button">Заказать</button>
+              <button
+                class="top-product__button button button--order"
+                type="button"
+              >
+                Заказать
+              </button>
             </div>
             <img
               class="top-product__item-image"
@@ -180,26 +189,26 @@
               <p class="reviews__autor-name">Анастасия Красильникова</p>
               <a class="reviews__autor-link" href="#"> @misssssiskras </a>
             </blockquote>
-            <p class="reviews__toggle slider__toggles">
-              <button class="slider__toggle" type="button">
-                <img
-                  class="slider__toggle-icon"
-                  src="img/Arrow/huge-arrow-left.svg.svg"
-                  width="50"
-                  height="26"
-                  alt="Вперед"
-                />
-              </button>
-              <button class="slider__toggle" type="button">
-                <img
-                  class="slider__toggle-icon"
-                  src="img/Arrow/huge-arrow-right.svg.svg "
-                  width="50"
-                  height="26"
-                  alt="Вперед"
-                />
-              </button>
-            </p>
+          </div>
+          <div class="reviews__toggle slider__toggles">
+            <button class="slider__toggle" type="button">
+              <img
+                class="slider__toggle-icon"
+                src="img/Arrow/huge-arrow-left.svg.svg"
+                width="50"
+                height="26"
+                alt="Вперед"
+              />
+            </button>
+            <button class="slider__toggle" type="button">
+              <img
+                class="slider__toggle-icon"
+                src="img/Arrow/huge-arrow-right.svg.svg "
+                width="50"
+                height="26"
+                alt="Вперед"
+              />
+            </button>
           </div>
           <button class="button button--write" type="button">Написать</button>
         </div>
@@ -333,7 +342,9 @@
             method="post"
           >
             <fieldset class="size-product__group-button">
-              <legend class="size-product__legend-title">Выберите размер:</legend>
+              <legend class="size-product__legend-title">
+                Выберите размер:
+              </legend>
               <ul class="size-product__list">
                 <li class="size-product__item">
                   <input
@@ -364,7 +375,10 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="size-product__button button button--button-add" type="submit">
+            <button
+              class="size-product__button button button--button-add"
+              type="submit"
+            >
               Добавить
             </button>
           </form>

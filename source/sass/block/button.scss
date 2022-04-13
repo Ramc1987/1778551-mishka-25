@@ -20,7 +20,12 @@
 }
 
 .button--write {
-  width: 260px;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    grid-column: 2/3;
+    grid-row: 1;
+  }
 }
 
 .button--send-order {
