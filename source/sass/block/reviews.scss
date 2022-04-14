@@ -1,12 +1,21 @@
 .reviews {
   width: 100%;
-
-  @media (min-width: $tablet) {
-    background: url("../img/Content/review.png") center left no-repeat;
-  }
 }
 
 .reviews__wrapper {
+  @media (min-width: $tablet) {
+    background: url("../img/Content/review.png") center left no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+  }
+}
+
+.reviews__inner {
   width: 260px;
   margin: 0 auto 45px;
 
@@ -17,12 +26,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1050px;
+    width: 875px;
+    margin: 0;
   }
 }
 
 .reviews__title {
-  @include font-title;
+  @include font-title(25px);
+  color: $color-base;
   line-height: 30px;
   margin: 0 0 14px 0;
 
@@ -52,19 +63,31 @@
     @include font-title(17px, 400);
     line-height: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 61px;
+  }
 }
 
 .reviews__autor-name {
-  font-family: inherit;
-  font-weight: inherit;
-  font-size: 17px;
+  @include font-title(17px);
   line-height: 24px;
+  color: $color-base;
   margin: 0;
+
+  @media (min-width: $tablet) {
+    @include font-title(18px);
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-title;
+    line-height: 24px;
+  }
 }
 
 .reviews__autor-link {
-  font-family: inherit;
-  font-weight: 400;
+  @include font-title(17px, 400);
   line-height: 30px;
   text-decoration: none;
   color: #444444;
