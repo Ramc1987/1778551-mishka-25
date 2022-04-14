@@ -26,13 +26,12 @@
   margin: 0 auto 45px;
 
   @media (min-width: $tablet) {
-    width: 668px;
+    width: 87%;
     display: grid;
     grid-template-columns: auto 175px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 875px;
     margin: 0;
   }
 }
