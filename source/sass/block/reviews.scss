@@ -1,5 +1,12 @@
 .reviews {
   width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    display: flex;
+    justify-content: end;
+    margin: 0 auto;
+  }
 }
 
 .reviews__wrapper {
@@ -9,7 +16,6 @@
 
   @media (min-width: $desktop-width) {
     width: 1050px;
-    margin: 0 auto;
     display: flex;
     justify-content: end;
   }
