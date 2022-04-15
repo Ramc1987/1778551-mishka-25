@@ -1,4 +1,30 @@
 .heading-container {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
+}
+
+.heading__wrapper {
+  background: #f1f1f1;
+}
+
+.heading__wrapper-title {
+  margin: 0;
+  padding: 73.5px 0 73.5px 0;
+
+  @include font-title(27px);
+  line-height: 30px;
+  color: $color-base;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    @include font-title(43px);
+
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-title(53px);
+
+    line-height: 57px;
+  }
 }
