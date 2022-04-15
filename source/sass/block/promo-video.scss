@@ -5,6 +5,12 @@
 .promo-video__wrapper {
   width: 81%;
   margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .promo-video__title {
@@ -18,15 +24,32 @@
   color: $color-base;
   padding: 21.5px 0 26.5px 0;
 
+  @media (min-width: $tablet) {
+    @include font-title(20px);
+    width: 336px;
+    line-height: 24px;
+    order: 3;
+    margin: 0;
+  }
+
   &--icon-camera {
     background: url("../img/icon/video/video-camera.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet) {
+      background-position: 35px 20px;
+    }
   }
 }
 
 .promo-video__description-wrapper {
   padding-left: 34px;
   width: 86.8%;
+
+  @media (min-width: $tablet) {
+    width: 93%;
+    order: 3;
+  }
 }
 
 .promo-video__description-text {
@@ -36,4 +59,33 @@
   @include font-title(13px, 400);
   line-height: 24px;
   color: $color-second;
+
+  @media (min-width: $tablet) {
+    padding: 0 70px 0 0;
+
+    @include font-title(15px, 400) {
+      line-height: 30px;
+    }
+  }
+}
+
+.promo-video__image-wrapper {
+  @media (min-width: $tablet) {
+    width: 100%;
+    order: 2;
+  }
+}
+
+.promo-video__image {
+  @media (min-width: $tablet) {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
+.promo-video__button {
+  @media (min-width: $tablet) {
+    width: 584px;
+  }
 }

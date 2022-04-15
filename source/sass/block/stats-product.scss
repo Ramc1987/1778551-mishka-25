@@ -2,7 +2,6 @@
   display: flex;
   margin: 0 auto;
   width: 78%;
-  border-bottom: 1px solid #ececec;
 }
 
 .stats-product__item {
@@ -11,6 +10,11 @@
   line-height: 30px;
   color: $color-second;
   margin-bottom: 17.5px;
+
+  @media (min-width: $tablet) {
+    @include font-title(15px);
+    line-height: 30px;
+  }
 }
 
 .stats-product__desription {
