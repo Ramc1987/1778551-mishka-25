@@ -5,7 +5,7 @@
 @import "../sass/block/header.scss";
 @import "../sass/block/main-nav.scss";
 @import "../sass/block/menu-list.scss";
-@import "../sass/block/user-list.scss";
+@import "../sass/block/menu-user.scss";
 @import "../sass/block/form-search.scss";
 @import "../sass/block/site-basket.scss";
 @import "../sass/block/main-page.scss";
@@ -35,7 +35,7 @@
 @import "../sass/block/form-contacts.scss";
 @import "../sass/block/field-additionally.scss";
 @import "../sass/block/button-gamburger.scss";
-@import "../sass/block/offer-list.scss";
+@import "../sass/block/menu-offer.scss";
 @import "../sass/block/logo.scss";
 
 
@@ -52,5 +52,10 @@ body {
   font-weight: 700;
   font-style: normal;
   font-size: 17px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
 }
 

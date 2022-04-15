@@ -1,34 +1,53 @@
 .menu-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  width: 100%;
+  z-index: 10;
 
   @media (min-width: $tablet) {
-    width: 405px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    width: 335px;
+    margin-bottom: -44.5px;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
+    align-items: flex-end;
+    width: 405px;
+    justify-content: space-between;
+    margin-bottom: 0;
   }
 }
 
 .menu-list__item {
-  background: #ffffff;
+  &:nth-child(1) {
+    @media (min-width: $tablet) {
+      order: 1;
+      width: 167px;
+    }
 
-  @media (min-width: $tablet) {
-    width: 100%;
-    padding: 0;
-    margin-top: 65px;
+    @media (min-width: $desktop-width) {
+      order: 1;
+      width: 167px;
+      padding: 32.5px 0 31.5px 0;
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    width: 167px;
-    padding: 0;
-    margin: 0 0 50px 0;
+  &:nth-child(2) {
+    @media (min-width: $tablet) {
+      order: 2;
+      width: 167px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+      padding: 32.5px 0 31.5px 0;
+    }
+  }
+
+  &:nth-child(3) {
+    @media (min-width: $tablet) {
+      order: 2;
+      padding: 21px 0 21px 0;
+    }
   }
 }
 
@@ -36,7 +55,9 @@
   @include font-title;
 
   text-decoration: none;
+  display: block;
   color: $color-base;
+  line-height: 24px;
 
   @media (min-width: $tablet) {
     @include font-title(15px);

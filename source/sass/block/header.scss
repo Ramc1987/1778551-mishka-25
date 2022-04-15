@@ -1,46 +1,40 @@
 .header {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #ffffff;
-
-  @media (min-width: $tablet) {
-    flex-direction: row;
-    position: relative;
-    width: 87%;
-    margin: 0 auto;
-  }
-}
-
-.header__wrapper {
-  display: flex;
-  width: 260px;
-  justify-content: end;
-  margin: 0 auto;
 
   @media (min-width: $tablet) {
     width: 100%;
   }
 }
 
-.header__link-logo {
+.header__wrapper {
+  width: 260px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 87%;
+    margin: 0 auto;
+  }
+}
+
+.header__top-wrapper {
+  @media (min-width: $tablet) {
+    position: relative;
+  }
+}
+
+.header__logo {
   height: 79px;
-  margin-right: 67px;
 
   @media (min-width: $tablet) {
     position: absolute;
-    left: 0;
     top: 22px;
-    transform: rotate(50%, -50%);
-    height: 89px;
-    margin-right: 0;
+    left: 0;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 9px;
-    left: 40%;
+    left: 43%;
   }
 }
 

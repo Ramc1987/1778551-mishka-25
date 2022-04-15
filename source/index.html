@@ -9,67 +9,71 @@
   <body>
     <header class="header">
       <div class="header__wrapper">
-        <a class="header__link-logo logo" href="form.html">
-          <picture class="header__picture-logo">
-            <source
-              media="(min-width: 1200px)"
-              srcset="../img/logo/mishka-logo-desktop.svg"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="../img/logo/mishka-logo-tablet.svg"
-            />
-            <img src="../img/logo/mishka-logo-mobile.svg" alt="Пример" />
-          </picture>
-        </a>
-        <button class="button-gamburger button-gamburger--close">
-          <span class="button-gamburger__line"></span>
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-      </div>
-      <div class="header__nav-wrapper main-nav">
-        <nav class="main-nav__menu main-nav__menu--show">
-          <ul class="main-nav__list menu-list">
-            <li class="menu-list__item">
-              <a class="menu-list__link" href="catalog.html">
-                Каталог товаров
-              </a>
-            </li>
-            <li class="menu-list__item">
-              <a class="menu-list__link" href="catalog.html">
-                Вязание на заказ
-              </a>
-            </li>
-            <li class="main-nav__list offer-list offer-list--hidden">
-              <ul class="offer-list">
-                <li class="offer-item">
-                  <a class="offer-link" href="#">Новые поступления</a>
-                </li>
-                <li class="offer-item">
-                  <a class="offer-link" href="#">Распродажа</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item form-search">
-              <a class="form-search__link-search" href="#"> Поиск по сайту </a>
-              <form
-                class="visually-hidden"
-                method="post"
-                action="https://htmlacademy.ru"
-              >
-                <label class="form-search__name-input">
-                  <input class="form-search__search" type="search" />
-                </label>
-              </form>
-            </li>
-            <li class="user-list__item site-basket">
-              <a class="site-basket__link-backet" href="#">
-                Корзина: пока пуста
-              </a>
-            </li>
-          </ul>
+        <div class="header__top-wrapper">
+          <a class="header__logo logo" href="form.html">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="../img/logo/mishka-logo-desktop.svg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="../img/logo/mishka-logo-tablet.svg"
+              />
+              <img src="../img/logo/mishka-logo-mobile.svg" alt="Пример" />
+            </picture>
+          </a>
+          <button class="button-gamburger button-gamburger--close">
+            <span class="button-gamburger__line"></span>
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <nav class="main-nav main-nav--show">
+          <div class="main-nav__menu-wrapper">
+            <ul class="main-nav__list menu-list">
+              <li class="menu-list__item">
+                <a class="menu-list__link" href="catalog.html">
+                  Каталог товаров
+                </a>
+              </li>
+              <li class="menu-list__item">
+                <a class="menu-list__link" href="catalog.html">
+                  Вязание на заказ
+                </a>
+              </li>
+              <li class="menu-list__item menu-offer menu-offer--show">
+                <ul class="main-nav__list menu-offer menu-offer--show">
+                  <li class="menu-offer__item">
+                    <a class="menu-offer__link" href="#">Новые поступления</a>
+                  </li>
+                  <li class="menu-offer__item">
+                    <a class="menu-offer__link" href="#">Распродажа</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="main-nav__list menu-user">
+              <li class="menu-user__item form-search">
+                <a class="form-search__link-search" href="#">
+                  Поиск по сайту
+                </a>
+                <form
+                  class="visually-hidden"
+                  method="post"
+                  action="https://htmlacademy.ru"
+                >
+                  <label class="form-search__name-input">
+                    <input class="form-search__search" type="search" />
+                  </label>
+                </form>
+              </li>
+              <li class="menu-user__item site-basket">
+                <a class="site-basket__link-backet" href="#">
+                  Корзина: пока пуста
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>

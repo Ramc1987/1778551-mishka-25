@@ -1,0 +1,28 @@
+.menu-offer {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: none;
+    width: 334px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+  }
+}
+
+.menu-offer__link {
+  text-decoration: none;
+  color: $color-base;
+
+  @include font-title;
+  line-height: 24px;
+
+  @media (min-width: $tablet) {
+    @include font-title(15px);
+    line-height: 24px;
+  }
+}
