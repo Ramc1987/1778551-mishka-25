@@ -1,9 +1,5 @@
 .advantages {
   width: 100%;
-
-  @media (min-width: $tablet) {
-    width: 100%;
-  }
 }
 
 .advantages__wrapper {
@@ -12,18 +8,30 @@
 
   @media (min-width: $tablet) {
     width: 660px;
-    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1052px;
-    margin: 0 auto;
+    width: 87%;
+    display: flex;
+  }
+}
+
+.advantages__inner {
+  @media (min-width: $desktop-width) {
+    padding-left: 140px;
   }
 }
 
 .advantages__title {
   @include font-title($fs: 25px);
   margin: 0 0 28px 0;
+
+  @media (min-width: $desktop-width) {
+    @include font-title(53px);
+
+    line-height: 57px;
+    margin: 0 0 39px 0;
+  }
 }
 
 .advantages__list {
@@ -39,7 +47,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    column-gap: 70px;
+    column-gap: 85px;
   }
 }
 

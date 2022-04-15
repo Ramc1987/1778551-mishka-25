@@ -1,20 +1,15 @@
 .contacts {
   width: 100%;
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    width: 1200px;
-    justify-content: end;
-  }
 }
 
 .contacts__wrapper-container {
   @media (min-width: $desktop-width) {
-    width: 1050px;
+    width: 87%;
     display: grid;
     justify-content: end;
     grid-template-columns: 438px 527px;
     column-gap: 23px;
+    margin: 0 auto;
   }
 }
 
