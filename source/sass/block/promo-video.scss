@@ -1,20 +1,21 @@
 .promo-video {
-  width: 320px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .promo-video__wrapper {
-  width: 260px;
+  width: 81%;
   margin: 0 auto;
 }
 
 .promo-video__title {
-  margin: 0;
+  width: 213px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: end;
 
   @include font-title;
   line-height: 24px;
   color: $color-base;
-  text-align: center;
   padding: 21.5px 0 26.5px 0;
 
   &--icon-camera {
@@ -23,8 +24,14 @@
   }
 }
 
-.description-text {
-  margin: 0;
+.promo-video__description-wrapper {
+  padding-left: 34px;
+  width: 86.8%;
+}
+
+.promo-video__description-text {
+  margin: 0 0 41px 0;
+  padding: 0 10px 0 0;
 
   @include font-title(13px, 400);
   line-height: 24px;

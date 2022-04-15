@@ -1,6 +1,7 @@
-.card-list {
-  list-style: none;
-  width: 260px;
+.card-list__item {
+  border-bottom: 1px solid #ececec;
+  box-sizing: border-box;
+  margin-bottom: 30px;
 }
 
 .card-list__link {
@@ -11,14 +12,17 @@
 .card-list__image {
   width: 100%;
   object-fit: contain;
+  margin-bottom: 27.5px;
 }
 
 .card-list__title {
-  margin: 0;
+  margin: 0 0 6px 0;
 
   @include font-title;
   line-height: 24px;
   color: $color-base;
+
+  text-align: center;
 }
 
 .card-list__price {

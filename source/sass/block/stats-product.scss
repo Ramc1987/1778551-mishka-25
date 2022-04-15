@@ -1,6 +1,8 @@
 .stats-product {
   display: flex;
-  margin: 0;
+  margin: 0 auto;
+  width: 78%;
+  border-bottom: 1px solid #ececec;
 }
 
 .stats-product__item {
@@ -8,6 +10,7 @@
   display: flex;
   line-height: 30px;
   color: $color-second;
+  margin-bottom: 17.5px;
 }
 
 .stats-product__desription {
