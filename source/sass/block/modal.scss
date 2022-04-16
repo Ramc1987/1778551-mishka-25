@@ -5,8 +5,9 @@
 .modal-window__title {
   margin: 0;
 
-  @include font-title(25px, 700, 25px);
+  @include font-title(25px, 700);
   color: $color-base;
+  line-height: 25px;
 }
 
 .modal-window__size-product {
