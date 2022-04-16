@@ -1,19 +1,17 @@
 .stats-product {
+  width: 78%;
   display: flex;
   margin: 0 auto;
-  width: 78%;
 }
 
 .stats-product__item {
-  @include font-title(13px, 400);
+  @include font-title(13px, 30px, 400);
   display: flex;
-  line-height: 30px;
   color: $color-second;
-  margin-bottom: 17.5px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet) {
-    @include font-title(15px);
-    line-height: 30px;
+    @include font-title(15px, 30px);
   }
 }
 

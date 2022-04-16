@@ -18,22 +18,16 @@
 
 .heading__wrapper-title {
   margin: 0;
-  padding: 73.5px 0 73.5px 0;
+  padding: 73px 0 73px 0;
 
-  @include font-title(27px);
-  line-height: 30px;
-  color: $color-base;
+  @include font-title(27px, 30px);
   text-align: center;
 
   @media (min-width: $tablet) {
-    @include font-title(43px);
-
-    line-height: 50px;
+    @include font-title(43px, 50px);
   }
 
   @media (min-width: $desktop-width) {
-    @include font-title(53px);
-
-    line-height: 57px;
+    @include font-title(53px, 57px);
   }
 }

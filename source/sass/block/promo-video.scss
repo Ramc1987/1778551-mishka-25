@@ -14,20 +14,16 @@
 }
 
 .promo-video__title {
+  @include font-title(17px, 24px);
   width: 213px;
   margin: 0 auto;
   display: flex;
   justify-content: end;
-
-  @include font-title;
-  line-height: 24px;
-  color: $color-base;
   padding: 21px 0 26px 0;
 
   @media (min-width: $tablet) {
-    @include font-title(20px);
+    @include font-title(20px, 24px);
     width: 336px;
-    line-height: 24px;
     order: 3;
     margin: 0;
   }
@@ -56,15 +52,13 @@
   margin: 0 0 41px 0;
   padding: 0 10px 0 0;
 
-  @include font-title(13px, 400);
-  line-height: 24px;
+  @include font-title(13px, 24px, 400);
   color: $color-second;
 
   @media (min-width: $tablet) {
     padding: 0 70px 0 0;
 
-    @include font-title(15px, 400);
-    line-height: 30px;
+    @include font-title(15px, 30px, 400);
   }
 }
 

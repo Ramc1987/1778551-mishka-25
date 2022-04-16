@@ -1,12 +1,10 @@
 .field-additionally__title-name {
-  @include font-title;
-  line-height: 16px;
+  @include font-title(17px, 16px);
   color: $decor-color;
   text-transform: uppercase;
 }
 
 .service-form__required-text {
-  @include font-title(17px, 400);
-  line-height: 16px;
+  @include font-title(17px, 16px, 400);
   color: $color-second;
 }

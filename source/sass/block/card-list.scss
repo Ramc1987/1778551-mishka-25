@@ -38,20 +38,16 @@
   width: 100%;
   object-fit: cover;
   height: 100%;
-  margin-bottom: 27.5px;
+  margin-bottom: 27px;
 }
 
 .card-list__title {
+  @include font-title(17px, 24px);
   margin: 0 0 6px 0;
-
-  @include font-title;
-  line-height: 24px;
-  color: $color-base;
   text-align: center;
 
   @media (min-width: $tablet) {
-    @include font-title(20px);
-    line-height: 24px;
+    @include font-title(20px, 24px);
     width: 262px;
     text-align: start;
     padding: 27px 0 0 36px;
@@ -59,22 +55,19 @@
 }
 
 .card-list__price {
+  @include font-title(15px,24px);
   margin: 0;
-
-  @include font-title(15px);
-  line-height: 24px;
-  color: $color-base;
 }
 
 .card-list__card-footer {
-  border-top: 1px solid #ececec;
+  width: 78%;
   display: flex;
   justify-content: space-between;
-  padding: 22.5px 0 26px 0;
-  width: 78%;
   margin: 0 auto;
+  padding: 22px 0 26px 0;
+  border-top: 1px solid #ececec;
 
   @media (min-width: $tablet) {
-    padding: 22.5px 0 0 0;
+    padding: 22px 0 0 0;
   }
 }

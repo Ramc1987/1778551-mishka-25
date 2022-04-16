@@ -1,8 +1,6 @@
 .site-basket__link-backet {
-  @include font-title;
-  line-height: 24px;
+  @include font-title(17px, 24px);
   text-decoration: none;
-  color: $color-base;
 
   @media (min-width: $tablet) {
     display: block;

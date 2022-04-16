@@ -5,10 +5,8 @@
 }
 
 .data-users__title {
+  @include font-title(17px, 16px);
   padding: 0;
-
-  @include font-title;
-  line-height: 16px;
   color: $decor-color;
 }
 
@@ -19,9 +17,7 @@
 }
 
 .data-users__title-name {
-  @include font-title;
-  line-height: 18px;
-  color: $color-base;
+  @include font-title(17px, 18px);
 }
 
 .data-users__field-name {

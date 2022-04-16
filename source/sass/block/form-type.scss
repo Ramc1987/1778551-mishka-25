@@ -7,8 +7,7 @@
 .form-type__title {
   padding: 0;
 
-  @include font-title;
-  line-height: 16px;
+  @include font-title(17px, 16px);
   color: $decor-color;
 }
 
@@ -23,7 +22,5 @@
 }
 
 .form-type__radio-box {
-  @include font-title;
-  line-height: 18px;
-  color: $color-base;
+  @include font-title(17px, 18px);
 }
