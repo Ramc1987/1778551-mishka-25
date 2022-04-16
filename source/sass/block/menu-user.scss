@@ -1,0 +1,22 @@
+.menu-user {
+  @media (min-width: $tablet) {
+    display: flex;
+    height: 89px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.menu-user__item {
+  background: #ffffff;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 32px 0 31px 0;
+  }
+}

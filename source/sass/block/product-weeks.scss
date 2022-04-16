@@ -1,5 +1,5 @@
 .product-weeks {
-  width: 320px;
+  width: 100%;
 }
 
 .product-weeks__title {
@@ -9,4 +9,12 @@
 .product-weeks__wrapper {
   width: 260px;
   margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
 }
