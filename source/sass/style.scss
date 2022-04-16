@@ -51,9 +51,4 @@ body {
   font-weight: 700;
   font-style: normal;
   font-size: 17px;
-
-  @media (min-width: $desktop-width) {
-    max-width: 1400px;
-    margin: 0 auto;
-  }
 }

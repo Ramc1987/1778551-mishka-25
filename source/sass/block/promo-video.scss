@@ -63,9 +63,8 @@
   @media (min-width: $tablet) {
     padding: 0 70px 0 0;
 
-    @include font-title(15px, 400) {
-      line-height: 30px;
-    }
+    @include font-title(15px, 400);
+    line-height: 30px;
   }
 }
 
