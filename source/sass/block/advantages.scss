@@ -3,11 +3,10 @@
 }
 
 .advantages__wrapper {
-  width: 260px;
-  margin: 0 auto;
+  width: 81%;
 
   @media (min-width: $tablet) {
-    width: 660px;
+    width: 86%;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,7 +41,7 @@
   @media (min-width: $tablet) {
     width: 100%;
     display: grid;
-    grid-template-columns: 265px 332px;
+    grid-template-columns: 1fr 1fr;
     column-gap: 62px;
   }
 
