@@ -19,11 +19,11 @@
   width: 100%;
 
   &.catalog-menu__item--interior {
-    background: #63d1bb;
+    background: $decor-color;
   }
 
   &.catalog-menu__item--toys {
-    background: #56c3b2;
+    background: $decor-color;
   }
 }
 

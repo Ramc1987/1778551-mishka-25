@@ -19,7 +19,7 @@
 .top-product__title {
   @include font-title(24px);
   line-height: 30px;
-  margin: 0 0 3.5px 0;
+  margin: 0 0 3px 0;
 
   @media (min-width: $tablet) {
     @include font-title(43px);
@@ -37,7 +37,7 @@
 }
 
 .top-product__legend {
-  margin: 0 0 17.5px 0;
+  margin: 0 0 17px 0;
   line-height: 20px;
 
   @include font-title;
@@ -92,7 +92,7 @@
 .top-product__price {
   @include font-title;
   text-align: center;
-  margin: 0 0 24.5px 0;
+  margin: 0 0 24px 0;
   line-height: 24px;
   color: $color-second;
 }
