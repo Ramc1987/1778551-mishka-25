@@ -22,7 +22,7 @@
   @include font-title;
   line-height: 24px;
   color: $color-base;
-  padding: 21.5px 0 26.5px 0;
+  padding: 21px 0 26px 0;
 
   @media (min-width: $tablet) {
     @include font-title(20px);

@@ -2,7 +2,7 @@
   @include font-title;
   line-height: 24px;
   text-decoration: none;
-  color: #000000;
+  color: $color-base;
 
   @media (min-width: $tablet) {
     display: block;

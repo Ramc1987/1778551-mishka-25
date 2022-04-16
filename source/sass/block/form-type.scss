@@ -9,7 +9,7 @@
 
   @include font-title;
   line-height: 16px;
-  color: hsl(168, 54%, 60%);
+  color: $decor-color;
 }
 
 .form-type__list {
