@@ -8,11 +8,15 @@
   @include font-title(13px, 30px, 400);
   display: flex;
   color: $color-second;
-  margin-bottom: 17px;
+  // margin-bottom: 17px;
 
   @media (min-width: $tablet) {
     @include font-title(15px, 30px);
   }
+
+  // @media (min-width: $desktop-width) {
+  //   margin-bottom: 36px;
+  // }
 }
 
 .stats-product__desription {

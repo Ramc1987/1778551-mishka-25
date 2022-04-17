@@ -12,4 +12,11 @@
     width: 87%;
     margin-bottom: 41px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 87%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 46px;
+  }
 }
