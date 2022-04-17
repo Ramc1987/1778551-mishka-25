@@ -19,6 +19,7 @@
 
   @media (min-width: $tablet) {
     margin: 0 97px 0 0;
+    padding: 17px 0 0 0;
   }
 }
 
@@ -59,6 +60,7 @@
   @include font-title(17px, 18px);
 
   @media (min-width: $tablet) {
+    @include font-title(19px, 18px);
     margin: 0 24px 0 0;
   }
 }

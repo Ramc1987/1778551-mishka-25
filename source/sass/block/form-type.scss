@@ -43,4 +43,8 @@
 
 .form-type__custom-radio {
   @include font-title(17px, 18px);
+
+  @media (min-width: $tablet) {
+    @include font-title(19px, 18px);
+  }
 }

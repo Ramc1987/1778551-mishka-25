@@ -43,6 +43,11 @@
   @media (min-width: $tablet) {
     @include font-title(17px, 30px, 400);
   }
+
+  @media (min-width: $desktop-width) {
+    width: 87%;
+    padding: 31px 0 33px 0;
+  }
 }
 
 .main-page__wrapper-promo {

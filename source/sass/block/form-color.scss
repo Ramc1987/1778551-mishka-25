@@ -49,6 +49,10 @@
 .form-color__custom-checkbox {
   @include font-title(17px, 18px);
   padding: 10px 0;
+
+  @media (min-width: $tablet) {
+    @include font-title(19px, 18px);
+  }
 }
 
 .form-color__control-input {
