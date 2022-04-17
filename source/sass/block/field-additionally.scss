@@ -7,12 +7,24 @@
   }
 }
 
+.field-additionally__title {
+  @media (min-width: $tablet) {
+    display: flex;
+    padding: 50px 0 53px 0;
+  }
+}
+
 .field-additionally__title-name {
   @include font-title(17px, 16px);
   color: $decor-color;
   text-transform: uppercase;
   margin-bottom: 23px;
   display: block;
+
+  @media (min-width: $tablet) {
+    margin: 0 100px 0 0;
+    padding: 17px 0 0 0;
+  }
 }
 
 .service-form__required-text {

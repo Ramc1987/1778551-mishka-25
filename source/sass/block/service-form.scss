@@ -16,3 +16,21 @@
     padding: 50px 0 50px 0;
   }
 }
+
+.service-form__inner {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.service-form__required-text {
+  display: block;
+  margin: 0 0 30px 0;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
+}
