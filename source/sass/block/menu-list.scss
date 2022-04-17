@@ -53,6 +53,7 @@
 
 .menu-list__link {
   @include font-title(17px, 24px);
+  color: $color-base;
   text-decoration: none;
   display: block;
 

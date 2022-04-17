@@ -16,6 +16,7 @@
 
 .menu-offer__link {
   @include font-title(17px, 24px);
+  color: $color-base;
   text-decoration: none;
 
   @media (min-width: $tablet) {
