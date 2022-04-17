@@ -1,0 +1,18 @@
+.service-form__element-wrapper {
+  @media (min-width: $tablet) {
+    width: 100%;
+    background: #f1f1f1;
+  }
+}
+
+.service-form__data-users {
+  @media (min-width: $tablet) {
+    padding: 50px 0 0 0;
+  }
+}
+
+.service-form__contacts {
+  @media (min-width: $tablet) {
+    padding: 50px 0 50px 0;
+  }
+}

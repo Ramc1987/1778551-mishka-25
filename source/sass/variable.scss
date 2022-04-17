@@ -8,9 +8,3 @@ $decor-color: #63d1bb;
   font-size: $fs;
   line-height: $lh;
 }
-
-@mixin zero-fieldset() {
-  margin: 0;
-  padding: 0;
-  border: none;
-}

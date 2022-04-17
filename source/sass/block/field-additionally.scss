@@ -1,10 +1,28 @@
+.field-additionally {
+  margin: 0 auto;
+  width: 81%;
+
+  @media (min-width: $tablet) {
+    width: 87%;
+  }
+}
+
 .field-additionally__title-name {
   @include font-title(17px, 16px);
   color: $decor-color;
   text-transform: uppercase;
+  margin-bottom: 23px;
+  display: block;
 }
 
 .service-form__required-text {
   @include font-title(17px, 16px, 400);
   color: $color-second;
+}
+
+.field-additionally__field {
+  width: 100%;
+  padding: 0;
+  border: 2px solid $color-second;
+  box-sizing: border-box;
 }

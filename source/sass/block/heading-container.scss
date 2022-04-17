@@ -16,6 +16,19 @@
   }
 }
 
+.heading__form-wrapper {
+  background: #f1f1f1;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 111px;
+  }
+}
+
 .heading__wrapper-title {
   margin: 0;
   padding: 73px 0 73px 0;
