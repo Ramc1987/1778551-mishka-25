@@ -7,8 +7,7 @@
 }
 
 .main-page__form-wrapper {
-  width: 260px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .main-page__service {
@@ -17,36 +16,38 @@
 }
 
 .main-page__promo-title {
+  @include font-title(27px, 30px);
   margin: 0 auto;
   width: 260px;
-
-  @include font-title(27px);
-  line-height: 30px;
   text-align: center;
   padding: 100px 0 100px 0;
 
   @media (min-width: $tablet) {
+    @include font-title(43px, 50px);
     width: 668px;
-
-    @include font-title(43px);
-    line-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
+    @include font-title(53px, 57px);
     width: 700px;
-
-    @include font-title(53px);
-    line-height: 57px;
   }
 }
 
 .main-page__service-promo-text {
-  width: 260px;
-  margin: 0 auto;
+  width: 81%;
+  margin: 0 auto 29px;
 
-  @include font-title(14px, 400);
-  line-height: 24px;
+  @include font-title(14px, 24px, 400);
   color: $color-second;
+
+  @media (min-width: $tablet) {
+    @include font-title(17px, 30px, 400);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 87%;
+    padding: 31px 0 33px 0;
+  }
 }
 
 .main-page__wrapper-promo {

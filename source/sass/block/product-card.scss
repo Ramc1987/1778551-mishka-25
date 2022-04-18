@@ -1,4 +1,22 @@
+.product-card {
+  width: 100%;
+}
+
 .product-card__list {
-  margin: 0;
+  list-style: none;
+  margin: 0 auto;
   padding: 0;
+  width: 81%;
+
+  @media (min-width: $tablet) {
+    width: 87%;
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 87%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 46px;
+  }
 }

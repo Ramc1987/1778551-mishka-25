@@ -5,9 +5,7 @@
 }
 
 .size-product__legend-title {
-  @include font-title(15px, 400);
-
-  line-height: 30px;
+  @include font-title(15px, 30px, 400);
   color: $color-second;
 }
 
@@ -16,16 +14,13 @@
 }
 
 .size-product__legend-size {
-  @include font-title(16px);
-
-  line-height: 17px;
+  @include font-title(16px, 17px);
   color: $color-second;
 }
 
 .size-product__button {
+  @include font-title(17px, 16px);
   border: none;
   width: 260px;
   color: #ffffff;
-  font-size: 17px;
-  line-height: 16px;
 }

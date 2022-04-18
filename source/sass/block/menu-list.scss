@@ -18,16 +18,22 @@
 }
 
 .menu-list__item {
+  padding: 28px 0 26px 0;
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+
   &:nth-child(1) {
     @media (min-width: $tablet) {
       order: 1;
       width: 167px;
+      box-shadow: none;
+      padding: 0;
     }
 
     @media (min-width: $desktop-width) {
       order: 1;
       width: 167px;
       padding: 32px 0 31px 0;
+      box-shadow: none;
     }
   }
 
@@ -35,6 +41,8 @@
     @media (min-width: $tablet) {
       order: 2;
       width: 167px;
+      box-shadow: none;
+      padding: 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -47,25 +55,22 @@
     @media (min-width: $tablet) {
       order: 2;
       padding: 21px 0 21px 0;
+      box-shadow: none;
     }
   }
 }
 
 .menu-list__link {
-  @include font-title;
-
+  @include font-title(17px, 24px);
+  color: $color-base;
   text-decoration: none;
   display: block;
-  color: $color-base;
-  line-height: 24px;
 
   @media (min-width: $tablet) {
-    @include font-title(15px);
-    line-height: 24px;
+    @include font-title(15px, 24px);
   }
 
   @media (min-width: $desktop-width) {
-    @include font-title(17px);
-    line-height: 24px;
+    @include font-title(17px, 24px);
   }
 }

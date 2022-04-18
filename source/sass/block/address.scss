@@ -3,8 +3,7 @@
   justify-content: space-between;
 
   @media (min-width: $tablet) {
-    @include font-title(17px, 400);
-    line-height: 30px;
+    @include font-title(17px, 30px, 400);
     width: 335px;
   }
 }
@@ -18,11 +17,9 @@
 }
 
 .address__text {
-  margin: 0;
-
-  @include font-title(14px, 400);
+  @include font-title(14px, 30px, 400);
   font-style: normal;
-  line-height: 30px;
   color: $color-second;
   text-decoration: none;
+  margin: 0;
 }

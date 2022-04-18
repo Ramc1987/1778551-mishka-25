@@ -24,7 +24,6 @@
 @import "../sass/block/modal.scss";
 @import "../sass/block/size-product.scss";
 @import "../sass/block/heading-container.scss";
-@import "../sass/block/heading-wrapper.scss";
 @import "../sass/block/product-card.scss";
 @import "../sass/block/card-list.scss";
 @import "../sass/block/stats-product.scss";
@@ -34,8 +33,8 @@
 @import "../sass/block/data-users.scss";
 @import "../sass/block/form-contacts.scss";
 @import "../sass/block/field-additionally.scss";
-@import "../sass/block/button-hamburger.scss";
 @import "../sass/block/menu-offer.scss";
+@import "../sass/block/service-form.scss";
 @import "../sass/block/logo.scss";
 
 
@@ -52,9 +51,5 @@ body {
   font-weight: 700;
   font-style: normal;
   font-size: 17px;
-
-  @media (min-width: $desktop-width) {
-    max-width: 1400px;
-    margin: 0 auto;
-  }
+  color: $color-base;
 }

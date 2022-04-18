@@ -22,13 +22,16 @@
 }
 
 .advantages__title {
-  @include font-title($fs: 25px);
+  @include font-title(25px, 30px);
   margin: 0 0 28px 0;
 
-  @media (min-width: $desktop-width) {
-    @include font-title(53px);
+  @media (min-width: $tablet) {
+    @include font-title(43px, 50px);
+    margin: 0 0 41px 0;
+  }
 
-    line-height: 57px;
+  @media (min-width: $desktop-width) {
+    @include font-title(53px, 57px);
     margin: 0 0 39px 0;
   }
 }
@@ -105,8 +108,7 @@
 }
 
 .advantages__description {
+  @include font-title(17px, 20px);
   margin: 0;
   padding-top: 47px;
-
-  @include font-title;
 }

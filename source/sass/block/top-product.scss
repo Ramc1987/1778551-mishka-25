@@ -17,13 +17,11 @@
 }
 
 .top-product__title {
-  @include font-title(24px);
-  line-height: 30px;
+  @include font-title(24px, 30px);
   margin: 0 0 3px 0;
 
   @media (min-width: $tablet) {
-    @include font-title(43px);
-    line-height: 50px;
+    @include font-title(43px, 50px);
   }
 }
 
@@ -37,16 +35,13 @@
 }
 
 .top-product__legend {
-  margin: 0 0 17px 0;
-  line-height: 20px;
-
-  @include font-title;
+  @include font-title(17px, 20px);
   color: $decor-color;
   text-transform: uppercase;
+  margin: 0 0 17px 0;
 
   @media (min-width: $tablet) {
-    @include font-title;
-    line-height: 17px;
+    @include font-title(17px, 17px);
     width: 100px;
     text-align: center;
     margin: 0;
@@ -56,13 +51,11 @@
 .top-product__description {
   margin: 0 0 28px 0;
 
-  @include font-title(15px, 400);
-  line-height: 24px;
+  @include font-title(15px, 24px, 400);
   color: $color-second;
 
   @media (min-width: $tablet) {
-    @include font-title(17px, 400);
-    line-height: 30px;
+    @include font-title(17px, 30px, 400);
     margin-bottom: 60px;
   }
 }
@@ -76,25 +69,22 @@
 }
 
 .top-product__stats-number {
-  @include font-title(15px, 400);
-  line-height: 20px;
+  @include font-title(15px, 20px, 400);
   color: $color-second;
   width: 97px;
 }
 
 .top-product__stats-description {
-  @include font-title(15px, 400);
-  margin: 0;
+  @include font-title(15px, 20px, 400);
   color: $color-second;
-  line-height: 20px;
+  margin: 0;
 }
 
 .top-product__price {
   @include font-title;
+  color: $color-second;
   text-align: center;
   margin: 0 0 24px 0;
-  line-height: 24px;
-  color: $color-second;
 }
 
 .top-product__price-inner {

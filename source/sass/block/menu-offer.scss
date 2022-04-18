@@ -15,14 +15,11 @@
 }
 
 .menu-offer__link {
-  text-decoration: none;
+  @include font-title(17px, 24px);
   color: $color-base;
-
-  @include font-title;
-  line-height: 24px;
+  text-decoration: none;
 
   @media (min-width: $tablet) {
-    @include font-title(15px);
-    line-height: 24px;
+    @include font-title(15px, 24px);
   }
 }

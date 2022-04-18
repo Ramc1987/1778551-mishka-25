@@ -1,30 +1,90 @@
-.card-list {
-  list-style: none;
-  width: 260px;
+.card-list__item {
+  border-bottom: 1px solid #ececec;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    border-top: 1px solid #ececec;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    border-top: none;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    box-sizing: border-box;
+  }
 }
 
 .card-list__link {
   text-decoration: none;
   display: block;
+
+  @media (min-width: $tablet) {
+    width: 334px;
+    height: 334px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 316px;
+    height: 462px;
+  }
+}
+
+.card-list__content-inner {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 251px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    height: 144px;
+  }
 }
 
 .card-list__image {
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  height: 100%;
+  margin-bottom: 27px;
 }
 
 .card-list__title {
-  margin: 0;
+  @include font-title(17px, 24px);
+  margin: 0 0 6px 0;
+  text-align: center;
 
-  @include font-title;
-  line-height: 24px;
-  color: $color-base;
+  @media (min-width: $tablet) {
+    @include font-title(20px, 24px);
+    width: 262px;
+    text-align: start;
+    padding: 27px 0 0 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .card-list__price {
+  @include font-title(15px,24px);
   margin: 0;
+}
 
-  @include font-title(15px);
-  line-height: 24px;
-  color: $color-base;
+.card-list__card-footer {
+  width: 78%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 22px 0 26px 0;
+  border-top: 1px solid #ececec;
+
+  @media (min-width: $tablet) {
+    padding: 22px 0 0 0;
+  }
 }

@@ -1,16 +1,12 @@
 .button {
+  @include font-title(17px, 20px);
   display: block;
   padding: 16px 0;
-
-  @include font-title(17px);
-  line-height: 20px;
-
   text-transform: uppercase;
-  color: #444444;
+  color: $color-second;
   text-align: center;
   background: #ffffff;
-
-  border: 2px solid #444444;
+  border: 2px solid $color-second;
   box-sizing: border-box;
   cursor: pointer;
 }
@@ -33,9 +29,8 @@
 }
 
 .button--make-order {
-  font-size: 18px;
-  line-height: 16px;
-  width: 260px;
+  @include font-title(18px, 16px);
+  width: 100%;
   padding: 18px 0;
 }
 

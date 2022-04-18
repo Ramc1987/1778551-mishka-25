@@ -4,19 +4,19 @@
   padding: 0;
 
   @media (min-width: $tablet) {
-    display: flex;
     width: 668px;
+    display: flex;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
     width: 1050px;
+    display: flex;
   }
 }
 
 .catalog-menu__item {
-  padding: 24px 0 31px 0;
   width: 100%;
+  padding: 24px 0 31px 0;
 
   &.catalog-menu__item--interior {
     background: $decor-color;
@@ -30,10 +30,9 @@
 .catalog-menu__link {
   display: block;
 
-  @include font-title(19px);
-  line-height: 24px;
+  @include font-title(19px, 24px);
+  width: 130px;
+  padding: 0 0 0 30px;
   color: #ffffff;
   text-decoration: none;
-  padding: 0 0 0 30px;
-  width: 130px;
 }
