@@ -33,16 +33,6 @@
   }
 }
 
-// .card-list__content-wrapper {
-//   @media (min-width: $tablet) {
-//     flex-grow: 1;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     height: 197px;
-//   }
-// }
-
 .card-list__content-inner {
   @media (min-width: $tablet) {
     display: flex;
