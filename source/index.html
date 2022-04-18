@@ -9,26 +9,24 @@
   <body>
     <header class="header">
       <div class="header__wrapper">
-        <div class="header__top-wrapper">
-          <a class="header__logo logo" href="form.html">
-            <picture>
-              <source
-                media="(min-width: 1200px)"
-                srcset="../img/logo/mishka-logo-desktop.svg"
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="../img/logo/mishka-logo-tablet.svg"
-              />
-              <img src="../img/logo/mishka-logo-mobile.svg" alt="Пример" />
-            </picture>
-          </a>
-          <button class="button-hamburger button-hamburger--close">
-            <span class="button-hamburger__line"></span>
+        <a class="header__logo logo" href="form.html">
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="../img/logo/mishka-logo-desktop.svg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="../img/logo/mishka-logo-tablet.svg"
+            />
+            <img src="../img/logo/mishka-logo-mobile.svg" alt="Пример" />
+          </picture>
+        </a>
+        <nav class="main-nav main-nav--show">
+          <button class="main-nav__toggle main-nav__toggle--close">
+            <span class="main-nav__toggle-line"></span>
             <span class="visually-hidden">Открыть меню</span>
           </button>
-        </div>
-        <nav class="main-nav main-nav--show">
           <div class="main-nav__menu-wrapper">
             <ul class="main-nav__list menu-list">
               <li class="menu-list__item">
