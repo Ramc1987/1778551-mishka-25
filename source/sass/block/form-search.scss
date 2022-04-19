@@ -7,13 +7,21 @@
   padding: 27px 76px 26px 76px;
   box-sizing: border-box;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @include font-title(17px, 24px);
   font-style: inherit;
 
   @media (min-width: $tablet) {
     width: 84px;
     height: 89px;
-    padding: 36px 31px 34px 33px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,10 +36,16 @@
   left: 32px;
   width: 18px;
   height: 18px;
+  fill: rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    fill: $decor-color;
+  }
 
   @media (min-width: $tablet) {
-    top: 36px;
-    left: 34px;
+    top: 0;
+    left: 0;
+    padding: 36px 31px 34px 33px;
   }
 }
 

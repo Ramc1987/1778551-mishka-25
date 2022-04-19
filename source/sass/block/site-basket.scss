@@ -10,6 +10,14 @@
   text-decoration: none;
   cursor: pointer;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet) {
     padding: 32px 0 31px 80px;
     box-shadow: none;
@@ -26,6 +34,11 @@
   left: 31px;
   width: 21px;
   height: 18px;
+  fill: rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    fill: $decor-color;
+  }
 
   @media (min-width: $tablet) {
     top: 35px;
