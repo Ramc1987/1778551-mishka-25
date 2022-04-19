@@ -1,22 +1,36 @@
 .site-basket__link-backet {
+  display: block;
+  position: relative;
+  padding: 28px 23px 26px 76px;
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+  box-sizing: border-box;
+
   @include font-title(17px, 24px);
   color: $color-base;
   text-decoration: none;
   cursor: pointer;
 
   @media (min-width: $tablet) {
-    padding: 32px 0 32px 0;
-    display: block;
+    padding: 32px 0 31px 80px;
+    box-shadow: none;
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
-    padding: 32px 0 32px 0;
+    padding: 32px 0 32px 80px;
   }
 }
 
-.site-basket__link-backet span {
+.site-basket__link-logo {
+  position: absolute;
+  top: 31px;
+  left: 31px;
+  width: 21px;
+  height: 18px;
+
   @media (min-width: $tablet) {
-    padding: 0 10px 0 0;
+    top: 35px;
+    left: 31px;
+    width: 21px;
+    height: 18px;
   }
 }

@@ -12,6 +12,10 @@
     margin: 0 auto;
     position: relative;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 88%;
+  }
 }
 
 .header__logo {

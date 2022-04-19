@@ -5,62 +5,63 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
-    width: 335px;
+    width: 320px;
     margin-bottom: -44px;
   }
 
   @media (min-width: $desktop-width) {
     align-items: flex-end;
-    width: 405px;
-    justify-content: space-between;
+    width: 417px;
     margin-bottom: 0;
   }
 }
 
 .menu-list__item {
-  padding: 28px 0 26px 0;
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+  box-sizing: border-box;
 
   &:nth-child(1) {
     @media (min-width: $tablet) {
       order: 1;
-      width: 167px;
       box-shadow: none;
       padding: 0;
+      margin-right: 36px;
     }
 
     @media (min-width: $desktop-width) {
       order: 1;
-      width: 167px;
-      padding: 32px 0 31px 0;
       box-shadow: none;
+      border-right: 2px solid #ececec;
+      margin-right: 0;
     }
   }
 
   &:nth-child(2) {
     @media (min-width: $tablet) {
       order: 2;
-      width: 167px;
       box-shadow: none;
       padding: 0;
     }
 
     @media (min-width: $desktop-width) {
-      margin-top: 0;
-      padding: 32px 0 31px 0;
+      padding-left: 35px;
+      width: 55%;
     }
   }
 
   &:nth-child(3) {
     @media (min-width: $tablet) {
       order: 2;
-      padding: 21px 0 21px 0;
       box-shadow: none;
     }
   }
 }
 
 .menu-list__link {
+  position: relative;
+  padding: 28px 76px 26px 76px;
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+
   @include font-title(17px, 24px);
   color: $color-base;
   text-decoration: none;
@@ -68,9 +69,12 @@
 
   @media (min-width: $tablet) {
     @include font-title(15px, 24px);
+    padding: 0;
+    box-shadow: none;
   }
 
   @media (min-width: $desktop-width) {
     @include font-title(17px, 24px);
+    padding: 32px 35px 32px 0;
   }
 }

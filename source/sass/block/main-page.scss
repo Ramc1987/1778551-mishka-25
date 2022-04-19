@@ -2,7 +2,7 @@
   flex-grow: 1;
 
   @media (min-width: $desktop-width) {
-    margin-top: -66px;
+    margin-top: -64px;
   }
 }
 
@@ -29,7 +29,7 @@
 
   @media (min-width: $desktop-width) {
     @include font-title(53px, 57px);
-    width: 700px;
+    width: 58.4%;
   }
 }
 
