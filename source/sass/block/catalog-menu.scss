@@ -1,38 +1,75 @@
 .catalog-menu {
-  width: 100%;
+  position: relative;
   list-style: none;
   padding: 0;
 
   @media (min-width: $tablet) {
-    width: 668px;
+    width: 87%;
     display: flex;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1050px;
-    display: flex;
+    width: 87.2%;
   }
 }
 
 .catalog-menu__item {
   width: 100%;
-  padding: 24px 0 31px 0;
-
-  &.catalog-menu__item--interior {
-    background: $decor-color;
-  }
-
-  &.catalog-menu__item--toys {
-    background: $decor-color;
-  }
 }
 
 .catalog-menu__link {
+  position: relative;
   display: block;
+  padding: 24px 30px 31px;
+  cursor: pointer;
 
   @include font-title(19px, 24px);
-  width: 130px;
-  padding: 0 0 0 30px;
   color: #ffffff;
   text-decoration: none;
+
+  &:hover {
+    transform: translateY(-5px);
+
+    &::before {
+      bottom: -5px;
+      height: 5px;
+    }
+  }
+
+  &--interior {
+    background: $decor-color;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: url("../source/img/icon/catalog-menu-icon/interior.svg");
+      background-size: 40px 62px;
+      right: 36px;
+      top: 23px;
+      width: 40px;
+      height: 62px;
+      z-index: 20;
+    }
+  }
+
+  &--toys {
+    background: #56c3b2;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: url("/source/img/icon/catalog-menu-icon/toy-svg.svg");
+      background-size: 40px 62px;
+      right: 36px;
+      top: 23px;
+      width: 40px;
+      height: 62px;
+      z-index: 20;
+    }
+  }
+}
+
+.catalog-menu__link-text {
+  display: block;
+  max-width: 120px;
 }

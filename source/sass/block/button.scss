@@ -1,4 +1,6 @@
 .button {
+  position: relative;
+
   @include font-title(17px, 20px);
   display: block;
   padding: 16px 0;
@@ -9,6 +11,16 @@
   border: 2px solid $color-second;
   box-sizing: border-box;
   cursor: pointer;
+  transition: 0.35s;
+
+  &:hover {
+    background: $color-second;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: #ffffff4f;
+  }
 }
 
 .button--order {

@@ -9,7 +9,7 @@
     justify-content: end;
     grid-template-columns: 1fr 1fr;
     column-gap: 23px;
-    margin: 0 auto;
+    margin: 0 auto 61px;
   }
 }
 
@@ -23,6 +23,10 @@
 
   @media (min-width: $desktop-width) {
     width: 438px;
+    padding-left: 138px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
@@ -95,4 +99,9 @@
 .contacts__wrapper-button {
   width: 260px;
   margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    margin-top: -56px;
+    margin-right: 178px;
+  }
 }

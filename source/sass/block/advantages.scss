@@ -4,9 +4,10 @@
 
 .advantages__wrapper {
   width: 81%;
+  margin: 0 auto 36px auto;
 
   @media (min-width: $tablet) {
-    width: 86%;
+    width: 87%;
   }
 
   @media (min-width: $desktop-width) {
