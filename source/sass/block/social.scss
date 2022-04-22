@@ -29,3 +29,15 @@
 .social__link {
   display: block;
 }
+
+.social__link-icon {
+  fill: $color-base;
+
+  &:hover {
+    fill: rgb(70, 193, 174);
+  }
+
+  &:active {
+    fill: rgb(70, 193, 174, 0.3);
+  }
+}

@@ -19,12 +19,16 @@
   }
 
   &:active {
-    color: #ffffff4f;
+    color: rgb(255, 255, 255, 0.3);
   }
 }
 
 .button--order {
   width: 260px;
+
+  @media (min-width: $desktop-width) {
+    width: 292px;
+  }
 }
 
 .button--write {

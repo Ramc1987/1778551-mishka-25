@@ -17,5 +17,14 @@
 }
 
 .copyright__link-icon {
+  fill: rgb(99, 209, 187);
   display: block;
+
+  &:hover {
+    fill: rgb(70, 193, 174);
+  }
+
+  &:active {
+    fill: rgb(70, 193, 174, 0.3);
+  }
 }

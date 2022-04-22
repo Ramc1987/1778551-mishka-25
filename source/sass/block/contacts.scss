@@ -75,11 +75,45 @@
 }
 
 .contacts__email-link {
+  position: relative;
+
   @include font-title(14px, 30px, 400);
   color: $color-second;
   text-decoration: none;
   min-width: 183px;
   margin-bottom: 30px;
+  transition: 0.2s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 93%;
+    bottom: 0;
+    left: 0;
+    background: rgb(98, 209, 186);
+    height: 1px;
+
+    @media (min-width: $tablet) {
+      top: 30px;
+      width: 100%;
+    }
+  }
+
+  &:hover {
+    color: rgb(70, 193, 174);
+  }
+
+  &:active {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 95%;
+      bottom: 0;
+      left: 0;
+      background: rgb(70, 193, 174, 0.1);
+      height: 1px;
+    }
+  }
 
   @media (min-width: $tablet) {
     @include font-title(17px, 30px, 400);

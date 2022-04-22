@@ -42,13 +42,12 @@
     &::after {
       content: "";
       position: absolute;
-      background: url("../source/img/icon/catalog-menu-icon/interior.svg");
+      background: url("../img/icon/catalog-menu-icon/interior.svg");
       background-size: 40px 62px;
       right: 36px;
       top: 23px;
       width: 40px;
       height: 62px;
-      z-index: 20;
     }
   }
 
@@ -58,13 +57,12 @@
     &::after {
       content: "";
       position: absolute;
-      background: url("/source/img/icon/catalog-menu-icon/toy-svg.svg");
+      background: url("../img/icon/catalog-menu-icon/toy-svg.svg");
       background-size: 40px 62px;
       right: 36px;
       top: 23px;
       width: 40px;
       height: 62px;
-      z-index: 20;
     }
   }
 }

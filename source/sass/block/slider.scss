@@ -5,6 +5,10 @@
   border: 1px solid #ededed;
   box-sizing: border-box;
 
+  @media (min-width: $tablet) {
+    border: none;
+  }
+
   &:hover {
     opacity: 0.6;
   }
