@@ -5,6 +5,7 @@
 .reviews__wrapper {
   @media (min-width: $tablet) {
     background: url("../img/Content/review.png") center left no-repeat;
+    background-size: contain;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,6 +28,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    padding-top: 78px;
   }
 }
 
@@ -42,6 +44,10 @@
 .reviews__list {
   @media (min-width: $tablet) {
     grid-column: 1/3;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 39px 140px 0 0;
   }
 }
 
@@ -59,7 +65,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 61px;
+    margin: 0 0 44px 0;
   }
 }
 

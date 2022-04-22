@@ -1,4 +1,6 @@
 .button {
+  position: relative;
+
   @include font-title(17px, 20px);
   display: block;
   padding: 16px 0;
@@ -9,10 +11,24 @@
   border: 2px solid $color-second;
   box-sizing: border-box;
   cursor: pointer;
+  transition: 0.35s;
+
+  &:hover {
+    background: $color-second;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgb(255, 255, 255, 0.3);
+  }
 }
 
 .button--order {
   width: 260px;
+
+  @media (min-width: $desktop-width) {
+    width: 292px;
+  }
 }
 
 .button--write {

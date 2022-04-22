@@ -3,13 +3,12 @@
 
   @media (min-width: $tablet) {
     display: none;
-    width: 334px;
+    width: 417px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     z-index: 10;
   }
 }
@@ -18,8 +17,23 @@
   @include font-title(17px, 24px);
   color: $color-base;
   text-decoration: none;
+  display: block;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet) {
     @include font-title(15px, 24px);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 65px 20px 0;
   }
 }

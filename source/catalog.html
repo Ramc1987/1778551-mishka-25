@@ -9,7 +9,7 @@
   <body>
     <header class="header">
       <div class="header__wrapper">
-        <a class="header__logo logo" href="form.html">
+        <a class="header__logo logo" href="index.html">
           <picture>
             <source
               media="(min-width: 1200px)"
@@ -22,9 +22,8 @@
             <img src="../img/logo/mishka-logo-mobile.svg" alt="Пример" />
           </picture>
         </a>
-        <nav class="main-nav main-nav--show">
-          <button class="main-nav__toggle main-nav__toggle--close">
-            <span class="main-nav__toggle-line"></span>
+        <nav class="main-nav main-nav--closed">
+          <button class="main-nav__toggle">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <div class="main-nav__menu-wrapper">
@@ -54,6 +53,7 @@
               <li class="menu-user__item form-search">
                 <a class="form-search__link-search" href="catalog.html">
                   <svg
+                    class="form-search__link-logo"
                     width="18"
                     height="18"
                     viewBox="0 0 18 18"
@@ -81,6 +81,7 @@
               <li class="menu-user__item site-basket">
                 <a class="site-basket__link-backet" href="#">
                   <svg
+                    class="site-basket__link-logo"
                     width="21"
                     height="18"
                     viewBox="0 0 21 18"
@@ -93,7 +94,7 @@
                       fill="black"
                     />
                   </svg>
-                  <span>Корзина: пока пуста</span>
+                  Корзина: пока пуста
                 </a>
               </li>
             </ul>

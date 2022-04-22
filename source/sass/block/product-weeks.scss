@@ -7,14 +7,15 @@
 }
 
 .product-weeks__wrapper {
-  width: 260px;
+  width: 81.5%;
   margin: 0 auto;
 
   @media (min-width: $tablet) {
-    width: 668px;
+    width: 87%;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1050px;
+    width: 87%;
   }
 }

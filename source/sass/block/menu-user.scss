@@ -1,6 +1,7 @@
 .menu-user {
   @media (min-width: $tablet) {
     display: flex;
+    width: 348px;
     height: 89px;
   }
 
@@ -10,18 +11,9 @@
 }
 
 .menu-user__item {
-  padding: 28px 0 26px 0;
-  background: #ffffff;
-  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
-  cursor: pointer;
-
   @media (min-width: $tablet) {
     padding: 0;
     box-shadow: none;
     border-left: 1px solid #ececec;
   }
-
-  // @media (min-width: $desktop-width) {
-  //   padding: 32px 0 32px 0;
-  // }
 }
