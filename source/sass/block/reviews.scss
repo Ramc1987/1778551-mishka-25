@@ -1,15 +1,14 @@
-.reviews {
-  width: 100%;
-}
-
 .reviews__wrapper {
   @media (min-width: $tablet) {
     background: url("../img/Content/review.png") center left no-repeat;
     background-size: contain;
+    max-width: 768px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    width: 87%;
+    width: 91%;
+    max-width: 1200px;
     display: flex;
     justify-content: end;
     margin: 0 auto;

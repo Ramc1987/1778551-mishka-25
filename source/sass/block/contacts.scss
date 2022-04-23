@@ -1,10 +1,7 @@
-.contacts {
-  width: 100%;
-}
-
 .contacts__wrapper-container {
   @media (min-width: $desktop-width) {
-    width: 87%;
+    width: 91%;
+    max-width: 1200px;
     display: grid;
     justify-content: end;
     grid-template-columns: 1fr 1fr;
@@ -14,11 +11,12 @@
 }
 
 .contacts__wrapper {
-  width: 260px;
+  width: 81%;
   margin: 0 auto;
 
   @media (min-width: $tablet) {
     width: 87%;
+    max-width: 768px;
   }
 
   @media (min-width: $desktop-width) {
