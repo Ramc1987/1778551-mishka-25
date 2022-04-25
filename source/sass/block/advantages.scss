@@ -4,12 +4,12 @@
 
   @media (min-width: $tablet) {
     width: 87%;
-    max-width: 768px;
+    max-width: 680px;
   }
 
   @media (min-width: $desktop-width) {
     width: 91%;
-    max-width: 1200px;
+    max-width: 1050px;
     display: flex;
   }
 }
