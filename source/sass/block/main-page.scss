@@ -8,24 +8,20 @@
 
 .main-page__promo {
   position: relative;
+}
+
+.main-page__line-zigzag {
+  position: absolute;
+  bottom: 0;
 
   @media (min-width: $tablet) {
-    &::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      bottom: 0;
-      height: 24px;
-      background: url("../img/line-decor/zigzag-fill-desktop.svg");
-
-      @media (min-width: $desktop-width) {
-        height: 34px;
-      }
-    }
+    background: url("../img/line-decor/zigzag-fill-desktop.svg");
+    height: 24px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 20px;
+    width: 100%;
   }
 }
 
@@ -71,6 +67,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
+    padding-bottom: 12px;
   }
 }
 
