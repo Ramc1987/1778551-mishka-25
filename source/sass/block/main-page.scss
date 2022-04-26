@@ -6,6 +6,29 @@
   }
 }
 
+.main-page__promo {
+  position: relative;
+
+  @media (min-width: $tablet) {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      height: 24px;
+      background: url("../img/line-decor/zigzag-fill-desktop.svg");
+
+      @media (min-width: $desktop-width) {
+        height: 34px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 20px;
+  }
+}
+
 .main-page__catalog-wrapper {
   margin: 0 auto;
 }
@@ -44,6 +67,10 @@
 
   @media (min-width: $tablet) {
     margin: 0 auto 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
   }
 }
 
