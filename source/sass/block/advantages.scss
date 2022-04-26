@@ -1,17 +1,15 @@
-.advantages {
-  width: 100%;
-}
-
 .advantages__wrapper {
   width: 81%;
   margin: 0 auto 36px auto;
 
   @media (min-width: $tablet) {
     width: 87%;
+    max-width: 680px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 87%;
+    width: 91%;
+    max-width: 1050px;
     display: flex;
   }
 }

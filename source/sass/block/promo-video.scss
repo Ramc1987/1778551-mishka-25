@@ -3,49 +3,67 @@
 }
 
 .promo-video__wrapper {
+  display: flex;
+  flex-direction: column;
   width: 81%;
-  margin: 0 auto;
+  margin: 0 auto 58px;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  padding: 21px 0 33px 0;
 
   @media (min-width: $tablet) {
     width: 87%;
-    display: flex;
-    flex-direction: column;
+    max-width: 680px;
+    border-top: none;
+    margin: 0 auto 64px;
+    padding: 0 0 46px 0;
   }
 
   @media (min-width: $desktop-width) {
+    border-top: 1px solid #ececec;
+    max-width: 1050px;
+    min-width: 1050px;
     display: grid;
     grid-template-columns: 1fr 368px;
-    grid-template-rows: 151px 151px;
+    grid-template-rows: 151px 151px 151px;
+    padding: 0;
+    margin: 0 auto 105px;
   }
 }
 
 .promo-video__title {
   @include font-title(17px, 24px);
-  width: 213px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: end;
-  padding: 21px 0 26px 0;
+  width: 156px;
+  margin: 0;
+  padding: 0 0 26px 91px;
 
   @media (min-width: $tablet) {
     @include font-title(20px, 24px);
     width: 336px;
-    order: 3;
-    margin: 0;
+    order: 1;
+    margin: 0 0 24px 0;
+    padding: 41px 0 0 107px;
   }
 
   @media (min-width: $desktop-width) {
     grid-row: 1;
-    padding: 76px 0 0 79px;
-    justify-content: flex-start;
+    grid-column: 3/4;
+    padding: 97px 0 0 79px;
+    width: 178px;
+    margin: 0;
   }
 
   &--icon-camera {
     background: url("../img/icon/video/video-camera.svg");
     background-repeat: no-repeat;
+    background-position: 34px 9px;
 
     @media (min-width: $tablet) {
       background-position: 35px 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: 79px 48px;
     }
   }
 }
@@ -61,8 +79,9 @@
 }
 
 .promo-video__description-text {
-  margin: 0 auto 41px auto;
-  width: 87%;
+  margin: 0;
+  margin-bottom: 41px;
+  width: 89%;
   padding-left: 34px;
 
   @include font-title(13px, 24px, 400);
@@ -70,11 +89,17 @@
 
   @media (min-width: $tablet) {
     @include font-title(15px, 30px, 400);
-    padding: 0 35px 0 0;
+    padding: 0 0 0 40px;
+    max-width: 680px;
+    order: 2;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 0 79px;
+    padding: 27px 0 0 79px;
+    width: 252px;
+    grid-column: 3/4;
+    grid-row: 2;
+    margin: 0;
   }
 }
 
@@ -86,28 +111,36 @@
 }
 
 .promo-video__image {
-  width: 100%;
-  height: 100%;
+  width: 260px;
+  height: 150px;
 
   @media (min-width: $tablet) {
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-    grid-row: 1/4;
+    width: 668px;
+    height: 455px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 682px;
+    grid-column: 1/3;
+    grid-row: 1/3;
   }
 }
 
 .promo-video__button {
   width: 192px;
-  margin-left: 79px;
+  margin: 0 auto;
 
   @media (min-width: $tablet) {
     width: 584px;
+    margin-left: 40px;
+    order: 3;
   }
 
   @media (min-width: $desktop-width) {
     width: 230px;
     height: 52px;
-    margin: 0 auto;
+    margin-left: 79px;
+    grid-column: 3/4;
+    margin-top: 51px;
   }
 }

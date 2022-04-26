@@ -1,12 +1,14 @@
 .service-form__type {
   @media (min-width: $desktop-width) {
     width: 69%;
+    max-width: 1050px;
   }
 }
 
 .service-form__color {
   @media (min-width: $desktop-width) {
     width: 69%;
+    max-width: 1050px;
   }
 }
 
@@ -25,6 +27,7 @@
   @media (min-width: $desktop-width) {
     padding: 50px 0 0 0;
     width: 69%;
+    max-width: 1050px;
   }
 }
 
@@ -36,6 +39,7 @@
   @media (min-width: $desktop-width) {
     padding: 50px 0 0 0;
     width: 69%;
+    max-width: 1050px;
   }
 }
 
@@ -55,6 +59,8 @@
 .service-form__field-additionally {
   @media (min-width: $desktop-width) {
     width: 69%;
+    max-width: 1050px;
+    min-width: 950px;
     padding: 50px 0 0 0;
   }
 }

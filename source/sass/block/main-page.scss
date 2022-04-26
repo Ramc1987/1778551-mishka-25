@@ -6,6 +6,29 @@
   }
 }
 
+.main-page__promo {
+  position: relative;
+}
+
+.main-page__line-zigzag {
+  position: absolute;
+  bottom: 0;
+
+  @media (min-width: $tablet) {
+    background: url("../img/line-decor/zigzag-fill-desktop.svg");
+    height: 24px;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.main-page__catalog-wrapper {
+  margin: 0 auto;
+}
+
 .main-page__form-wrapper {
   width: 100%;
 }
@@ -21,14 +44,17 @@
 
   @include font-title(14px, 24px, 400);
   color: $color-second;
+  max-width: 260px;
 
   @media (min-width: $tablet) {
     @include font-title(17px, 30px, 400);
+    max-width: 680px;
   }
 
   @media (min-width: $desktop-width) {
     width: 87%;
     padding: 31px 0 33px 0;
+    max-width: 702px;
   }
 }
 
@@ -37,6 +63,11 @@
 
   @media (min-width: $tablet) {
     margin: 0 auto 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding-bottom: 12px;
   }
 }
 
