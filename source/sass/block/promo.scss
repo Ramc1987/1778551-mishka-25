@@ -1,22 +1,19 @@
-.promo {
-  max-width: 100%;
-  background: url("../img/Content/main-promo.jpg") center 50px no-repeat fixed, #f1f1f184;
-}
-
 .promo__title {
   @include font-title(27px, 30px);
   margin: 0 auto;
   width: 260px;
   text-align: center;
-  padding: 100px 0 100px 0;
+  padding: 73px 0 120px 0;
 
   @media (min-width: $tablet) {
     @include font-title(43px, 50px);
     width: 668px;
+    padding: 154px 0 372px 0;
   }
 
   @media (min-width: $desktop-width) {
     @include font-title(53px, 57px);
     width: 58.4%;
+    padding: 157px 0 355px 0;
   }
 }
