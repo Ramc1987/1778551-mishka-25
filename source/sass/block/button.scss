@@ -26,6 +26,10 @@
 .button--order {
   width: 260px;
 
+  @media (min-width: $tablet) {
+    width: 100%;
+  }
+
   @media (min-width: $desktop-width) {
     width: 292px;
   }
