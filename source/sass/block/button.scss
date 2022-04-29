@@ -42,6 +42,10 @@
     grid-column: 2/3;
     grid-row: 1;
   }
+
+  @media (min-width: $desktop-width) {
+    height: 52px;
+  }
 }
 
 .button--send-order {

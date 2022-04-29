@@ -34,12 +34,27 @@
 
   @media (min-width: $tablet) {
     @include font-title(43px, 50px);
+    padding: 100px 0 63px 0;
   }
 
   @media (min-width: $desktop-width) {
     @include font-title(53px, 57px);
-    padding: 101px 0 96px 0;
+    padding: 101px 0 79px 0;
     margin: 0 auto;
     max-width: 1050px;
+  }
+}
+
+.heading__wrapper-zigzag {
+  @media (min-width: $tablet) {
+    height: 24px;
+    background-image: url("../img/line-decor/zigzag-fill-tablet.svg");
+    width: 100%;
+    background-repeat: repeat-x;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/line-decor/zigzag-fill-desktop.svg");
+    height: 34px;
   }
 }
