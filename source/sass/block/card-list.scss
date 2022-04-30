@@ -14,6 +14,16 @@
     flex-direction: column;
     border-top: none;
   }
+
+  &:hover {
+    box-sizing: border-box;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-sizing: border-box;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .card-list__content-wrapper {
@@ -31,11 +41,6 @@
   @media (min-width: $desktop-width) {
     padding: 27px 0 25px 28px;
     outline: 1px solid #ececec;
-  }
-
-  &:hover {
-    box-sizing: border-box;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -88,6 +93,7 @@
 
 .card-list__title {
   @include font-title(17px, 24px);
+  color: $color-base;
   margin: 0 0 6px 0;
 
   @media (min-width: $tablet) {
@@ -102,6 +108,7 @@
 
 .card-list__price {
   @include font-title(15px,24px);
+  color: $color-base;
   margin: 0;
 }
 
