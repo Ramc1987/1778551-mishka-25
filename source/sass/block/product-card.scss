@@ -1,16 +1,11 @@
-.product-card {
-  width: 100%;
-  max-width: 1050px;
-}
-
 .product-card__list {
+  width: 100%;
   list-style: none;
-  margin: 0 auto;
   padding: 0;
-  width: 81%;
+  margin: 0;
 
   @media (min-width: $tablet) {
-    width: 87%;
+    width: 100%;
     margin-bottom: 41px;
   }
 
