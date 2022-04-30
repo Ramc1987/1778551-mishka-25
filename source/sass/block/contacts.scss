@@ -5,7 +5,7 @@
     display: grid;
     justify-content: end;
     grid-template-columns: 1fr 1fr;
-    column-gap: 23px;
+    column-gap: 50px;
     margin: 71px auto 61px;
   }
 }
@@ -126,6 +126,7 @@
 
 .contacts__map {
   width: 100%;
+  display: block;
   margin-bottom: 41px;
   border: none;
 
@@ -135,6 +136,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
+    width: 527px;
   }
 }
 
