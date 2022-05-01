@@ -25,6 +25,14 @@
   &--dark-green {
     background: #56c3b2;
   }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 17px;
+  }
 }
 
 .catalog-menu__link {

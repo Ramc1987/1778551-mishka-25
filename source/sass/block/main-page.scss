@@ -22,8 +22,19 @@
     background-image: url("../img/Promo/tablet/hero-tablet.jpg");
     background-position: 50% 0;
 
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 24px;
+      left: 0;
+      bottom: 0;
+      background: url("../img/line-decor/zigzag-fill-tablet-promo.svg");
+      z-index: 1;
+    }
+
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/Promo/tablet/hero-tablet@2x.jpg");
+      background-image: url("../img/Promo/tablet/hero-tablet@2x.jpg");
       background-size: cover;
       background-position: 50% -17px;
     }
@@ -32,21 +43,41 @@
   @media (min-width: $desktop-width) {
     background-position: 50%;
     background-size: contain;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 34px;
+      left: 0;
+      bottom: 0;
+      background: url("../img/line-decor/zigzag-fill-desktop.svg");
+      z-index: 1;
+    }
   }
 }
 
-.main-page__line-zigzag {
-  position: absolute;
-  bottom: 0;
+.main-page__product-weeks {
+  margin-bottom: 31px;
 
   @media (min-width: $tablet) {
-    background: url("../img/line-decor/zigzag-fill-desktop.svg");
-    height: 24px;
-    width: 100%;
+    margin-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    margin-bottom: 68px;
+  }
+}
+
+.main-page__reviews {
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
   }
 }
 

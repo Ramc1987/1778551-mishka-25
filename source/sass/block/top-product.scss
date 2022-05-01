@@ -173,22 +173,3 @@
   width: auto;
   height: 100%;
 }
-
-.top-product__decor-line {
-  height: 6px;
-  background: url("../img/line-decor/zigzag-line-desktop.svg") repeat-x;
-  width: 100%;
-  margin-bottom: 31px;
-
-  @media (min-width: $tablet) {
-    height: 17px;
-    background: url("../img/line-decor/zigzag-line-tablet.svg") repeat-x;
-    margin-bottom: 55px;
-  }
-
-  @media (min-width: $desktop-width) {
-    background: url("../img/line-decor/zigzag-line-desktoper.svg") repeat-x;
-    height: 23px;
-    margin-bottom: 68px;
-  }
-}

@@ -1,11 +1,37 @@
+.reviews {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background: url("../img/line-decor/zigzag-line-desktop.svg") repeat-x;
+    left: 0;
+    bottom: 0;
+
+    @media (min-width: $tablet) {
+      height: 17px;
+      background: url("../img/line-decor/zigzag-line-tablet.svg") repeat-x;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 23px;
+      background: url("../img/line-decor/zigzag-line-desktoper.svg") repeat-x;
+    }
+  }
+}
+
 .reviews__wrapper {
-  margin: 0 auto 45px;
+  margin: 0 auto;
+  padding-bottom: 51px;
 
   @media (min-width: $tablet) {
     background: url("../img/decor-fon/review-tablet.jpg") no-repeat;
     max-width: 768px;
     height: 457px;
-    margin: 0 auto 85px;
+    margin: 0 auto;
+    padding-bottom: 85px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/decor-fon/review@2x.png");
@@ -18,12 +44,13 @@
     max-width: 1050px;
     display: flex;
     justify-content: end;
+    padding-bottom: 90px;
   }
 }
 
 .reviews__inner {
   width: 81.3%;
-  margin: 0 auto 45px;
+  margin: 0 auto;
   padding-top: 82px;
 
   @media (min-width: $tablet) {
@@ -115,21 +142,5 @@
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
     padding-top: 125px;
-  }
-}
-
-.reviews__decor-line {
-  height: 6px;
-  background: url("../img/line-decor/zigzag-line-desktop.svg") repeat-x;
-  width: 100%;
-
-  @media (min-width: $tablet) {
-    height: 17px;
-    background: url("../img/line-decor/zigzag-line-tablet.svg") repeat-x;
-  }
-
-  @media (min-width: $desktop-width) {
-    background: url("../img/line-decor/zigzag-line-desktoper.svg") repeat-x;
-    height: 23px;
   }
 }
