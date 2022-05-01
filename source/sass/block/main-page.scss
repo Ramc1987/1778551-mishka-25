@@ -81,6 +81,73 @@
   }
 }
 
+.main-page__heading {
+  position: relative;
+  margin-bottom: 30px;
+  background: #f1f1f1;
+
+  &--form-page {
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 67px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 24px;
+      left: 0;
+      bottom: 0;
+      background: url("../img/line-decor/zigzag-fill-tablet-promo.svg");
+      z-index: 1;
+    }
+
+    &--form-page {
+      margin-bottom: 54px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 34px;
+      left: 0;
+      bottom: 0;
+      background: url("../img/line-decor/zigzag-fill-desktop.svg");
+      z-index: 1;
+    }
+    margin-bottom: 111px;
+
+    &--form-page {
+      margin-bottom: 98px;
+    }
+  }
+}
+
+.main-page__heading-title {
+  margin: 0;
+  padding: 73px 0 73px 0;
+
+  @include font-title(27px, 30px);
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    @include font-title(43px, 50px);
+    padding: 101px 0 87px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-title(53px, 57px);
+    padding: 101px 0 113px 0;
+    margin: 0 auto;
+    max-width: 1050px;
+  }
+}
+
 .main-page__catalog-wrapper {
   width: 81.25%;
   margin: 0 auto;
@@ -100,28 +167,23 @@
   width: 100%;
 }
 
-.main-page__service {
-  width: 260px;
-  margin: 0 auto;
-}
-
 .main-page__service-promo-text {
   width: 81%;
   margin: 0 auto 29px;
 
   @include font-title(14px, 24px, 400);
   color: $color-second;
-  max-width: 260px;
 
   @media (min-width: $tablet) {
     @include font-title(17px, 30px, 400);
-    max-width: 680px;
+    width: 87%;
+    margin-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {
     width: 87%;
-    padding: 31px 0 33px 0;
-    max-width: 702px;
+    margin-bottom: 62px;
+    max-width: 728px;
   }
 }
 
