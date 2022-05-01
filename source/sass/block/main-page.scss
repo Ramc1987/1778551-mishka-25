@@ -176,8 +176,9 @@
 
   @media (min-width: $tablet) {
     @include font-title(17px, 30px, 400);
-    width: 87%;
+    width: 69%;
     margin-bottom: 63px;
+    max-width: 1050px;
   }
 
   @media (min-width: $desktop-width) {
