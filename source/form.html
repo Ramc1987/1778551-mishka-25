@@ -118,30 +118,30 @@
             action="https://echo.htmlacademy.ru/"
           >
             <fieldset class="service-form__type form-type">
-              <h3 class="form-type__title">Тип</h3>
+              <h2 class="form-type__title">Тип</h2>
               <ul class="form-type__list">
                 <li class="form-type__item">
-                  <label class="form-type__custom-radio">
+                  <label class="form-type__check">
                     <input
                       type="radio"
-                      class="form-type__control-radio"
+                      class="form-type__check-radio"
                       name="type"
                       value="accessories"
                       checked
                     />
-                    <span class="form-type__radio-box"></span>
+                    <span class="form-type__radiobox"></span>
                     Аксессуар для интерьера
                   </label>
                 </li>
                 <li class="form-type__item">
-                  <label class="form-type__custom-radio">
+                  <label class="form-type__check form-type__check--kids">
                     <input
                       type="radio"
-                      class="form-type__control-radio"
+                      class="form-type__check-radio"
                       name="type"
                       value="kids-toy"
                     />
-                    <span class="form-type__radio-box"></span>
+                    <span class="form-type__radiobox"></span>
                     Детская игрушка
                   </label>
                 </li>
@@ -149,12 +149,12 @@
             </fieldset>
             <div class="service-form__element-wrapper">
               <fieldset class="service-form__color form-color">
-                <h3 class="form-color__title">Цвет</h3>
+                <h2 class="form-color__title">Цвет</h2>
                 <ul class="form-color__list">
                   <li class="form-color__item">
-                    <label class="form-color__custom-checkbox">
+                    <label class="form-color__check">
                       <input
-                        class="form-color__control-input"
+                        class="form-color__check-input"
                         type="checkbox"
                         name="color"
                         value="white"
@@ -165,9 +165,9 @@
                     </label>
                   </li>
                   <li class="form-color__item">
-                    <label class="form-color__custom-checkbox">
+                    <label class="form-color__check">
                       <input
-                        class="form-color__control-input"
+                        class="form-color__check-input"
                         type="checkbox"
                         name="color"
                         value="gray"
@@ -178,9 +178,9 @@
                     </label>
                   </li>
                   <li class="form-color__item">
-                    <label class="form-color__custom-checkbox">
+                    <label class="form-color__check">
                       <input
-                        class="form-color__control-input"
+                        class="form-color__check-input"
                         type="checkbox"
                         name="color"
                         value="tiffany"
@@ -190,9 +190,9 @@
                     </label>
                   </li>
                   <li class="form-color__item">
-                    <label class="form-color__custom-checkbox">
+                    <label class="form-color__check">
                       <input
-                        class="form-color__control-input"
+                        class="form-color__check-input"
                         type="checkbox"
                         name="color"
                         value="black"
@@ -202,9 +202,9 @@
                     </label>
                   </li>
                   <li class="form-color__item">
-                    <label class="form-color__custom-checkbox">
+                    <label class="form-color__check">
                       <input
-                        class="form-color__control-input"
+                        class="form-color__check-input"
                         type="checkbox"
                         name="color"
                         value="pink"
@@ -214,9 +214,9 @@
                     </label>
                   </li>
                   <li class="form-color__item">
-                    <label class="form-color__custom-checkbox">
+                    <label class="form-color__check">
                       <input
-                        class="form-color__control-input"
+                        class="form-color__check-input"
                         type="checkbox"
                         name="color"
                         value="orange"
@@ -229,7 +229,7 @@
               </fieldset>
             </div>
             <fieldset class="service-form__data-users data-users">
-              <h3 class="data-users__title">ФИО</h3>
+              <h2 class="data-users__title">ФИО</h2>
               <ul class="data-users__list">
                 <li class="data-users__item">
                   <label class="data-users__user-title">
@@ -270,11 +270,14 @@
             </fieldset>
             <div class="service-form__element-wrapper">
               <fieldset class="service-form__contacts form-contacts">
-                <h3 class="visually-hidden">Контакты</h3>
+                <h2 class="visually-hidden">Контакты</h2>
                 <ul class="form-contacts__list">
                   <li class="form-contacts__item">
                     <label class="form-contacts__title">
-                      <h3 class="form-contacts__legend--legend-phone">тел</h3>
+                      <span
+                        class="form-contacts__legend form-contacts__legend--legend-phone"
+                        >тел</span
+                      >
                       <input
                         class="form-contacts__field-contacts form-contacts__field-contacts--contact-phone"
                         type="text"
@@ -308,7 +311,10 @@
                   </li>
                   <li class="form-contacts__item">
                     <label class="form-contacts__title">
-                      <h3 class="form-contacts__legend--legend-email">E-mail</h3>
+                      <span
+                        class="form-contacts__legend form-contacts__legend--legend-email"
+                        >E-mail</span
+                      >
                       <input
                         class="form-contacts__field-contacts form-contacts__field-contacts--contact-email"
                         type="email"
