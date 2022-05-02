@@ -58,7 +58,6 @@
   @media (min-width: $desktop-width) {
     grid-row: 1;
     grid-column: 2/3;
-    // padding: 97px 0 0 79px;
     width: 178px;
     height: 80px;
     margin: 0;
@@ -179,11 +178,6 @@
     border-radius: 20px;
     transform: scale(0.8);
   }
-
-  // &:focus::before::after {
-  //   outline: 3px solid #ececec;
-  //   outline-offset: 3px;
-  // }
 }
 
 .promo-video__image {
