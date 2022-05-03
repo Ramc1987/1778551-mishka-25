@@ -14,6 +14,10 @@
   @media (min-width: $tablet) {
     width: 257px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
 }
 
 .address__text {
@@ -22,4 +26,8 @@
   color: $color-second;
   text-decoration: none;
   margin: 0;
+
+  @media (min-width: $tablet) {
+    @include font-title(17px, 30px, 400);
+  }
 }

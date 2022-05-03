@@ -103,25 +103,35 @@
       </div>
     </header>
     <main class="main-page">
-      <section class="main-page__products-catalog heading-container">
-        <header class="heading-container__heading-title heading__wrapper">
+      <section class="main-page__products-catalog">
+        <header class="main-page__heading">
           <h1 class="heading__wrapper-title">Каталог товаров</h1>
         </header>
         <div class="main-page__catalog-wrapper product-card">
           <ul class="product-card__list card-list">
             <li class="card-list__item">
               <a class="card-list__link" href="#">
-                <img
-                  class="card-list__image"
-                  src="img/Content/products-cards/photo-1-mobile-1.jpg"
-                  width="265"
-                  height="195"
-                  alt="Зайчик-попрыгайчик"
-                />
-              </a>
-              <div class="card-list__content-wrapper">
-                <h2 class="card-list__title">Зайчик-попрыгайчик</h2>
-                <div class="card-list__content-inner">
+                <div class="card-list__wrapper-image">
+                  <picture>
+                    <source
+                      media="(min-width: 1050px)"
+                      srcset="../img/Content/products-cards/photo-1-desktop.jpg"
+                    />
+                    <source
+                      media="(min-width: 680px)"
+                      srcset="
+                        ../img/Content/products-cards/photo-1-tablet.jpg 1x
+                      "
+                    />
+                    <img
+                      class="card-list__image"
+                      src="../img/Content/products-cards/photo-1-mobile.jpg"
+                      alt="Зайчик-попрыгайчик"
+                    />
+                  </picture>
+                </div>
+                <div class="card-list__content-wrapper">
+                  <h2 class="card-list__title">Зайчик-попрыгайчик</h2>
                   <dl class="card-list__stats stats-product">
                     <div class="stats-product__item">
                       <dt class="stats-product__lable">Рост</dt>
@@ -150,21 +160,36 @@
                     </div>
                   </footer>
                 </div>
-              </div>
+              </a>
             </li>
             <li class="card-list__item">
               <a class="card-list__link" href="#">
-                <img
-                  class="card-list__image"
-                  src="img/Content/products-cards/photo-2-mobile-1.jpg"
-                  width="265"
-                  height="195"
-                  alt="Корзина для белья"
-                />
-              </a>
-              <div class="card-list__content-wrapper">
-                <h2 class="card-list__title">Корзина для белья</h2>
-                <div class="card-list__content-inner">
+                <picture>
+                  <source
+                    media="(min-width: 1050px)"
+                    srcset="
+                      ../img/Content/products-cards/photo-2-desktop.jpg    1x,
+                      ../img/Content/products-cards/photo-2-desktop@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 680px)"
+                    srcset="
+                      ../img/Content/products-cards/photo-2-tablet.jpg    1x,
+                      ../img/Content/products-cards/photo-2-tablet@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card-list__image"
+                    src="../img/Content/products-cards/photo-2-mobile.jpg"
+                    srcset="
+                      ../img/Content/products-cards/photo-2-mobile@2x.jpg 2x
+                    "
+                    alt="Зайчик-попрыгайчик"
+                  />
+                </picture>
+                <div class="card-list__content-wrapper">
+                  <h2 class="card-list__title">Корзина для белья</h2>
                   <dl class="card-list__stats stats-product">
                     <div class="stats-product__item">
                       <dt class="stats-product__lable">Диаметр</dt>
@@ -193,22 +218,39 @@
                     </div>
                   </footer>
                 </div>
-              </div>
+              </a>
             </li>
             <li class="card-list__item">
               <a class="card-list__link" href="#">
-                <img
-                  class="card-list__image"
-                  src="img/Content/products-cards/photo-2-mobile-1.jpg"
-                  width="265"
-                  height="195"
-                  alt="Корзина для белья"
-                />
-              </a>
-              <div class="card-list__content-wrapper">
-                <h2 class="card-list__title">Большая корзинка для игрушек</h2>
-                <div class="card-list__content-inner">
-                  <dl class="card-list__stats stats-product">
+                <picture>
+                  <source
+                    media="(min-width: 1050px)"
+                    srcset="
+                      ../img/Content/products-cards/photo-3-desktop.jpg    1x,
+                      ../img/Content/products-cards/photo-3-desktop@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 680px)"
+                    srcset="
+                      ../img/Content/products-cards/photo-3-tablet.jpg    1x,
+                      ../img/Content/products-cards/photo-3-tablet@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="card-list__image"
+                    src="../img/Content/products-cards/photo-3-mobile.jpg"
+                    srcset="
+                      ../img/Content/products-cards/photo-3-mobile@2x.jpg 2x
+                    "
+                    alt="Зайчик-попрыгайчик"
+                  />
+                </picture>
+                <div class="card-list__content-wrapper">
+                  <h2 class="card-list__title">Большая корзинка для игрушек</h2>
+                  <dl
+                    class="card-list__stats card-list__stats--three-child stats-product"
+                  >
                     <div class="stats-product__item">
                       <dt class="stats-product__lable">Диаметр</dt>
                       <dd class="stats-product__desription">15 см,</dd>
@@ -236,7 +278,7 @@
                     </div>
                   </footer>
                 </div>
-              </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -246,13 +288,31 @@
           <h2 class="promo-video__title promo-video__title--icon-camera">
             Процесс производства
           </h2>
-          <img
-            class="promo-video__image"
-            src="img/Content/video-mobile-1.jpg"
-            width="260"
-            height="150"
-            alt="Видео производства"
-          />
+          <div class="promo-video__wrapper-images">
+            <picture>
+              <source
+                media="(1050px)"
+                srcset="
+                  ../img/video/video-desktop.jpg    1x,
+                  ../img/video/video-desktop@2x.jpg
+                "
+              />
+              <source
+                media="(min-width: 680px)"
+                srcset="
+                  ../img/video/video-tablet.jpg    1x,
+                  ../img/video/video-tablet@2x.jpg 2x
+                "
+              />
+              <img
+                class="promo-video__image"
+                src="../img/video/video-mobile.jpg"
+                srcset="../img/video/video-mobile@2x.jpg 2x"
+                alt="Видео производства"
+              />
+            </picture>
+          </div>
+
           <p class="promo-video__description-text">
             По просьбам наших любимых фолловеров мы сняли для вас подробное
             видео о том, как появляются наши товары.

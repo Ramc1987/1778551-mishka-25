@@ -27,34 +27,76 @@
   margin: 0 0 33px 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet) {
-    display: flex;
-    flex-wrap: wrap;
     margin: 0 0 50px 0;
     padding: 50px 0 0 0;
   }
 }
 
 .form-color__item {
+  width: 211px;
+
   &:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 23px;
   }
 
   @media (min-width: $tablet) {
-    width: 244px;
+    width: 248px;
+
+    &:not(:last-child) {
+      margin-bottom: 23px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 248px;
   }
 }
 
-.form-color__custom-checkbox {
+.form-color__check {
+  display: flex;
+  align-items: center;
+  padding: 10px 61px;
+
   @include font-title(17px, 18px);
-  padding: 10px 0;
 
   @media (min-width: $tablet) {
     @include font-title(19px, 18px);
+    padding: 17px 82px;
   }
 }
 
-.form-color__control-input {
+.form-color__check-input {
   margin: 0;
+  appearance: none;
+  position: absolute;
+
+  &:checked + .form-color__checkbox {
+    background-image: url("../img/icon/Tick.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 22px 16px;
+
+    @media (min-width: $tablet) {
+      background-position: 50% 50%;
+      background-size: 31px 22px;
+    }
+  }
+}
+
+.form-color__checkbox {
+  margin-left: -61px;
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  border: 2px solid $color-second;
+
+  @media (min-width: $tablet) {
+    width: 52px;
+    height: 52px;
+    margin-left: -82px;
+  }
 }

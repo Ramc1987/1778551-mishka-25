@@ -1,44 +1,52 @@
 .card-list__item {
-  border-bottom: 1px solid #ececec;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 30px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet) {
-    display: flex;
-    border-top: 1px solid #ececec;
+    flex-direction: row;
   }
 
   @media (min-width: $desktop-width) {
-    width: 316px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     border-top: none;
-    border-left: 1px solid #ececec;
-    border-right: 1px solid #ececec;
+  }
+
+  &:hover {
     box-sizing: border-box;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-sizing: border-box;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 }
 
 .card-list__content-wrapper {
-  &:hover {
-    box-sizing: border-box;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 27px 0 26px 28px;
+  border-bottom: 1px solid #ececec;
+
+  @media (min-width: $tablet) {
+    padding: 27px 0 25px 34px;
+    border-top: 1px solid #ececec;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 27px 0 25px 28px;
+    outline: 1px solid #ececec;
   }
 }
 
 .card-list__link {
   text-decoration: none;
   display: block;
-
-  @media (min-width: $tablet) {
-    width: 334px;
-    height: 334px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 316px;
-    height: 462px;
-  }
 }
 
 .card-list__icon-basket {
@@ -54,36 +62,43 @@
   }
 }
 
-.card-list__content-inner {
+.card-list__stats {
+  margin: 0 0 17px 0;
+
   @media (min-width: $tablet) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 251px;
+    margin: 0 0 173px 0;
+
+    &--three-child {
+      margin-bottom: 149px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: flex-start;
-    height: 144px;
+    margin: 0 0 36px 0;
+
+    &--three-child {
+      margin-bottom: 12px;
+    }
   }
 }
 
 .card-list__image {
+  display: block;
   width: 100%;
-  object-fit: cover;
-  height: 100%;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
 }
 
 .card-list__title {
   @include font-title(17px, 24px);
+  color: $color-base;
   margin: 0 0 6px 0;
-  text-align: center;
 
   @media (min-width: $tablet) {
     @include font-title(20px, 24px);
     width: 262px;
-    text-align: start;
-    padding: 27px 0 0 36px;
   }
 
   @media (min-width: $desktop-width) {
@@ -93,18 +108,19 @@
 
 .card-list__price {
   @include font-title(15px,24px);
+  color: $color-base;
   margin: 0;
 }
 
 .card-list__card-footer {
-  width: 78%;
+  width: 88.3%;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
-  padding: 22px 0 26px 0;
   border-top: 1px solid #ececec;
+  padding: 22px 0 0 0;
 
   @media (min-width: $tablet) {
     padding: 22px 0 0 0;
+    width: 88.1%;
   }
 }

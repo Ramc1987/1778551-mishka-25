@@ -13,6 +13,45 @@
   cursor: pointer;
   transition: 0.35s;
 
+  &--order {
+    width: 260px;
+
+    @media (min-width: $tablet) {
+      width: 100%;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 292px;
+    }
+  }
+
+  &--write {
+    width: 100%;
+
+    @media (min-width: $tablet) {
+      grid-column: 2/3;
+      grid-row: 1;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 52px;
+    }
+  }
+
+  &--send-order {
+    width: 260px;
+  }
+
+  .button--make-order {
+    @include font-title(18px, 16px);
+    width: 100%;
+    padding: 18px 0;
+  }
+
+  .button--button-add {
+    background: $decor-color;
+  }
+
   &:hover {
     background: $color-second;
     color: #ffffff;
@@ -21,35 +60,4 @@
   &:active {
     color: rgb(255, 255, 255, 0.3);
   }
-}
-
-.button--order {
-  width: 260px;
-
-  @media (min-width: $desktop-width) {
-    width: 292px;
-  }
-}
-
-.button--write {
-  width: 100%;
-
-  @media (min-width: $tablet) {
-    grid-column: 2/3;
-    grid-row: 1;
-  }
-}
-
-.button--send-order {
-  width: 260px;
-}
-
-.button--make-order {
-  @include font-title(18px, 16px);
-  width: 100%;
-  padding: 18px 0;
-}
-
-.button--button-add {
-  background: $decor-color;
 }

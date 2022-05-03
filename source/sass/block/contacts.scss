@@ -5,8 +5,8 @@
     display: grid;
     justify-content: end;
     grid-template-columns: 1fr 1fr;
-    column-gap: 23px;
-    margin: 0 auto 61px;
+    column-gap: 50px;
+    margin: 71px auto 61px;
   }
 }
 
@@ -15,26 +15,34 @@
   margin: 0 auto;
 
   @media (min-width: $tablet) {
-    width: 87%;
-    max-width: 768px;
+    width: 100%;
+    max-width: 680px;
   }
 
   @media (min-width: $desktop-width) {
     width: 438px;
     padding-left: 138px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
   }
 }
 
 .contacts__title {
   @include font-title(25px, 30px);
   margin: 0 0 28px 0;
-  padding-top: 38px;
 
   @media (min-width: $tablet) {
     @include font-title(43px, 50px);
+    padding-top: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-title(53px, 57px, 700);
+    width: 300px;
+    padding-top: 78px;
+    margin: 0;
   }
 }
 
@@ -50,7 +58,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
   }
 }
 
@@ -60,6 +70,12 @@
 
   @media (min-width: $tablet) {
     width: 308px;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    display: block;
   }
 }
 
@@ -69,6 +85,7 @@
 
   @media (min-width: $tablet) {
     @include font-title(17px, 30px, 400);
+    margin-right: 25px;
   }
 }
 
@@ -122,18 +139,32 @@
   margin-bottom: 62px;
 }
 
-.contact__map {
+.contacts__map {
   width: 100%;
-  margin-bottom: 48px;
+  display: block;
+  margin-bottom: 41px;
   border: none;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    width: 527px;
+  }
 }
 
 .contacts__wrapper-button {
   width: 260px;
-  margin: 0 auto;
+  margin: 0 auto 39px;
+
+  @media (min-width: $tablet) {
+    margin: 0 auto 57px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-top: -56px;
-    margin-right: 178px;
+    margin-right: 40px;
   }
 }

@@ -116,9 +116,8 @@
             </a>
           </li>
         </ul>
-        <div class="main-page__line-zigzag"></div>
       </section>
-      <section class="product-weeks">
+      <section class="main-page__product-weeks product-weeks">
         <h2 class="product-weeks__title visually-hidden">Товар недели</h2>
         <div class="product-weeks__wrapper top-product">
           <article class="top-product__item">
@@ -155,13 +154,28 @@
                 Заказать
               </button>
             </div>
-            <img
-              class="top-product__item-image"
-              src="img/Content/basket-content.jpg"
-              width="260"
-              height="315"
-              alt="Вязанные корзинки"
-            />
+            <div class="top-product__wrapper-images">
+              <picture>
+                <source
+                  media="(min-width: 1050px)"
+                  srcset="img/Content/product-weeks/triple-set-desktop 1x.jpg,
+                    img/Content/product-weeks/triple-set-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 680px)"
+                  srcset="
+                    img/Content/product-weeks/triple-set-tablet.png    1x,
+                    img/Content/product-weeks/triple-set-tablet@2x.png 2x
+                  "
+                />
+                <img
+                  class="top-product__item-image"
+                  src="img/Content/product-weeks/triple-set-mobile.png"
+                  srcset="img/Content/product-weeks/triple-set-mobile@2x.png 2x"
+                  alt="Вязанные корзинки"
+                />
+              </picture>
+            </div>
           </article>
         </div>
       </section>
@@ -212,7 +226,7 @@
           </div>
         </div>
       </section>
-      <section class="reviews">
+      <section class="main-page__reviews reviews">
         <div class="reviews__wrapper">
           <div class="reviews__inner slider">
             <h2 class="reviews__title">Отзывы</h2>
@@ -281,9 +295,10 @@
             <iframe
               class="contacts__map"
               src="https://yandex.ru/map-widget/v1/?um=constructor%3A8da3431ddb455b08c693e9df09c856e2aca824615d52c355188fa1701c0bfcf0&amp;source=constructor"
-              width="100%"
+              width="320"
               height="454"
-              frameborder="0"
+              allowfullscreen
+              title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"
             ></iframe>
           </div>
           <div class="contacts__wrapper-button">
