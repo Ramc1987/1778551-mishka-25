@@ -1,9 +1,5 @@
 .main-page {
   flex-grow: 1;
-
-  @media (min-width: $desktop-width) {
-    margin-top: -64px;
-  }
 }
 
 .main-page__promo {
