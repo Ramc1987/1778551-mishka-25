@@ -71,6 +71,10 @@
   @media (min-width: $tablet) {
     @include font-title(19px, 18px);
   }
+
+  &:checked + .form-type__radiobox::before {
+    display: block;
+  }
 }
 
 .form-type__radiobox {
@@ -95,8 +99,10 @@
     height: 18px;
     background-color: $decor-color;
     border-radius: 50%;
-    top: 28%;
-    left: 28%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
 
     @media (min-width: $tablet) {
       width: 22px;
