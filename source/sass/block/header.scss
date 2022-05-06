@@ -149,7 +149,10 @@
 }
 
 .header__user-item {
-  padding: 28px 0 26px 76px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 28px 0 26px 32px;
   box-shadow: 0 1px 0 #ececec,
     inset 0 1px 0 #ececec;
 
@@ -164,6 +167,20 @@
 
   @include font-title;
   color: $color-base;
+}
+
+.header__link-search {
+  margin-right: 26px;
+}
+
+.header__text-search {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.header__link-basket {
+  margin-right: 25px;
 }
 
 .header__stock-list {
