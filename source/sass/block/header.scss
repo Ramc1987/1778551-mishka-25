@@ -44,6 +44,10 @@
   border: none;
   background: transparent;
 
+  &:active .header__site-item {
+    display: block;
+  }
+
   @media (min-width: $tablet) {
     display: none;
   }
@@ -108,10 +112,17 @@
 }
 
 .header__site-item {
+  &--close {
+    display: none;
+  }
+
   padding: 28px 0 26px 76px;
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 
   @media (min-width: $tablet) {
+    &--close {
+      display: inline-block;
+    }
     padding: 21px 35px 0 0;
     box-shadow: none;
   }
