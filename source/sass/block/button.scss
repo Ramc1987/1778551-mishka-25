@@ -42,14 +42,15 @@
     width: 260px;
   }
 
-  .button--make-order {
+  &--make-order {
     @include font-title(18px, 16px);
     width: 100%;
     padding: 18px 0;
   }
 
-  .button--button-add {
+  &--button-add {
     background: $decor-color;
+    margin-bottom: 46px;
   }
 
   &:hover {
