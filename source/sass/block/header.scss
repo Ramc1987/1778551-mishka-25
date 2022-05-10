@@ -91,11 +91,12 @@
   &--open {
     position: absolute;
     top: 100px;
-    min-height: 80vh;
+    min-height: 30vh;
     left: 0;
     background-color: #ececec;
     width: 100%;
     z-index: 1;
+    display: block;
   }
 
   @media (min-width: $tablet) {
