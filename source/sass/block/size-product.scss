@@ -39,8 +39,8 @@
   appearance: none;
   position: absolute;
 
-  :checked + .size-product__radiobox::before {
-    display: block;
+  &:checked + .size-product__radiobox {
+    border: 2px solid #63d1bb;
   }
 }
 
@@ -56,17 +56,6 @@
   text-transform: uppercase;
   color: $color-second;
   text-align: center;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border: 2px solid #63d1bb;
-    display: none;
-  }
 
   @media (min-width: $tablet) {
     padding: 18px 35px;

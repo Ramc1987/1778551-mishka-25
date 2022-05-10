@@ -169,9 +169,19 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: none;
 
   &--close {
+    display: none;
+  }
+
+  &--open {
+    position: absolute;
+    top: 300px;
+    min-height: 30vh;
+    left: 0;
+    background-color: #ececec;
+    width: 100%;
+    z-index: 1;
     display: block;
   }
 
