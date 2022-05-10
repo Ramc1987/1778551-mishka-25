@@ -56,6 +56,7 @@
   &--eco-material {
     background: url("../img/icon/advantages/icon-1.svg");
     background-repeat: no-repeat;
+    background-position: 9px 0;
 
     @media (min-width: $tablet) {
       grid-column: 1;
@@ -77,6 +78,7 @@
   &--like-photo {
     background: url("../img/icon/advantages/icon-3.svg");
     background-repeat: no-repeat;
+    background-position: 7px 5px;
 
     @media (min-width: $tablet) {
       grid-column: 1;
@@ -87,26 +89,29 @@
   &--handwork {
     background: url("../img/icon/advantages/icon-4.svg");
     background-repeat: no-repeat;
+    background-position: 2px 3px;
   }
 
   &--local-support {
     background: url("../img/icon/advantages/icon-5.svg");
     background-repeat: no-repeat;
+    background-position: 0 4px;
   }
 
 
   &--gift-wrap {
     background: url("../img/icon/advantages/icon-6.svg");
     background-repeat: no-repeat;
+    background-position: 4px 2px;
   }
 }
 
 .advantages__item:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 }
 
 .advantages__description {
   @include font-title(17px, 20px);
   margin: 0;
-  padding-top: 47px;
+  padding-top: 54px;
 }

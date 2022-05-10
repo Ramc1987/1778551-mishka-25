@@ -36,9 +36,9 @@
 }
 
 .top-product__title {
-  @include font-title(24px, 30px);
+  @include font-title(25px, 30px);
   padding: 31px 0 0 0;
-  margin: 0 0 3px 0;
+  margin: 0 0 3.5px 0;
 
   @media (min-width: $tablet) {
     @include font-title(43px, 50px);
@@ -92,7 +92,7 @@
 }
 
 .top-product__description {
-  margin: 0 0 28px 0;
+  margin: 0 0 18px 0;
 
   @include font-title(15px, 24px, 400);
   color: $color-second;
@@ -110,7 +110,7 @@
 
 .top-product__stats-item {
   display: flex;
-  padding: 10px 0 16px 0;
+  padding: 10px 0 10px 0;
   border-bottom: 1px solid #ececec;
 }
 
@@ -155,7 +155,7 @@
 }
 
 .top-product__wrapper-images {
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet) {
     grid-row: 2/4;

@@ -1,6 +1,5 @@
-let toggleBtn = document.getElementById('header__toggle-menu');
-let siteList = document.getElementById('header__site-list');
-
-if(siteList && siteList.classList.contains('header__site-item--close')) {
-  siteList.classList.remove('header__site-item--close');
-}
+let btn = document.querySelector('.header__toggle-menu');
+let siteList = document.querySelector('.header__site-list');
+btn.addEventListener('click', function() {
+  siteList.classList.toggle('.header__site-list--open');
+})

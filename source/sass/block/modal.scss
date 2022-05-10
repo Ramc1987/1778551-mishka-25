@@ -7,10 +7,10 @@
   height: 100%;
   background-color: rgba(255, 255, 255, 0.9);
   visibility: hidden;
+}
 
-  &--active {
-    visibility: visible;
-  }
+.modal__active {
+  visibility: visible;
 }
 
 .modal__window {
