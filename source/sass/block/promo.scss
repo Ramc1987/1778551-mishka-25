@@ -13,7 +13,8 @@
 
   @media (min-width: $desktop-width) {
     @include font-title(53px, 57px);
-    width: 58.4%;
+    width: 55.2%;
+    max-width: 1150px;
     padding: 157px 0 355px 0;
   }
 }

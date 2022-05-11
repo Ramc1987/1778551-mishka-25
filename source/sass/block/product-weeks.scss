@@ -32,14 +32,15 @@
   padding-bottom: 41px;
 
   @media (min-width: $tablet) {
-    width: 94%;
-    max-width: 680px;
+    width: 87%;
+    max-width: 768px;
     padding-bottom: 69px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
-    max-width: 1050px;
+    display: flex;
+    width: 91.3%;
+    max-width: 1150px;
     padding-bottom: 96px;
   }
 }

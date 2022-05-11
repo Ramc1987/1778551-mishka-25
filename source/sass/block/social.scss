@@ -32,4 +32,12 @@
 
 .social__link-icon {
   fill: $color-base;
+
+  &:hover {
+    fill: $hover-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

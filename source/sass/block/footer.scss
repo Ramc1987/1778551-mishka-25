@@ -8,7 +8,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet) {
-    width: 87%;
+    width: 86.4%;
     max-width: 680px;
     padding: 58px 0 51px 0;
     display: flex;
@@ -17,7 +17,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 91%;
+    width: 91.3%;
     max-width: 1050px;
   }
 }
@@ -36,5 +36,13 @@
   @media (min-width: $tablet) {
     display: block;
     height: 34px;
+
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
