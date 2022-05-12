@@ -36,6 +36,7 @@
   @media (min-width: $tablet) {
     @include font-title(43px, 50px);
     padding-top: 22px;
+    margin-bottom: 49px;
   }
 
   @media (min-width: $desktop-width) {
@@ -136,7 +137,7 @@
 }
 
 .contacts__address {
-  margin-bottom: 62px;
+  margin-bottom: 49px;
 }
 
 .contacts__map {
@@ -146,7 +147,7 @@
   border: none;
 
   @media (min-width: $tablet) {
-    margin-bottom: 55px;
+    margin-bottom: 57px;
   }
 
   @media (min-width: $desktop-width) {
@@ -160,6 +161,7 @@
   margin: 0 auto 43px;
 
   @media (min-width: $tablet) {
+    width: 230px;
     margin: 0 auto 57px;
   }
 

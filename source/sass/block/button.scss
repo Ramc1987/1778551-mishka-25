@@ -35,6 +35,7 @@
     @media (min-width: $tablet) {
       grid-column: 2/3;
       grid-row: 1;
+      letter-spacing: 0;
     }
 
     @media (min-width: $desktop-width) {
