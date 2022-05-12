@@ -16,7 +16,7 @@
 
   @media (min-width: $tablet) {
     background-image: url("../img/Promo/tablet/hero-tablet.webp");
-    background-position: 50% 0;
+    background-position: 50% -47px;
 
     &::before {
       content: "";
@@ -188,7 +188,7 @@
   margin: 0;
 
   @media (min-width: $tablet) {
-    margin: 0 auto 39px;
+    margin: 0 auto 41px;
   }
 
   @media (min-width: $desktop-width) {

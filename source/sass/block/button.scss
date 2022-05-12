@@ -29,6 +29,8 @@
 
   &--write {
     width: 100%;
+    padding: 15px 0 13px 0;
+    letter-spacing: 0.7px;
 
     @media (min-width: $tablet) {
       grid-column: 2/3;

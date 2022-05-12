@@ -5,7 +5,7 @@
 .header__nav {
   @media (min-width: $tablet) {
     display: flex;
-    width: 89.3%;
+    width: 87.1%;
     max-width: 1049px;
     flex-wrap: wrap;
     margin-left: auto;
@@ -178,6 +178,7 @@
 
   @media (min-width: $tablet) {
     @include font-title(15px, 24px, 700);
+    letter-spacing: 0.1px;
   }
 
   @media (min-width: $desktop-width) {
@@ -205,7 +206,7 @@
   }
 
   @media (min-width: $tablet) {
-    width: 420px;
+    width: 348px;
     flex-wrap: wrap;
     display: flex;
     justify-content: end;
@@ -347,7 +348,7 @@
   color: $color-base;
 
   @media (min-width: $tablet) {
-    padding: 22px 0 0 0;
+    padding: 20px 0 0 0;
     margin: 0;
 
     @include font-title(15px, 24px, 400);

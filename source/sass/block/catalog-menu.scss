@@ -43,7 +43,7 @@
   }
 
   @media (min-width: $tablet) {
-    margin-bottom: 12px;
+    margin-bottom: 9px;
   }
 
   @media (min-width: $desktop-width) {
@@ -63,11 +63,7 @@
 
   @media (min-width: $tablet) {
     @include font-title(20px, 30px, 700);
-    padding: 25px 34px 36px;
-  }
-
-  @media (min-width: $tablet) {
-    padding: 25px 34px 37px;
+    padding: 25px 36px 37px;
   }
 
   &:hover {

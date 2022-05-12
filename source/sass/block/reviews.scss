@@ -51,7 +51,7 @@
 .reviews__inner {
   width: 81.3%;
   margin: 0 auto;
-  padding-top: 22px;
+  padding-top: 24px;
 
   @media (min-width: $tablet) {
     width: 87%;
@@ -69,7 +69,7 @@
 
 .reviews__title {
   @include font-title(25px, 30px);
-  margin: 0 0 14px 0;
+  margin: 0 0 13px 0;
 
   @media (min-width: $tablet) {
     @include font-title(43px, 50px);
@@ -110,7 +110,7 @@
 
 .reviews__autor-name {
   @include font-title(17px, 24px);
-  margin: 0;
+  margin: 0 0 3px 0;
 
   @media (min-width: $tablet) {
     @include font-title(18px, 24px);
@@ -128,7 +128,7 @@
 }
 
 .reviews__toggle {
-  margin: 0 0 38px 0;
+  margin: 0 0 37px 0;
   display: flex;
   justify-content: space-between;
 

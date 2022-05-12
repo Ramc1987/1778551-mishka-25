@@ -31,7 +31,7 @@
 
 .contacts__title {
   @include font-title(25px, 30px);
-  margin: 0 0 28px 0;
+  margin: 0 0 28.4px 0;
 
   @media (min-width: $tablet) {
     @include font-title(43px, 50px);
@@ -103,7 +103,7 @@
     content: "";
     position: absolute;
     width: 93%;
-    bottom: 0;
+    bottom: 3px;
     left: 0;
     background: rgb(98, 209, 186);
     height: 1px;
@@ -157,7 +157,7 @@
 
 .contacts__wrapper-button {
   width: 260px;
-  margin: 0 auto 39px;
+  margin: 0 auto 43px;
 
   @media (min-width: $tablet) {
     margin: 0 auto 57px;
