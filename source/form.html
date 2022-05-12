@@ -448,6 +448,65 @@
         </div>
       </div>
     </footer>
+    <div class="modal modal--close" aria-hidden="true">
+      <div class="modal__window">
+        <section class="modal__window-content">
+          <h2 class="modal__window-title">Добавить в корзину</h2>
+          <form
+            class="modal__window-size size-product"
+            action="https://echo.htmlacademy.ru/"
+            method="post">
+            <fieldset class="size-product__group-button">
+              <h3 class="size-product__legend-title">
+                Выберите размер:
+              </h3>
+              <ul class="size-product__list">
+                <li class="size-product__item">
+                  <label class="size-product__check">
+                    <input
+                    class="size-product__check-radio"
+                    type="radio"
+                    name="size"
+                    value="S"
+                    checked
+                  />
+                  <span class="size-product__radiobox">s</span>
+                  </label>
+                </li>
+                <li class="size-product__item">
+                  <label class="size-product__check">
+                    <input
+                    class="size-product__check-radio"
+                    type="radio"
+                    name="size"
+                    value="M"
+                  />
+                  <span class="size-product__radiobox">m</span>
+                  </label>
+                </li>
+                <li class="size-product__item">
+                  <label class="size-product__check">
+                    <input
+                    class="size-product__check-radio"
+                    type="radio"
+                    name="size"
+                    value="L"
+                  />
+                  <span class="size-product__radiobox">l</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button
+              class="size-product__button button button--button-add"
+              type="submit">
+              Добавить
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
     <script src="js/mobile-menu.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>
