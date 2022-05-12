@@ -10,11 +10,13 @@ weeksBtn.addEventListener('click', function() {
   }
 })
 
-headerBtn.addEventListener('click', function() {
-  if (modalWindow.classList.toggle('modal--open')) {
-    modalWindow.classList.remove('modal--close')
-  } else {
-    modalWindow.classList.add('modal--close');
-  }
-})
+
+
+// headerBtn.addEventListener('click', function() {
+//   if (modalWindow.classList.toggle('modal--open')) {
+//     modalWindow.classList.remove('modal--close')
+//   } else {
+//     modalWindow.classList.add('modal--close');
+//   }
+// })
 

@@ -143,6 +143,7 @@
     background-image: url("../img/video/play.svg");
     background-repeat: no-repeat;
     z-index: 1;
+    cursor: pointer;
   }
 
   &::after {
@@ -183,6 +184,7 @@
 .promo-video__image {
   display: block;
   width: 100%;
+  cursor: pointer;
 }
 
 .promo-video__button {

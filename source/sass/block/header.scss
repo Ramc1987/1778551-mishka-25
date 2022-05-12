@@ -128,6 +128,10 @@
   @media (min-width: $tablet) {
     background-color: #f1f1f1;
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: #ffffff;
+  }
 }
 
 .header__site-item {
@@ -360,7 +364,7 @@
       bottom: 0;
       height: 46px;
       z-index: -1;
-      background-color: #f9f9f9;
+      background-color: #f1f1f1;
     }
   }
 }

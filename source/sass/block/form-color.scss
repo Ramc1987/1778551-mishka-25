@@ -94,6 +94,14 @@
   height: 38px;
   border: 2px solid $color-second;
 
+  &:hover {
+    border: 2px solid $hover-color;
+  }
+
+  &:active {
+    border: 2px solid rgba(68, 68, 68, 0.3);
+  }
+
   @media (min-width: $tablet) {
     width: 52px;
     height: 52px;

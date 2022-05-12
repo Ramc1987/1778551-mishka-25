@@ -57,7 +57,8 @@
     border: 2px solid $hover-color;
   }
 
-  :focus {
-    border: 2px solid $hover-color;
+  &:focus {
+    outline: 1px solid $hover-color;
+    outline-offset: 2px;
   }
 }
