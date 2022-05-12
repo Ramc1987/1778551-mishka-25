@@ -66,6 +66,11 @@
   appearance: none;
   position: absolute;
 
+  &:focus-visible + .form-type__radiobox {
+    outline: 2px solid #46c1ae;
+    outline-offset: 2px;
+  }
+
   @include font-title(17px, 18px);
 
   @media (min-width: $tablet) {

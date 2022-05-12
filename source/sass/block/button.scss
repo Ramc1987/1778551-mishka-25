@@ -13,6 +13,11 @@
   cursor: pointer;
   transition: 0.35s;
 
+  &:focus-visible {
+    outline: 2px solid #46c1ae;
+    outline-offset: 2px;
+  }
+
   &--order {
     width: 260px;
     font-size: 18px;

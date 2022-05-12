@@ -74,6 +74,11 @@
   appearance: none;
   position: absolute;
 
+  &:focus-visible + .form-color__checkbox {
+    outline: 2px solid #46c1ae;
+    outline-offset: 2px;
+  }
+
   &:checked + .form-color__checkbox {
     background-image: url("../img/icon/Tick.svg");
     background-repeat: no-repeat;
