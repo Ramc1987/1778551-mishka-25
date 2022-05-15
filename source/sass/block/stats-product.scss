@@ -9,7 +9,7 @@
   color: $color-second;
 
   @media (min-width: $tablet) {
-    @include font-title(15px, 30px);
+    @include font-title(15px, 30px, 400);
   }
 }
 

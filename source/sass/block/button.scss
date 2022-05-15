@@ -56,6 +56,8 @@
     @include font-title(18px, 16px);
     width: 100%;
     padding: 18px 0;
+
+    @include font-title(17px, 16px, 700);
   }
 
   &--button-add {
