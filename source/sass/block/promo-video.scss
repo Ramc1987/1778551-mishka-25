@@ -67,7 +67,7 @@
   &--icon-camera {
     background: url("../img/icon/video/video-camera.svg");
     background-repeat: no-repeat;
-    background-position: 34px 9px;
+    background-position: 34px 13px;
 
     @media (min-width: $tablet) {
       background-position: 35px 20px;
@@ -123,6 +123,7 @@
 
 .promo-video__wrapper-images {
   position: relative;
+  margin-bottom: 35px;
 
   @media (min-width: $desktop-width) {
     width: 682px;
@@ -190,6 +191,7 @@
 .promo-video__button {
   width: 192px;
   margin: 0 auto;
+  padding: 16px 0;
 
   @media (min-width: $tablet) {
     width: 584px;

@@ -38,8 +38,7 @@
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/Promo/hero-desktop.webp");
-    background-position: 50%;
-    background-size: contain;
+    background-position: 50% -45px;
 
     &::before {
       content: "";
@@ -48,7 +47,7 @@
       height: 34px;
       left: 0;
       bottom: 0;
-      background: url("../img/line-decor/zigzag-fill-desktop.svg");
+      background: url("../img/line-decor/zigzag-fill-desktop-index.svg");
       z-index: 1;
     }
   }
@@ -80,7 +79,7 @@
 
 .main-page__heading {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   background: #f1f1f1;
 
   &--form-page {

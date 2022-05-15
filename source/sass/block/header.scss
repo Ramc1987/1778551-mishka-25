@@ -109,7 +109,7 @@
     position: relative;
     background-color: #f9f9f9;
     flex-grow: 1;
-    width: 347px;
+    width: 400px;
     flex-wrap: wrap;
     display: flex;
     order: 1;
@@ -215,7 +215,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 379px;
+    width: 390px;
     order: 1;
     justify-content: end;
     border-bottom: 1px solid #ececec;
@@ -318,6 +318,10 @@
 
   &:not(:last-child) {
     margin-right: 60px;
+
+    @media (min-width: $desktop-width) {
+      margin-right: 62px;
+    }
   }
 }
 

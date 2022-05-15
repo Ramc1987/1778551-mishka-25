@@ -1,7 +1,7 @@
 .card-list__item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   box-sizing: border-box;
 
   @media (min-width: $tablet) {
@@ -95,6 +95,7 @@
   @include font-title(17px, 24px);
   color: $color-base;
   margin: 0 0 6px 0;
+  padding-right: 36px;
 
   @media (min-width: $tablet) {
     @include font-title(20px, 24px);

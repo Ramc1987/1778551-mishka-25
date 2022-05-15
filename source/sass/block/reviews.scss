@@ -40,7 +40,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 54.3%;
+    width: 91.3%;
     max-width: 1150px;
     display: flex;
     justify-content: end;
@@ -76,6 +76,10 @@
     @include font-title(43px, 50px);
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    @include font-title(53px, 57px, 700);
+  }
 }
 
 .reviews__list {
@@ -86,7 +90,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 100px 0 0;
+    padding: 0 70px 0 0;
   }
 }
 
@@ -148,6 +152,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
-    padding-top: 125px;
+    padding-top: 111px;
+    margin-bottom: 65px;
   }
 }
