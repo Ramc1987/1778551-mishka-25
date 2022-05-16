@@ -24,10 +24,11 @@
     max-width: 1050px;
     min-width: 1050px;
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 682px 1fr;
     grid-template-rows: auto 1fr;
+    gap: 0 80px;
     padding: 0;
-    margin: 0 auto 93px;
+    margin: 0 auto 105px;
   }
 
   &:hover {
@@ -61,7 +62,7 @@
     width: 178px;
     height: 80px;
     margin: 0;
-    padding: 98px 0 0 21px;
+    padding: 98px 0 0 0;
   }
 
   &--icon-camera {
@@ -74,7 +75,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      background-position: 21px 48px;
+      background-position: 0 48px;
     }
   }
 }
@@ -107,8 +108,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
-    padding: 0 0 0 21px;
+    margin: -5px 0 0 0;
+    padding: 0;
     width: 252px;
     grid-column: 2/3;
     grid-row: 2;
@@ -204,9 +205,9 @@
   @media (min-width: $desktop-width) {
     width: 230px;
     height: 52px;
-    margin-left: 79px;
+    margin: 0 0 57px 0;
     grid-column: 2/3;
     grid-row: 2;
-    align-self: self-end;
+    align-self: flex-end;
   }
 }
