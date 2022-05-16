@@ -21,6 +21,11 @@
     margin: 0 125px 0 0;
     padding: 17px 0 0 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 74px 0 0;
+    padding: 18px 0 0 0;
+  }
 }
 
 .data-users__list {
@@ -31,6 +36,10 @@
   @media (min-width: $tablet) {
     margin: 0 0 50px 0;
     width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 75.2%;
   }
 }
 

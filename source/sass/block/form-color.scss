@@ -21,6 +21,10 @@
     margin: 0 114px 0 0;
     padding: 67px 0 0 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 61px 0 0;
+  }
 }
 
 .form-color__list {
@@ -34,6 +38,11 @@
     margin: 0 0 26px 0;
     padding: 50px 0 0 0;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 83.5%;
+    margin-bottom: 26px;
   }
 }
 
@@ -54,6 +63,10 @@
 
   @media (min-width: $desktop-width) {
     width: 248px;
+
+    &:not(:last-child) {
+      margin-bottom: 28px;
+    }
   }
 }
 
@@ -67,6 +80,10 @@
   @media (min-width: $tablet) {
     @include font-title(19px, 18px);
     padding: 17px 91px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 91px;
   }
 }
 
