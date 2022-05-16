@@ -15,17 +15,34 @@
   margin: 0 auto;
 
   @media (min-width: $tablet) {
+    position: relative;
     width: 87%;
     max-width: 680px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 47px;
+      height: 81px;
+      top: 0;
+      right: 0;
+      background-image: url("../img/line-decor/flag.svg");
+    }
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     width: 438px;
     padding-left: 138px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: end;
+
+    &::before {
+      top: 60px;
+      left: 166px;
+    }
   }
 }
 
