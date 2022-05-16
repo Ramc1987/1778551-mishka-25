@@ -18,7 +18,8 @@
   margin: 0 0 30px 0;
 
   @media (min-width: $tablet) {
-    margin: 0 101px 0 0;
+    margin: 0 134px 0 0;
+    padding-top: 18px;
   }
 }
 
@@ -28,7 +29,7 @@
   list-style: none;
 
   @media (min-width: $tablet) {
-    margin: 0 0 50px 0;
+    margin: 0 0 24px 0;
   }
 }
 
@@ -37,27 +38,31 @@
   display: flex;
   align-items: center;
   width: 260px;
-  margin-bottom: 11px;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet) {
-    margin-bottom: 24px;
+    margin-bottom: 26px;
+    width: 432px;
   }
 }
 
 .form-type__check {
   margin: 0;
   display: flex;
-  padding: 0 0 0 61px;
+  padding: 6px 0 0 61px;
+
+  @include font-title(17px, 18px, 700);
 
   @media (min-width: $tablet) {
-    padding: 0 0 0 82px;
+    @include font-title(19px, 18px, 700);
+    padding: 16px 0 17px 77px;
   }
 
   &--kids {
-    padding: 11px 0 11px 61px;
+    padding: 11px 0 14px 61px;
 
     @media (min-width: $tablet) {
-      padding: 16px 0 16px 82px;
+      padding: 16px 0 16px 77px;
     }
   }
 }
@@ -85,8 +90,8 @@
 .form-type__radiobox {
   position: absolute;
   top: 0;
-  width: 42px;
-  height: 42px;
+  width: 36px;
+  height: 37px;
   border: 2px solid $color-second;
   border-radius: 50%;
   margin-left: -61px;
@@ -102,16 +107,16 @@
   }
 
   @media (min-width: $tablet) {
-    width: 52px;
-    height: 52px;
-    margin-left: -82px;
+    width: 46px;
+    height: 46px;
+    margin-left: -77px;
   }
 
   &::before {
     content: "";
     position: absolute;
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     background-color: $decor-color;
     border-radius: 50%;
     top: 50%;

@@ -18,7 +18,7 @@
   margin: 0 0 29px 0;
 
   @media (min-width: $tablet) {
-    margin: 0 97px 0 0;
+    margin: 0 125px 0 0;
     padding: 17px 0 0 0;
   }
 }
@@ -68,8 +68,12 @@
 .data-users__field-name {
   margin: 0;
   border: none;
-  padding: 17px 0;
+  padding: 18.2px 0;
   box-shadow: inset 0 -2px 0 $color-base;
+
+  &::placeholder {
+    @include font-title(17px, 18px, 400);
+  }
 
   &:hover {
     box-shadow: inset 0 -2px 0 $hover-color;
@@ -82,5 +86,11 @@
 
   @media (min-width: $tablet) {
     width: 100%;
+    padding: 18px 0 19px 18px;
+
+    &::placeholder {
+      @include font-title(19px, 18px, 400);
+      padding: 4px 0 0 0;
+    }
   }
 }

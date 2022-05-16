@@ -33,7 +33,7 @@
 
 .service-form__contacts {
   @media (min-width: $tablet) {
-    padding: 50px 0 50px 0;
+    padding: 43px 0 30px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,7 +47,6 @@
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
     justify-content: space-between;
   }
 
@@ -65,10 +64,22 @@
 }
 
 .service-form__required-text {
+  @include font-title(14px, 16px, 400);
   display: block;
   margin: 0 0 30px 0;
 
   @media (min-width: $tablet) {
+    @include font-title(17px, 30px, 400);
+    color: $color-second;
     margin: 0;
+    padding-top: 11px;
+  }
+}
+
+.service-form__button {
+  margin-bottom: 55px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 48px;
   }
 }

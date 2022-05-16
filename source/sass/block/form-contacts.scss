@@ -21,7 +21,11 @@
 }
 
 .form-contacts__item {
-  margin-bottom: 34px;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 20px;
+  }
 }
 
 .form-contacts__title {
@@ -46,7 +50,7 @@
     margin: 0;
 
     @media (min-width: $tablet) {
-      margin-right: 105px;
+      margin-right: 136px;
     }
 
     @media (min-width: $desktop-width) {
@@ -58,7 +62,8 @@
     margin: 0;
 
     @media (min-width: $tablet) {
-      margin-right: 79px;
+      margin-right: 90px;
+      width: 79px;
     }
 
     @media (min-width: $desktop-width) {
@@ -81,11 +86,11 @@
 
   &--contact-phone {
     @include font-title(17px, 18px, 400);
-    padding: 14px 0 20px 0;
+    padding: 18px 0 20px 0;
 
     @media (min-width: $tablet) {
       @include font-title(19px, 18px, 400);
-      padding: 14px 0 20px 17px;
+      padding: 17px 0 16px 17px;
       width: 77%;
     }
 
@@ -96,11 +101,11 @@
 
   &--contact-email {
     @include font-title(17px, 18px, 400);
-    padding: 16px 0 18px 0;
+    padding: 20px 0 18px 0;
 
     @media (min-width: $tablet) {
       @include font-title(19px, 18px, 400);
-      padding: 15px 0 19px 18px;
+      padding: 15px 0 15px 18px;
       width: 77%;
     }
 
