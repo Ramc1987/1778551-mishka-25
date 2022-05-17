@@ -189,6 +189,16 @@
   display: block;
   width: 100%;
   cursor: pointer;
+
+  @media (min-width: $tablet) {
+    width: 668px;
+    height: 455px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 682px;
+    height: 455px;
+  }
 }
 
 .promo-video__button {

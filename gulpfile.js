@@ -14,7 +14,7 @@ import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
 
 // Styles
-export const styles = () => {
+const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
@@ -29,7 +29,7 @@ export const styles = () => {
 
 //Html
 
-export const html = () => {
+const html = () => {
   return gulp.src('source/*.html')
   .pipe(htmlmin({collapseWhitespace: true}))
   .pipe(gulp.dest('build'));
@@ -45,14 +45,14 @@ const scripts = () => {
 
 //Image
 
-const optimazeImages = () => {
+const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(squoosh())
   .pipe(gulp.dest('build/img'));
 }
 
 
-export const copyImages = () => {
+const copyImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(squoosh())
   .pipe(gulp.dest('build/img'));
@@ -60,7 +60,7 @@ export const copyImages = () => {
 
 //Webp
 
-export const createWebp = () => {
+const createWebp = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(squoosh({
     webp: {}
@@ -96,7 +96,7 @@ const copy = (done) => {
   done();
 }
 
-export const clean = () => {
+const clean = () => {
   return del('build');
 };
 
@@ -114,14 +114,45 @@ const server = (done) => {
   done();
 }
 
+//Reload
+
+const reload = (done) => {
+  browser.reload();
+  done();
+}
+
 // Watcher
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
+  gulp.watch('source/js/*.js', gulp.series(scripts));
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
+//Build
+
+const build = gulp.series(
+  clean,
+  copy,
+  optimizeImages,
+  gulp.parallel(
+    styles,
+    html,
+    scripts,
+    svg,
+    sprite,
+    createWebp
+  ),
+);
+
+//Default
 
 export default gulp.series(
-  html, styles, server, watcher
+  clean, copy, copyImages,
+  gulp.parallel(
+    styles, html, scripts, svg, sprite, createWebp
+  ),
+  gulp.series(
+    server, watcher
+  )
 );
