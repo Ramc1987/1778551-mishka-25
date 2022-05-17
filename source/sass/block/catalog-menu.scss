@@ -57,6 +57,12 @@
   padding: 24px 30px 31px;
   cursor: pointer;
 
+  &:focus-visible {
+    outline: 2px solid #46c1ae;
+    outline-offset: 2px;
+    z-index: 10;
+  }
+
   @include font-title(19px, 24px);
   color: #ffffff;
   text-decoration: none;

@@ -48,10 +48,27 @@
 .card-list__link {
   text-decoration: none;
   display: block;
+
+  &:focus-visible {
+    outline: 2px solid #46c1ae;
+    outline-offset: 2px;
+  }
+}
+
+.card-list__link-backet {
+  &:focus-visible {
+    outline: 2px solid #46c1ae;
+    outline-offset: 2px;
+  }
 }
 
 .card-list__icon-basket {
   fill: rgb(0, 0, 0, 0.2);
+
+  &:focus-visible {
+    outline: 2px solid #46c1ae;
+    outline-offset: 2px;
+  }
 
   &:hover {
     fill: $decor-color;

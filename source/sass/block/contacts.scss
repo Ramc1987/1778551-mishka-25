@@ -110,6 +110,11 @@
 .contacts__email-link {
   position: relative;
 
+  &:focus-visible {
+    outline: 2px solid #46c1ae;
+    outline-offset: 2px;
+  }
+
   @include font-title(14px, 30px, 400);
   color: $color-second;
   text-decoration: none;

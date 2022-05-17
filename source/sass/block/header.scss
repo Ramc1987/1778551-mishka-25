@@ -62,6 +62,11 @@
     opacity: 0.3;
   }
 
+  &:focus-visible {
+    outline: 2px solid #46c1ae;
+    z-index: 10;
+  }
+
   @media (min-width: $tablet) {
     margin: 0;
     padding: 22px 0 20px 0;
@@ -173,6 +178,12 @@
 .header__site-link {
   text-decoration: none;
 
+  &:focus-visible {
+    outline: 2px solid #46c1ae;
+    outline-offset: 2px;
+    z-index: 10;
+  }
+
   @include font-title;
   color: $color-base;
 
@@ -259,6 +270,11 @@
 .header__user-link {
   color: $color-base;
   text-decoration: none;
+
+  &:focus-visible {
+    outline: 2px solid #46c1ae;
+    outline-offset: 2px;
+  }
 }
 
 .header__link-icon {
