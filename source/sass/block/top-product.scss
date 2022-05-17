@@ -195,5 +195,14 @@
 
 .top-product__item-image {
   display: block;
-  width: auto;
+
+  @media (min-width: $tablet) {
+    width: 334px;
+    height: 404px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+    height: 636px;
+  }
 }
