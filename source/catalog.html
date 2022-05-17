@@ -12,7 +12,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
     <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
@@ -144,21 +144,13 @@
               <a class="card-list__link" href="#">
                 <div class="card-list__wrapper-image">
                   <picture>
-                    <source
-                      media="(min-width: 1050px)"
-                      srcset="
-                        ../img/Content/products-cards/photo-1-desktop.webp
-                      "
-                    />
-                    <source
-                      media="(min-width: 680px)"
-                      srcset="../img/Content/products-cards/photo-1-tablet.webp"
-                    />
-                    <img
-                      class="card-list__image"
-                      src="../img/Content/products-cards/photo-1-mobile.webp"
-                      alt="Зайчик-попрыгайчик"
-                    />
+                    <source type="image/webp" media="(min-width: 1150px)" srcset="./img/Content/products-cards/photo-1-desktop@1x.webp 1x, ./img/Content/products-cards/photo-1-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/Content/products-cards/photo-1-tablet@1x.webp 1x, ./img/Content/products-cards/photo-1-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="./img/Content/products-cards/photo-1-mobile@1x.webp 1x, ./img/Content/products-cards/photo-1-mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1150px)" srcset=" ./img/Content/products-cards/photo-1-desktop@1x.jpg 1x, ./img/Content/products-cards/photo-1-desktop@2x.jpg 2x"/>
+                    <source media="(min-width: 768px)" srcset="./img/Content/products-cards/photo-1-tablet@1x.jpg 1x, ./img/Content/products-cards/photo-1-tablet@2x.jpg 2x"/>
+                    <img class="card-list__image" src="./img/Content/products-cards/photo-1-mobile@1x.jpg" srcset="./img/Content/products-cards/photo-1-mobile@2x.jpg 2x" width="260" height="195" loading="lazy" alt="Зайчик-попрыгайчик"/>
                   </picture>
                 </div>
               </a>
@@ -189,22 +181,13 @@
             <li class="card-list__item">
               <a class="card-list__link" href="#">
                 <picture>
-                  <source
-                    media="(min-width: 1050px)"
-                    srcset="
-                      ../img/Content/products-cards/photo-2-desktop.webp    1x,
-                      ../img/Content/products-cards/photo-2-desktop@2x.webp 2x"/>
-                  <source
-                    media="(min-width: 680px)"
-                    srcset="
-                      ../img/Content/products-cards/photo-2-tablet.webp    1x,
-                      ../img/Content/products-cards/photo-2-tablet@2x.webp 2x"/>
-                  <img
-                    class="card-list__image"
-                    src="../img/Content/products-cards/photo-2-mobile.webp"
-                    srcset="
-                      ../img/Content/products-cards/photo-2-mobile@2x.webp 2x"
-                    alt="Зайчик-попрыгайчик"/>
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="./img/Content/products-cards/photo-2-desktop@1x.webp 1x, ./img/Content/products-cards/photo-2-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/Content/products-cards/photo-2-tablet@1x.webp 1x, ./img/Content/products-cards/photo-2-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/Content/products-cards/photo-2-mobile@1x.webp 1x, ./img/Content/products-cards/photo-2-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1150px)" srcset="./img/Content/products-cards/photo-2-desktop@1x.jpg 1x, ./img/Content/products-cards/photo-2-desktop@2x.jpg 2x"/>
+                  <source media="(min-width: 768px)" srcset="./img/Content/products-cards/photo-2-tablet@1x.jpg 1x, ./img/Content/products-cards/photo-2-tablet@2x.jpg 2x"/>
+                  <img class="card-list__image" src="./img/Content/products-cards/photo-2-mobile@1x.jpg" srcset="./img/Content/products-cards/photo-2-mobile@2x.jpg 2x" width="260" height="195"  loading="lazy" alt="Корзинка для белья"/>
                 </picture>
               </a>
               <div class="card-list__content-wrapper">
@@ -234,21 +217,13 @@
             <li class="card-list__item">
               <a class="card-list__link" href="#">
                 <picture>
-                  <source
-                    media="(min-width: 1050px)"
-                    srcset="
-                      ../img/Content/products-cards/photo-3-desktop.webp    1x,
-                      ../img/Content/products-cards/photo-3-desktop@2x.webp 2x"/>
-                  <source
-                    media="(min-width: 680px)"
-                    srcset="
-                      ../img/Content/products-cards/photo-3-tablet.webp    1x,
-                      ../img/Content/products-cards/photo-3-tablet@2x.webp 2x"/>
-                  <img class="card-list__image"
-                    src="../img/Content/products-cards/photo-3-mobile.webp"
-                    srcset="
-                      ../img/Content/products-cards/photo-3-mobile@2x.webp 2x"
-                    alt="Зайчик-попрыгайчик"/>
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="./img/Content/products-cards/photo-3-desktop@1x.webp 1x, ./img/Content/products-cards/photo-3-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/Content/products-cards/photo-3-tablet@1x.webp 1x, ./img/Content/products-cards/photo-3-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/Content/products-cards/photo-3-mobile@1x.webp 1x, ./img/Content/products-cards/photo-3-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1150px)" srcset="./img/Content/products-cards/photo-3-desktop@1x.jpg 1x, ./img/Content/products-cards/photo-3-desktop@2x.jpg 2x"/>
+                  <source media="(min-width: 768px)" srcset="./img/Content/products-cards/photo-3-tablet@1x.jpg 1x, ./img/Content/products-cards/photo-3-tablet@2x.jpg 2x"/>
+                  <img class="card-list__image" src="./img/Content/products-cards/photo-3-mobile@1x.jpg" srcset=" ./img/Content/products-cards/photo-3-mobile@2x.jpg 2x" width="260" height="195" loading="lazy" alt="Большая корзинка для игрушек"/>
                 </picture>
               </a>
               <div class="card-list__content-wrapper">
@@ -285,21 +260,13 @@
           </h2>
           <div class="promo-video__wrapper-images">
             <picture>
-              <source
-                media="(min-width: 1050px)"
-                srcset="
-                  ../img/video/video-desktop.webp    1x,
-                  ../img/video/video-desktop@2x.webp 2x"/>
-              <source
-                media="(min-width: 680px)"
-                srcset="
-                  ../img/video/video-tablet.webp    1x,
-                  ../img/video/video-tablet@2x.webp 2x"/>
-              <img
-                class="promo-video__image"
-                src="../img/video/video-mobile.webp"
-                srcset="../img/video/video-mobile@2x.webp 2x"
-                alt="Видео производства"/>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="./img/video/video-desktop@1x.webp 1x, ./img/video/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./img/video/video-tablet@1x.webp 1x, ./img/video/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/video/video-mobile@1x.webp 1x, ./img/video/video-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1150px)" srcset=" ./img/video/video-desktop@1x.jpg 1x, ./img/video/video-desktop@2x.jpg 2x"/>
+              <source media="(min-width: 768px)" srcset="./img/video/video-tablet@1x.jpg 1x, ./img/video/video-tablet@2x.jpg 2x"/>
+              <img class="promo-video__image" src="./img/video/video-mobile@1x.jpg" srcset="./img/video/video-mobile@2x.jpg 2x" width="260" height="150" alt="Видео производства"/>
             </picture>
           </div>
           <p class="promo-video__description-text">

@@ -27,14 +27,14 @@
   padding-bottom: 51px;
 
   @media (min-width: $tablet) {
-    background: url("../img/decor-fon/review-tablet.webp") no-repeat;
+    background: url("../img/Decor-review/review@1x.jpg") no-repeat;
     max-width: 768px;
     height: 457px;
     margin: 0 auto;
     padding-bottom: 85px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/decor-fon/review@2x.webp");
+      background-image: url("../img/Decor-review/review@2x.jpg");
       background-repeat: no-repeat;
     }
   }
