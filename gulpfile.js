@@ -6,6 +6,10 @@ import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import autoprefixer from 'autoprefixer';
 import squoosh from 'gulp-libsquoosh';
+import svgstore from 'gulp-svgstore';
+import svgo from 'gulp-svgmin';
+import del from 'del';
+import terser from 'gulp-terser';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
 
@@ -63,6 +67,38 @@ export const createWebp = () => {
   }))
   .pipe(gulp.dest('build/img'))
 }
+
+//SVG
+
+const svg = () =>
+gulp.src(['source/img/**/*.svg', '!source/img/Icons-svg/*.svg'])
+.pipe(svgo())
+.pipe(gulp.dest('build/img'));
+
+const sprite = () => {
+  return gulp.src('source/img/Icons-svg/*.svg')
+  .pipe(svgo())
+  .pipe(svgstore({
+    inLineSvg: true
+  }))
+  .pipe(rename('sprite.svg'))
+  .pipe(gulp.dest('build/img'));
+}
+
+const copy = (done) => {
+  gulp.src([
+    'source/fonts/*.{woff2,woff}',
+    'source/*.ico',
+  ], {
+    base: 'source'
+  })
+  .pipe(gulp.dest('build'))
+  done();
+}
+
+export const clean = () => {
+  return del('build');
+};
 
 // Server
 
