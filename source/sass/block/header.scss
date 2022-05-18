@@ -41,12 +41,23 @@
 .header__toggle-menu {
   padding: 0;
   border: none;
-  background: url("../img/menu.svg") no-repeat center;
   width: 20px;
   height: 14px;
   position: absolute;
   top: 32px;
   right: 31px;
+
+  &--close {
+    background: url("../img/menu.svg") no-repeat center;
+  }
+
+  &--open {
+    width: 21px;
+    height: 20px;
+    top: 28px;
+    right: 30px;
+    background: url("../img/menu-close.svg") no-repeat center;
+  }
 
   @media (min-width: $tablet) {
     display: none;

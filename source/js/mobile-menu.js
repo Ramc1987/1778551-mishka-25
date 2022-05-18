@@ -1,7 +1,14 @@
 let btn = document.querySelector('.header__toggle-menu');
 let siteList = document.querySelector('.header__site-list');
-let userList = document.querySelector('.header__user-list')
+let userList = document.querySelector('.header__user-list');
 
+btn.addEventListener('click', function () {
+  if (btn.classList.toggle('header__toggle-menu--open')) {
+    btn.classList.remove('header__toggle-menu--close')
+  } else {
+    btn.classList.add('header__toggle-menu--close');
+  }
+})
 
 btn.addEventListener('click', function() {
   if (siteList.classList.toggle('header__site-list--open')) {
