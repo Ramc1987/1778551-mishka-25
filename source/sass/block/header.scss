@@ -41,7 +41,9 @@
 .header__toggle-menu {
   padding: 0;
   border: none;
-  background: transparent;
+  background: url("../img/menu.svg") no-repeat center;
+  width: 20px;
+  height: 14px;
   position: absolute;
   top: 32px;
   right: 31px;
