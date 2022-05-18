@@ -247,8 +247,16 @@
     fill: $hover-color;
   }
 
-  &:active .header__user-link {
-    color: rgba(0, 0, 0, 0.3);
+  &:active .header__link-icon {
+    opacity: 0.3;
+  }
+
+  &:hover .header__text-basket {
+    opacity: 0.6;
+  }
+
+  &:active .header__text-basket {
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet) {
