@@ -65,7 +65,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 68px;
+    max-width: 1150px;
+    margin: 0 auto 68px;
+  }
+}
+
+.main-page__advantages {
+  @media (min-width: $desktop-width) {
+    max-width: 1150px;
+    margin: 0 auto;
   }
 }
 
@@ -77,7 +85,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 71px;
+    max-width: 1150px;
+    margin: 0 auto 71px;
+  }
+}
+
+.main-page__contacts {
+  @media (min-width: $desktop-width) {
+    max-width: 1150px;
+    margin: 71px auto 48px;
   }
 }
 

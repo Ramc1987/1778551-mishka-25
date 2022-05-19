@@ -210,7 +210,7 @@
 .top-product__item-image {
   display: block;
   width: 100%;
-  object-fit: cover;
+  object-fit: none;
 
   @media (min-width: $tablet) {
     width: 334px;
