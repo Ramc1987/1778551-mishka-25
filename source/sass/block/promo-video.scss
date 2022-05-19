@@ -10,6 +10,7 @@
   border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
   padding: 21px 0 33px 0;
+  box-sizing: border-box;
 
   @media (min-width: $tablet) {
     width: 87%;
@@ -21,6 +22,7 @@
 
   @media (min-width: $desktop-width) {
     border-top: 1px solid #ececec;
+    border-right: 1px solid #ececec;
     max-width: 1050px;
     min-width: 1050px;
     display: grid;

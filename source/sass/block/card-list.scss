@@ -58,6 +58,14 @@
 
 .card-list__link-item {
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .card-list__link-backet {
