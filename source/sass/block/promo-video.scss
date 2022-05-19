@@ -119,6 +119,7 @@
 .promo-video__image-wrapper {
   @media (min-width: $tablet) {
     width: 100%;
+    max-width: 768px;
     order: 2;
   }
 }
@@ -126,6 +127,11 @@
 .promo-video__wrapper-images {
   position: relative;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet) {
+    width: 668px;
+    height: 455px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 682px;
@@ -186,8 +192,9 @@
 }
 
 .promo-video__image {
-  display: block;
   width: 100%;
+  height: auto;
+  display: block;
   cursor: pointer;
 
   @media (min-width: $tablet) {

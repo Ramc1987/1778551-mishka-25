@@ -2,7 +2,7 @@
   margin: 0 auto;
   padding: 0;
   border: none;
-  width: 81%;
+  width: 81.3%;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -56,8 +56,26 @@
 }
 
 .form-contacts__legend {
+  position: relative;
+
   &--legend-phone {
     margin: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 60px;
+      height: 1px;
+      width: 200px;
+      background-color: #62d1ba;
+    }
+
+    @media (min-width: $tablet) {
+      &::before {
+        display: none;
+      }
+    }
 
     @media (min-width: $tablet) {
       margin-right: 136px;
@@ -71,6 +89,23 @@
 
   &--legend-email {
     margin: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 78px;
+      height: 1px;
+      width: 182px;
+      background-color: #62d1ba;
+    }
+
+    @media (min-width: $tablet) {
+      &::before {
+        display: none;
+      }
+    }
 
     @media (min-width: $tablet) {
       margin-right: 90px;

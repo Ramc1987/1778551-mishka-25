@@ -24,10 +24,25 @@
   text-transform: uppercase;
   margin-bottom: 23px;
   display: block;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 78px;
+    height: 1px;
+    width: 200px;
+    background-color: #62d1ba;
+  }
 
   @media (min-width: $tablet) {
     margin: 0 128px 0 0;
     padding: 20px 0 0 0;
+
+    &::before {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -66,7 +81,7 @@
     border: 2px solid $hover-color;
   }
 
-  &:focus {
+  &:focus-within {
     outline: 2px solid $hover-color;
     outline-offset: 2px;
   }

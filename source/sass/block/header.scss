@@ -179,7 +179,7 @@
 
     &:nth-child(1) {
       border-right: 1px solid rgba(0, 0, 0, 0.1);
-      padding-right: 32px;
+      padding-right: 34px;
     }
 
     &:nth-child(2) {
@@ -284,6 +284,16 @@
 
     &:nth-child(2) {
       padding: 32px 0 31px 31px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:nth-child(1) {
+      padding: 36px 32px 34px 32px;
+    }
+
+    &:nth-child(2) {
+      padding: 32px 3px 31px 31px;
     }
   }
 }

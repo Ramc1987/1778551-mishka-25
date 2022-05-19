@@ -1,11 +1,13 @@
 .stats-product {
   width: 78%;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .stats-product__item {
   @include font-title(13px, 30px, 400);
   display: flex;
+  flex-wrap: wrap;
   color: $color-second;
 
   @media (min-width: $tablet) {

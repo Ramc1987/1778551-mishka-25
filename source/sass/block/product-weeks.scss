@@ -28,13 +28,14 @@
 
 .product-weeks__wrapper {
   width: 81.3%;
+  max-width: 320px;
   margin: 0 auto;
   padding-bottom: 41px;
 
   @media (min-width: $tablet) {
     width: 87%;
     max-width: 768px;
-    padding-bottom: 70px;
+    padding-bottom: 69px;
   }
 
   @media (min-width: $desktop-width) {

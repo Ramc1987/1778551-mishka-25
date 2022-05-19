@@ -35,8 +35,9 @@
   border-bottom: 1px solid #ececec;
 
   @media (min-width: $tablet) {
-    padding: 27px 0 25px 34px;
+    padding: 27px 0 22px 34px;
     border-top: 1px solid #ececec;
+    border-right: 1px solid #ececec;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,6 +54,10 @@
     outline: 2px solid #46c1ae;
     outline-offset: 2px;
   }
+}
+
+.card-list__link-item {
+  text-decoration: none;
 }
 
 .card-list__link-backet {
