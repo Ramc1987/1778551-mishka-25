@@ -9,7 +9,7 @@
   margin: 0 auto 58px;
   border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
-  padding: 21px 0 33px 0;
+  padding: 24px 0 33px 0;
   box-sizing: border-box;
   position: relative;
 
@@ -156,6 +156,7 @@
   right: 0;
   left: 0;
   margin: auto;
+  cursor: pointer;
 
   &:hover {
     transform: scale(1.1);
@@ -186,7 +187,6 @@
   width: 100%;
   height: auto;
   display: block;
-  cursor: pointer;
 
   @media (min-width: $tablet) {
     width: 668px;

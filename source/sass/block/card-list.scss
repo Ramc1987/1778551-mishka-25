@@ -1,7 +1,7 @@
 .card-list__item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 31px;
+  margin-bottom: 29px;
   box-sizing: border-box;
 
   @media (min-width: $tablet) {
@@ -31,8 +31,8 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding: 27px 0 26px 28px;
-  border-bottom: 1px solid #ececec;
+  padding: 27px 0 26px 25px;
+  border: 1px solid #ececec;
 
   @media (min-width: $tablet) {
     padding: 27px 0 22px 34px;

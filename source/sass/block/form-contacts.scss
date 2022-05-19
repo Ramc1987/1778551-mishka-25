@@ -60,6 +60,7 @@
 
   &--legend-phone {
     margin: 0;
+    overflow: hidden;
 
     &::before {
       content: "";
@@ -67,7 +68,7 @@
       top: 8px;
       left: 60px;
       height: 1px;
-      width: 200px;
+      width: 100%;
       background-color: #62d1ba;
     }
 
@@ -90,6 +91,7 @@
   &--legend-email {
     margin: 0;
     position: relative;
+    overflow: hidden;
 
     &::before {
       content: "";
@@ -97,7 +99,7 @@
       top: 8px;
       left: 78px;
       height: 1px;
-      width: 182px;
+      width: 100%;
       background-color: #62d1ba;
     }
 
@@ -125,10 +127,10 @@
   border: none;
   box-shadow: inset 0 -2px 0 #000000;
   box-sizing: border-box;
+  outline: none;
 
   &:focus-visible {
-    outline: 2px solid #46c1ae;
-    outline-offset: 2px;
+    box-shadow: inset 0 -2px 0 $hover-color;
   }
 
   &--contact-phone {
