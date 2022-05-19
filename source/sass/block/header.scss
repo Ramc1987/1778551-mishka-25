@@ -251,7 +251,6 @@
   display: flex;
   align-items: center;
   position: relative;
-  padding: 28px 0 26px 32px;
   box-shadow: 0 1px 0 #ececec,
     inset 0 1px 0 #ececec;
   cursor: pointer;
@@ -277,30 +276,24 @@
     box-shadow: none;
 
     &:nth-child(1) {
-      padding: 36px 31px 34px 33px;
       border-left: 1px solid #ececec;
       border-right: 1px solid #ececec;
-    }
-
-    &:nth-child(2) {
-      padding: 32px 0 31px 31px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &:nth-child(1) {
-      padding: 36px 32px 34px 32px;
-    }
-
-    &:nth-child(2) {
-      padding: 32px 3px 31px 31px;
     }
   }
 }
 
 .header__user-link {
+  display: flex;
+  align-items: center;
+  padding: 27.5px 0 27.5px 30px;
   color: $color-base;
   text-decoration: none;
+
+  &--search {
+    @media (min-width: $tablet) {
+      padding: 36px 31px 34px 33px;
+    }
+  }
 
   &:focus-visible {
     outline: 2px solid #46c1ae;
