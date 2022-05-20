@@ -19,9 +19,10 @@
   }
 
   &--order {
+    word-break: break-all;
     width: 100%;
     font-size: 18px;
-    padding: 16px 0 13px 0;
+    padding: 16px 13px 13px 13px;
 
     @media (min-width: $tablet) {
       width: 100%;
@@ -33,6 +34,7 @@
   }
 
   &--write {
+    word-wrap: break-word;
     width: 100%;
     max-width: 320px;
     margin: 0 auto;
