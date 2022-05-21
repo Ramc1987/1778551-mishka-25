@@ -30,12 +30,14 @@
   }
 
   @media (min-width: $tablet) {
+    overflow: visible;
+
     &::before {
       display: none;
     }
 
     margin: 0 125px 0 0;
-    padding: 17px 0 0 0;
+    padding: 20px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -56,6 +58,7 @@
 
   @media (min-width: $desktop-width) {
     width: 75.2%;
+    margin: 0 0 52px 0;
   }
 }
 
@@ -67,6 +70,10 @@
   @media (min-width: $tablet) {
     &:not(:last-child) {
       margin: 0 0 24px 0;
+    }
+
+    &:nth-child(2) {
+      margin: 0 0 22px 0;
     }
   }
 }
@@ -87,6 +94,10 @@
   @media (min-width: $tablet) {
     @include font-title(19px, 18px);
     margin: 0 24px 0 0;
+
+    &:nth-child(1) {
+      margin: 0 25px 0 0;
+    }
   }
 }
 
@@ -111,11 +122,15 @@
 
   @media (min-width: $tablet) {
     width: 100%;
-    padding: 18px 0 19px 18px;
+    padding: 19px 0 19px 18px;
 
     &::placeholder {
       @include font-title(19px, 18px, 400);
       padding: 4px 0 0 0;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 18px 0 19px 18px;
   }
 }

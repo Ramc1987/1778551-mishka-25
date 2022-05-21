@@ -62,9 +62,8 @@
   @media (min-width: $desktop-width) {
     grid-row: 1;
     grid-column: 2/3;
-    width: 178px;
-    height: 80px;
-    margin: 0;
+    max-width: 237px;
+    margin: 0 0 27px 0;
     padding: 98px 0 0 0;
   }
 
@@ -111,12 +110,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: -5px 0 0 0;
+    margin: -5px 0 50px 0;
     padding: 0;
     width: 252px;
-    grid-column: 2/3;
-    grid-row: 2;
   }
+}
+
+.promo-video__content-wrapper {
+  grid-column: 2/3;
+  grid-row: 2;
 }
 
 .promo-video__image-wrapper {

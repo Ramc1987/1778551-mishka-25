@@ -139,7 +139,7 @@
     margin-bottom: 111px;
 
     &--form-page {
-      margin-bottom: 98px;
+      margin-bottom: 100px;
     }
   }
 }
@@ -193,7 +193,7 @@
   @media (min-width: $tablet) {
     @include font-title(17px, 30px, 400);
     width: 87%;
-    margin-bottom: 63px;
+    margin-bottom: 64px;
     max-width: 1050px;
   }
 

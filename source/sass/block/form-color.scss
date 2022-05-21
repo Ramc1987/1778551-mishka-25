@@ -30,6 +30,8 @@
   }
 
   @media (min-width: $tablet) {
+    overflow: visible;
+
     &::before {
       display: none;
     }
@@ -37,7 +39,7 @@
 
   @media (min-width: $tablet) {
     margin: 0 114px 0 0;
-    padding: 67px 0 0 0;
+    padding: 68px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,6 +63,8 @@
   @media (min-width: $desktop-width) {
     width: 83.5%;
     margin-bottom: 26px;
+    align-items: center;
+    padding-top: 48px;
   }
 }
 
@@ -81,9 +85,10 @@
 
   @media (min-width: $desktop-width) {
     width: 248px;
+    margin-bottom: 24px;
 
     &:not(:last-child) {
-      margin-bottom: 28px;
+      margin-bottom: 24px;
     }
   }
 }
@@ -101,7 +106,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 15px 91px;
+    &:nth-child(1) {
+      padding: 17px 91px 18px 91px;
+    }
   }
 }
 

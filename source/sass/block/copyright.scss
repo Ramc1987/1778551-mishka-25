@@ -14,6 +14,8 @@
 
   @include font-title(19px, 18px);
   margin-right: 28px;
+  width: 128px;
+  word-wrap: break-word;
 }
 
 .copyright__link {

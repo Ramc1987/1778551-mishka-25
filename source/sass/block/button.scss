@@ -48,8 +48,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      height: 52px;
-      padding: 0;
+      height: fit-content;
     }
   }
 

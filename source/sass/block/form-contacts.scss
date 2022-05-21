@@ -29,6 +29,10 @@
 
   @media (min-width: $tablet) {
     margin-bottom: 20px;
+
+    &:nth-child(1) {
+      margin-bottom: 19px;
+    }
   }
 
   @media (min-width: $desktop-width) {
