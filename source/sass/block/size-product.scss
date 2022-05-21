@@ -15,8 +15,9 @@
 .size-product__list {
   margin: 0 0 31px 0;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  row-gap: 7px;
   list-style: none;
 }
 

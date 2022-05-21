@@ -32,6 +32,7 @@
 
 .footer__link-logo {
   display: none;
+  transition: 0.2s;
 
   @media (min-width: $tablet) {
     display: block;
