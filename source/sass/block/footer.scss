@@ -10,14 +10,14 @@
   @media (min-width: $tablet) {
     width: 87%;
     max-width: 680px;
-    padding: 58px 0 51px 0;
+    padding: 54px 0 51px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    width: 91%;
+    width: 91.3%;
     max-width: 1050px;
   }
 }
@@ -32,9 +32,23 @@
 
 .footer__link-logo {
   display: none;
+  transition: 0.2s;
 
   @media (min-width: $tablet) {
     display: block;
     height: 34px;
+
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &:focus-visible {
+      outline: 2px solid #46c1ae;
+      outline-offset: 2px;
+    }
   }
 }

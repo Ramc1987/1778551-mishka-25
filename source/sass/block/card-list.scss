@@ -1,11 +1,12 @@
 .card-list__item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   box-sizing: border-box;
 
   @media (min-width: $tablet) {
     flex-direction: row;
+    margin-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,12 +31,13 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding: 27px 0 26px 28px;
-  border-bottom: 1px solid #ececec;
+  padding: 27px 0 26px 25px;
+  border: 1px solid #ececec;
 
   @media (min-width: $tablet) {
-    padding: 27px 0 25px 34px;
+    padding: 27px 0 22px 34px;
     border-top: 1px solid #ececec;
+    border-right: 1px solid #ececec;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,10 +49,39 @@
 .card-list__link {
   text-decoration: none;
   display: block;
+
+  &:focus-visible {
+    outline: 2px solid #46c1ae;
+    outline-offset: 2px;
+  }
+}
+
+.card-list__link-item {
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.card-list__link-backet {
+  &:focus-visible {
+    outline: 2px solid #46c1ae;
+    outline-offset: 2px;
+  }
 }
 
 .card-list__icon-basket {
   fill: rgb(0, 0, 0, 0.2);
+
+  &:focus-visible {
+    outline: 2px solid #46c1ae;
+    outline-offset: 2px;
+  }
 
   &:hover {
     fill: $decor-color;
@@ -66,7 +97,7 @@
   margin: 0 0 17px 0;
 
   @media (min-width: $tablet) {
-    margin: 0 0 173px 0;
+    margin: 0 0 174px 0;
 
     &--three-child {
       margin-bottom: 149px;
@@ -85,9 +116,17 @@
 .card-list__image {
   display: block;
   width: 100%;
+  height: 100%;
 
   @media (min-width: $tablet) {
     margin: 0;
+    width: 334px;
+    height: 334px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 316px;
+    height: 462px;
   }
 }
 
@@ -95,10 +134,13 @@
   @include font-title(17px, 24px);
   color: $color-base;
   margin: 0 0 6px 0;
+  padding-right: 36px;
 
   @media (min-width: $tablet) {
     @include font-title(20px, 24px);
-    width: 262px;
+    width: 240px;
+    margin-bottom: 5px;
+    padding-right: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -110,6 +152,10 @@
   @include font-title(15px,24px);
   color: $color-base;
   margin: 0;
+
+  @media (min-width: $tablet) {
+    @include font-title(17px, 24px, 700);
+  }
 }
 
 .card-list__card-footer {
@@ -122,5 +168,9 @@
   @media (min-width: $tablet) {
     padding: 22px 0 0 0;
     width: 88.1%;
+
+    &--catalog-bigbasket {
+      padding: 25px 0 0 0;
+    }
   }
 }

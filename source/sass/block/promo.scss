@@ -8,12 +8,13 @@
   @media (min-width: $tablet) {
     @include font-title(43px, 50px);
     width: 668px;
-    padding: 154px 0 372px 0;
+    padding: 109px 0 372px 0;
   }
 
   @media (min-width: $desktop-width) {
     @include font-title(53px, 57px);
-    width: 58.4%;
-    padding: 157px 0 355px 0;
+    width: 55.2%;
+    max-width: 1150px;
+    padding: 113px 0 355px 0;
   }
 }

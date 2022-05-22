@@ -5,10 +5,12 @@
 
 .social__list {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 15px;
   padding: 0;
   margin: 0;
+  width: 142px;
 }
 
 .social__item {
@@ -28,8 +30,21 @@
 
 .social__link {
   display: block;
+
+  &:focus-visible {
+    outline: 2px solid #46c1ae;
+    outline-offset: 2px;
+  }
 }
 
 .social__link-icon {
   fill: $color-base;
+
+  &:hover {
+    fill: $hover-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

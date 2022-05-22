@@ -4,13 +4,13 @@
   padding: 0;
 
   @media (min-width: $tablet) {
-    width: 88%;
-    max-width: 680px;
+    width: 87%;
+    max-width: 768px;
     display: flex;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    width: 91.3%;
     max-width: 1050px;
   }
 }
@@ -19,19 +19,43 @@
   width: 100%;
 
   &--light-green {
-    background: $decor-color;
+    background: #63d1bb;
+
+    &:hover {
+      background-color: #59d5bc;
+    }
   }
 
   &--dark-green {
     background: #56c3b2;
+
+    &:hover {
+      background-color: #46c1ae;
+    }
+  }
+
+  &:hover .catalog-menu__link--interior::after {
+    opacity: 0.7;
+  }
+
+  &:active .catalog-menu__link--interior::after {
+    opacity: 0.3;
+  }
+
+  &:hover .catalog-menu__link--toys::after {
+    opacity: 0.7;
+  }
+
+  &:active .catalog-menu__link--toys::after {
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet) {
-    margin-bottom: 12px;
+    margin-bottom: 9px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 17px;
+    margin-bottom: 14px;
   }
 }
 
@@ -41,30 +65,32 @@
   padding: 24px 30px 31px;
   cursor: pointer;
 
+  &:focus-visible {
+    outline: 2px solid #46c1ae;
+    outline-offset: 2px;
+    z-index: 10;
+  }
+
   @include font-title(19px, 24px);
   color: #ffffff;
   text-decoration: none;
 
   @media (min-width: $tablet) {
     @include font-title(20px, 30px, 700);
-    padding: 25px 34px 36px;
-  }
-
-  @media (min-width: $tablet) {
-    padding: 25px 34px 37px;
-  }
-
-  &:hover {
-    transform: translateY(-5px);
-
-    &::before {
-      bottom: -5px;
-      height: 5px;
-    }
+    padding: 25px 36px 37px;
   }
 
   &--interior {
-    background: $decor-color;
+    &:hover {
+      transform: translateY(-5px);
+      background: #59d5bc;
+    }
+
+    &::before {
+      background: #59d5bc;
+      bottom: -5px;
+      height: 5px;
+    }
 
     &::after {
       content: "";
@@ -86,18 +112,27 @@
   }
 
   &--toys {
-    background: #56c3b2;
+    &:hover {
+      transform: translateY(-5px);
+      background: #46c1ae;
+    }
+
+    &::before {
+      background: #46c1ae;
+      bottom: -5px;
+      height: 5px;
+    }
 
     &::after {
       content: "";
       position: absolute;
       background: url("../img/icon/catalog-menu-icon/toy-svg.svg");
       background-repeat: no-repeat;
-      background-size: 40px 62px;
-      right: 36px;
-      top: 23px;
-      width: 40px;
-      height: 62px;
+      background-size: 60px 60px;
+      right: 27px;
+      top: 21px;
+      width: 60px;
+      height: 60px;
       opacity: 0.5;
 
       @media (min-width: $tablet) {

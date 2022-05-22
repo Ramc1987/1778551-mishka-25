@@ -13,8 +13,16 @@
   cursor: pointer;
   transition: 0.35s;
 
+  &:focus-visible {
+    outline: 2px solid #46c1ae;
+    outline-offset: 2px;
+  }
+
   &--order {
-    width: 260px;
+    word-break: break-all;
+    width: 100%;
+    font-size: 18px;
+    padding: 16px 13px 13px 13px;
 
     @media (min-width: $tablet) {
       width: 100%;
@@ -26,30 +34,44 @@
   }
 
   &--write {
+    word-wrap: break-word;
     width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 15px 0 13px 0;
+    letter-spacing: 0.7px;
 
     @media (min-width: $tablet) {
       grid-column: 2/3;
       grid-row: 1;
+      letter-spacing: 0;
     }
 
     @media (min-width: $desktop-width) {
-      height: 52px;
+      height: fit-content;
     }
   }
 
   &--send-order {
     width: 260px;
+    padding: 14px 0;
+
+    @media (min-width: $tablet) {
+      width: 230px;
+    }
   }
 
-  .button--make-order {
+  &--make-order {
     @include font-title(18px, 16px);
     width: 100%;
     padding: 18px 0;
+
+    @include font-title(17px, 16px, 700);
   }
 
-  .button--button-add {
+  &--button-add {
     background: $decor-color;
+    margin-bottom: 46px;
   }
 
   &:hover {

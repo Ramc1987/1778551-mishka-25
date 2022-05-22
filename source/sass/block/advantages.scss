@@ -1,22 +1,24 @@
 .advantages__wrapper {
   width: 81.3%;
-  margin: 0 auto 36px auto;
+  margin: 0 auto 36px;
 
   @media (min-width: $tablet) {
     width: 87%;
     max-width: 680px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 92%;
-    max-width: 1050px;
+    width: 91.3%;
+    max-width: 1150px;
     display: flex;
+    margin-bottom: 29px;
   }
 }
 
 .advantages__inner {
   @media (min-width: $desktop-width) {
-    padding-left: 140px;
+    padding-left: 174px;
   }
 }
 
@@ -26,12 +28,12 @@
 
   @media (min-width: $tablet) {
     @include font-title(43px, 50px);
-    margin: 0 0 41px 0;
+    margin: 0 0 44px 0;
   }
 
   @media (min-width: $desktop-width) {
     @include font-title(53px, 57px);
-    margin: 0 0 39px 0;
+    margin: 0 0 41px 0;
   }
 }
 
@@ -46,7 +48,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    column-gap: 85px;
+    column-gap: 58px;
   }
 }
 
@@ -56,6 +58,7 @@
   &--eco-material {
     background: url("../img/icon/advantages/icon-1.svg");
     background-repeat: no-repeat;
+    background-position: 9px 0;
 
     @media (min-width: $tablet) {
       grid-column: 1;
@@ -77,6 +80,7 @@
   &--like-photo {
     background: url("../img/icon/advantages/icon-3.svg");
     background-repeat: no-repeat;
+    background-position: 7px 5px;
 
     @media (min-width: $tablet) {
       grid-column: 1;
@@ -87,26 +91,37 @@
   &--handwork {
     background: url("../img/icon/advantages/icon-4.svg");
     background-repeat: no-repeat;
+    background-position: 2px 3px;
   }
 
   &--local-support {
     background: url("../img/icon/advantages/icon-5.svg");
     background-repeat: no-repeat;
+    background-position: 0 4px;
   }
 
 
   &--gift-wrap {
     background: url("../img/icon/advantages/icon-6.svg");
     background-repeat: no-repeat;
+    background-position: 4px 2px;
   }
 }
 
 .advantages__item:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 57px;
+  }
 }
 
 .advantages__description {
   @include font-title(17px, 20px);
   margin: 0;
-  padding-top: 47px;
+  padding-top: 54px;
+
+  @media (min-width: $tablet) {
+    @include font-title(20px, 22px, 700);
+  }
 }

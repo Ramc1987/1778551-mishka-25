@@ -1,13 +1,13 @@
 .service-form__type {
   @media (min-width: $desktop-width) {
-    width: 69%;
+    width: 80.7%;
     max-width: 1050px;
   }
 }
 
 .service-form__color {
   @media (min-width: $desktop-width) {
-    width: 69%;
+    width: 80.7%;
     max-width: 1050px;
   }
 }
@@ -26,19 +26,19 @@
 
   @media (min-width: $desktop-width) {
     padding: 50px 0 0 0;
-    width: 69%;
+    width: 80.7%;
     max-width: 1050px;
   }
 }
 
 .service-form__contacts {
   @media (min-width: $tablet) {
-    padding: 50px 0 50px 0;
+    padding: 43px 0 30px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 50px 0 0 0;
-    width: 69%;
+    padding: 42px 0 0 0;
+    width: 80.7%;
     max-width: 1050px;
   }
 }
@@ -47,28 +47,44 @@
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 0 140px;
+    width: 87.7%;
   }
 }
 
 .service-form__field-additionally {
   @media (min-width: $desktop-width) {
-    width: 69%;
+    width: 80.7%;
     max-width: 1050px;
     padding: 50px 0 0 0;
   }
 }
 
 .service-form__required-text {
+  @include font-title(14px, 16px, 400);
   display: block;
   margin: 0 0 30px 0;
 
   @media (min-width: $tablet) {
+    @include font-title(17px, 30px, 400);
+    color: $color-second;
     margin: 0;
+    padding-top: 11px;
+  }
+}
+
+.service-form__button {
+  text-transform: uppercase;
+  margin-bottom: 55px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 114px;
   }
 }

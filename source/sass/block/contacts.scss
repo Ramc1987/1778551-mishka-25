@@ -1,47 +1,65 @@
 .contacts__wrapper-container {
   @media (min-width: $desktop-width) {
-    width: 91%;
-    max-width: 1050px;
+    width: 91.3%;
+    max-width: 1150px;
     display: grid;
     justify-content: end;
     grid-template-columns: 1fr 1fr;
     column-gap: 50px;
-    margin: 71px auto 61px;
+    margin: 74px auto 42px;
   }
 }
 
 .contacts__wrapper {
-  width: 81%;
+  width: 81.3%;
   margin: 0 auto;
 
   @media (min-width: $tablet) {
-    width: 100%;
+    position: relative;
+    width: 87%;
     max-width: 680px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 47px;
+      height: 81px;
+      top: 0;
+      right: 0;
+      background-image: url("../img/line-decor/flag.svg");
+    }
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     width: 438px;
     padding-left: 138px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: end;
+
+    &::before {
+      top: 60px;
+      left: 166px;
+    }
   }
 }
 
 .contacts__title {
   @include font-title(25px, 30px);
-  margin: 0 0 28px 0;
+  margin: 0 0 28.4px 0;
 
   @media (min-width: $tablet) {
     @include font-title(43px, 50px);
     padding-top: 22px;
+    margin-bottom: 49px;
   }
 
   @media (min-width: $desktop-width) {
     @include font-title(53px, 57px, 700);
     width: 300px;
-    padding-top: 78px;
+    padding-top: 81px;
     margin: 0;
   }
 }
@@ -61,6 +79,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 300px;
+    margin-bottom: 62px;
   }
 }
 
@@ -72,11 +91,6 @@
     width: 308px;
     justify-content: flex-start;
   }
-
-  @media (min-width: $desktop-width) {
-    width: auto;
-    display: block;
-  }
 }
 
 .contacts__legend-title {
@@ -87,10 +101,19 @@
     @include font-title(17px, 30px, 400);
     margin-right: 25px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 27px;
+  }
 }
 
 .contacts__email-link {
   position: relative;
+
+  &:focus-visible {
+    outline: 2px solid #46c1ae;
+    outline-offset: 2px;
+  }
 
   @include font-title(14px, 30px, 400);
   color: $color-second;
@@ -103,7 +126,7 @@
     content: "";
     position: absolute;
     width: 93%;
-    bottom: 0;
+    bottom: 3px;
     left: 0;
     background: rgb(98, 209, 186);
     height: 1px;
@@ -112,6 +135,19 @@
       top: 30px;
       width: 100%;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 33px;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    @include font-title(17px, 30px, 400);
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 14px;
   }
 
   &:hover {
@@ -129,42 +165,98 @@
       height: 1px;
     }
   }
-
-  @media (min-width: $tablet) {
-    @include font-title(17px, 30px, 400);
-  }
 }
 
 .contacts__address {
   margin-bottom: 62px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 51px;
+  }
+}
+
+.contacts__wrapper-map {
+  position: relative;
+  max-width: 320px;
+  margin: 0 auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 67px;
+    height: 100px;
+    top: 100px;
+    left: 117px;
+    background: url("../img/icon/map-pin.svg");
+    background-repeat: no-repeat;
+    z-index: 10;
+
+    @media (min-width: $tablet) {
+      top: 130px;
+      left: 317px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 131px;
+      left: 205px;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    max-width: 768px;
+  }
 }
 
 .contacts__map {
   width: 100%;
+  margin: 0 auto 41px;
   display: block;
   margin-bottom: 41px;
   border: none;
 
   @media (min-width: $tablet) {
-    margin-bottom: 55px;
+    width: 768px;
+    height: 457px;
+    margin-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
     width: 527px;
+    height: 457px;
   }
+}
+
+.contacts__map-interactive {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  display: block;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+  }
+}
+
+.contacts__map-interactive--nojs {
+  display: none;
 }
 
 .contacts__wrapper-button {
   width: 260px;
-  margin: 0 auto 39px;
+  margin: 0 auto 41px;
 
   @media (min-width: $tablet) {
+    width: 230px;
     margin: 0 auto 57px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -56px;
-    margin-right: 40px;
+    margin-top: -48px;
+    margin-right: 68px;
   }
 }
