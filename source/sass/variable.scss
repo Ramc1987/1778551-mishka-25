@@ -4,7 +4,7 @@ $decor-color: #63d1bb;
 $hover-color: #62d1ba;
 
 @mixin font-title($fs: 17px, $lh: 24px, $fw: 700) {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: $fw;
   font-size: $fs;
   line-height: $lh;
