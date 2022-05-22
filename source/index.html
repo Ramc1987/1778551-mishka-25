@@ -64,7 +64,7 @@
             </a>
           </li>
           <li class="header__user-item header__user-item--basket">
-            <a class="header__user-link" href="#">
+            <a class="header__user-link" href="#" aria-label="Корзина товара">
               <svg class="header__link-icon header__link-icon--basket" width="21" height="18">
                 <use xlink:href="../img/sprite.svg#basket"></use>
               </svg>
@@ -203,7 +203,7 @@
               <blockquote class="reviews__item slider-item">
                 <p class="reviews__text slider__text">
                   Я молодая мама, но всё равно фотографии не набирали и близко
-                  такого количества лайков, как<br class="reviews__br-text">&nbsp;&nbsp популярных инстамамочек.<br class="reviews__br-text">&nbsp;В
+                  такого количества лайков, как<br class="reviews__br-text">&nbsp;&nbsp;популярных инстамамочек.<br class="reviews__br-text">&nbsp;В
                   отчаянии, я накупила аксессуаров и игрушек в Мишке,<br class="reviews__br-text">&nbsp;и мои
                   фотографии сразу стали более стильными, а также набирают
                   больше лайков!
@@ -219,7 +219,7 @@
                   src="./img/Arrow/huge-arrow-left.svg"
                   width="50"
                   height="26"
-                  alt="Вперед"
+                  alt="Назад"
                 />
               </button>
               <button class="slider__toggle" type="button">
@@ -261,14 +261,15 @@
             </div>
           </div>
           <div class="contacts__wrapper-map">
-            <iframe
-              class="contacts__map"
-              src="https://yandex.ru/map-widget/v1/?um=constructor%3A8da3431ddb455b08c693e9df09c856e2aca824615d52c355188fa1701c0bfcf0&amp;source=constructor"
-              width="320"
-              height="454"
-              allowfullscreen
-              title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"
-            ></iframe>
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="../img/Content/map-desktop@1x.webp 1x, ../img/Content/map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="../img/Content/map-tablet@1x.webp 1x, ../img/Content/map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="../img/Content/map-mobile@1x.webp 1x, ../img/Content/map-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1150px)" srcset="../img/Content/map-desktop@1x.png 1x, ../img/Content/map-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="../img/Content/map-tablet@1x.png 1x, ../img/Content/map-tablet@2x.png 2x">
+              <img class="contacts__map" src="../img/Content/map-mobile@1x.png" srcset="../img/Content/map-mobile@2x.png 2x" width="315" height="454" alt="Карта с адресом компании">
+            </picture>
           </div>
           <div class="contacts__wrapper-button">
             <button class="button button--write" type="button">
@@ -280,7 +281,7 @@
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
-        <a class="footer__link-logo" href="index.html">
+        <a class="footer__link-logo" href="index.html" aria-label="Сайт Мишка">
           <svg class="footer__logo" width="101" height="34">
             <use xlink:href="../img/sprite.svg#logo-footer"></use>
           </svg>
