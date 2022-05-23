@@ -1,6 +1,6 @@
-@import "../sass/viewports.scss";
-@import "../sass/fonts.scss";
 @import "../sass/variables.scss";
+@import "../sass/global.scss";
+@import "../sass/fonts.scss";
 @import "../sass/general-style.scss";
 @import "../sass/block/header.scss";
 @import "../sass/block/main-page.scss";
@@ -29,20 +29,3 @@
 @import "../sass/block/field-additionally.scss";
 @import "../sass/block/service-form.scss";
 @import "../sass/block/promo.scss";
-
-
-html {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 17px;
-  color: $color-base;
-}
