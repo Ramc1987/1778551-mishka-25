@@ -5,8 +5,9 @@
 
   @media (min-width: $tablet) {
     width: 87%;
-    max-width: 768px;
+    max-width: 680px;
     display: flex;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
@@ -52,10 +53,12 @@
 
   @media (min-width: $tablet) {
     margin-bottom: 9px;
+    width: 340px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 14px;
+    width: 525px;
   }
 }
 

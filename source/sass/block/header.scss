@@ -128,16 +128,26 @@
   }
 
   @media (min-width: $tablet) {
-    position: relative;
     background-color: #f9f9f9;
     flex-grow: 1;
     width: 400px;
     flex-wrap: wrap;
     display: flex;
     order: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      left: 0;
+      height: 100%;
+      z-index: -1;
+      background-color: #f9f9f9;
+    }
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     width: 386px;
     align-items: center;
     order: 0;
@@ -149,6 +159,16 @@
 .header__site-list-catalog {
   @media (min-width: $tablet) {
     background-color: #f1f1f1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      left: 0;
+      height: 100%;
+      z-index: -1;
+      background-color: #f1f1f1;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -339,6 +359,20 @@
   }
 }
 
+.header__stock-list-catalog {
+  @media (min-width: $desktop-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      left: 0;
+      height: 100%;
+      z-index: -1;
+      background-color: #f1f1f1;
+    }
+  }
+}
+
 .header__stock-list {
   margin: 0;
   padding: 1px;
@@ -349,7 +383,7 @@
   @media (min-width: $desktop-width) {
     flex-wrap: wrap;
     display: flex;
-    flex-grow: 1;
+    width: 768px;
     order: 1;
 
     &::before {
@@ -357,8 +391,7 @@
       position: absolute;
       width: 100%;
       left: 0;
-      bottom: 0;
-      height: 47px;
+      height: 100%;
       z-index: -1;
       background-color: #f9f9f9;
     }
