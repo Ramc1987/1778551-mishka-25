@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#ffffff">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <link rel="preload" href="/build/fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="/build/js/mobile-menu.js" as="script" crossorigin="anonymous">
-    <link rel="preload" href="/build/js/modal.js" as="script" crossorigin="anonymous">
-    <link rel="preload" href="/build/css/style.min.css" as="style" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" sizes="32x32" href="/favicon.ico"/>
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png" />
@@ -25,21 +22,9 @@
         <div class="header__control-inner">
           <a class="header__logo" href="index.html">
             <picture>
-              <source
-                media="(min-width: 1150px)"
-                srcset="img/logo/mishka-logo-desktop.svg"
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="img/logo/mishka-logo-tablet.svg"
-              />
-              <img
-                class="header__logo-image"
-                src="img/logo/mishka-logo-mobile.svg"
-                width="86"
-                height="35"
-                alt="Пример"
-              />
+              <source media="(min-width: 1150px)" srcset="img/logo/mishka-logo-desktop.svg"/>
+              <source media="(min-width: 768px)" srcset="img/logo/mishka-logo-tablet.svg"/>
+              <img class="header__logo-image" src="img/logo/mishka-logo-mobile.svg" width="86" height="35" alt="Пример"/>
             </picture>
           </a>
         </div>
@@ -72,7 +57,7 @@
             </a>
           </li>
         </ul>
-        <ul class="header__stock-list">
+        <ul class="header__stock-list header__stock-list-catalog">
           <li class="header__stock-item">
             <a class="header__stock-link" href="#">Новые поступления</a>
           </li>
@@ -93,35 +78,20 @@
             Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
             форму заказа и мы свяжемся с вами, чтобы уточнить детали.
           </p>
-          <form
-            class="main-page__form-wrapper service-form"
-            method="post"
-            action="https://echo.htmlacademy.ru/"
-          >
+          <form class="main-page__form-wrapper service-form" method="post" action="https://echo.htmlacademy.ru/">
             <fieldset class="service-form__type form-type">
               <h2 class="form-type__title">Тип</h2>
               <ul class="form-type__list">
                 <li class="form-type__item">
                   <label class="form-type__check">
-                    <input
-                      type="radio"
-                      class="form-type__check-radio"
-                      name="type"
-                      value="accessories"
-                      checked
-                    />
+                    <input type="radio" class="form-type__check-radio" name="type" value="accessories" checked/>
                     <span class="form-type__radiobox"></span>
-                    <span class="form-type__title-name">Аксессуар для интерьера </span>
+                    <span class="form-type__title-name">Аксессуар для интерьера</span>
                   </label>
                 </li>
                 <li class="form-type__item">
                   <label class="form-type__check form-type__check--kids">
-                    <input
-                      type="radio"
-                      class="form-type__check-radio"
-                      name="type"
-                      value="kids-toy"
-                    />
+                    <input type="radio" class="form-type__check-radio" name="type" value="kids-toy"/>
                     <span class="form-type__radiobox"></span>
                     Детская игрушка
                   </label>
@@ -134,74 +104,42 @@
                 <ul class="form-color__list">
                   <li class="form-color__item">
                     <label class="form-color__check">
-                      <input
-                        class="form-color__check-input"
-                        type="checkbox"
-                        name="color"
-                        value="white"
-                        checked
-                      />
+                      <input class="form-color__check-input" type="checkbox" name="color" value="white"  checked/>
                       <span class="form-color__checkbox"></span>
                       Белый
                     </label>
                   </li>
                   <li class="form-color__item">
                     <label class="form-color__check">
-                      <input
-                        class="form-color__check-input"
-                        type="checkbox"
-                        name="color"
-                        value="gray"
-                        checked
-                      />
+                      <input class="form-color__check-input" type="checkbox" name="color" value="gray" checked/>
                       <span class="form-color__checkbox"></span>
                       Cерый
                     </label>
                   </li>
                   <li class="form-color__item">
                     <label class="form-color__check">
-                      <input
-                        class="form-color__check-input"
-                        type="checkbox"
-                        name="color"
-                        value="tiffany"
-                      />
+                      <input class="form-color__check-input" type="checkbox" name="color" value="tiffany"/>
                       <span class="form-color__checkbox"></span>
                       Тиффани
                     </label>
                   </li>
                   <li class="form-color__item">
                     <label class="form-color__check">
-                      <input
-                        class="form-color__check-input"
-                        type="checkbox"
-                        name="color"
-                        value="black"
-                      />
+                      <input class="form-color__check-input" type="checkbox" name="color" value="black"/>
                       <span class="form-color__checkbox"></span>
                       Черный
                     </label>
                   </li>
                   <li class="form-color__item">
                     <label class="form-color__check">
-                      <input
-                        class="form-color__check-input"
-                        type="checkbox"
-                        name="color"
-                        value="pink"
-                      />
+                      <input class="form-color__check-input" type="checkbox" name="color" value="pink"/>
                       <span class="form-color__checkbox"></span>
                       Розовый
                     </label>
                   </li>
                   <li class="form-color__item">
                     <label class="form-color__check">
-                      <input
-                        class="form-color__check-input"
-                        type="checkbox"
-                        name="color"
-                        value="orange"
-                      />
+                      <input class="form-color__check-input" type="checkbox" name="color" value="orange"/>
                       <span class="form-color__checkbox"></span>
                       Оранжевый
                     </label>
@@ -215,36 +153,20 @@
                 <li class="data-users__item">
                   <label class="data-users__user-title">
                     <span class="data-users__title-name">Имя:</span>
-                    <input
-                      class="data-users__field-name"
-                      type="text"
-                      name="name"
-                      placeholder="Введите ваше имя*"
-                      required
-                    />
+                    <input class="data-users__field-name" type="text" name="name" placeholder="Введите ваше имя*" required/>
                   </label>
                 </li>
                 <li class="data-users__item">
                   <label class="data-users__user-title">
                     <span class="data-users__title-name">Фамилия:</span>
-                    <input
-                      class="data-users__field-name"
-                      type="text"
-                      name="surname"
-                      placeholder="Укажите фамилию*"
-                      required
+                    <input class="data-users__field-name" type="text" name="surname" placeholder="Укажите фамилию*" required
                     />
                   </label>
                 </li>
                 <li class="data-users__item">
                   <label class="data-users__user-title">
                     <span class="data-users__title-name">Отчество:</span>
-                    <input
-                      class="data-users__field-name"
-                      type="text"
-                      name="middle-name"
-                      placeholder="Отчество, если желаете"
-                    />
+                    <input class="data-users__field-name" type="text" name="middle-name" placeholder="Отчество, если желаете"/>
                   </label>
                 </li>
               </ul>
@@ -255,17 +177,8 @@
                 <ul class="form-contacts__list">
                   <li class="form-contacts__item">
                     <label class="form-contacts__title form-contacts__title--phone">
-                      <span
-                        class="form-contacts__legend form-contacts__legend--legend-phone"
-                        >тел</span
-                      >
-                      <input
-                        class="form-contacts__field-contacts form-contacts__field-contacts--contact-phone"
-                        type="text"
-                        name="user-phone"
-                        placeholder="+7 ХХХ ХХХ ХХ ХХ*"
-                        required
-                      />
+                      <span class="form-contacts__legend form-contacts__legend--legend-phone">тел</span>
+                      <input class="form-contacts__field-contacts form-contacts__field-contacts--contact-phone" type="text" name="user-phone" placeholder="+7 xxx xxx xx xx*" required/>
                       <svg class="form-contacts__field-icons form-contacts__field-icons--phone" width="25" height="24">
                         <use xlink:href="img/sprite.svg#phone"></use>
                       </svg>
@@ -273,17 +186,8 @@
                   </li>
                   <li class="form-contacts__item">
                     <label class="form-contacts__title form-contacts__title--email">
-                      <span
-                        class="form-contacts__legend form-contacts__legend--legend-email"
-                        >E-mail</span
-                      >
-                      <input
-                        class="form-contacts__field-contacts form-contacts__field-contacts--contact-email"
-                        type="email"
-                        name="user-email"
-                        placeholder="Ваш Email*"
-                        required
-                      />
+                      <span class="form-contacts__legend form-contacts__legend--legend-email">E-mail</span>
+                      <input class="form-contacts__field-contacts form-contacts__field-contacts--contact-email" type="email" name="user-email" placeholder="Ваш Email*" required/>
                       <svg class="form-contacts__field-icons form-contacts__field-icons--email" width="32" height="21">
                         <use xlink:href="img/sprite.svg#mail"></use>
                       </svg>
@@ -295,24 +199,11 @@
             <div class="service-form__field-additionally field-additionally">
               <label class="field-additionally__title">
                 <span class="field-additionally__title-name">Доп</span>
-                <textarea
-                  class="field-additionally__field"
-                  name="addititonally to order"
-                  cols="30"
-                  rows="8"
-                  placeholder="Опишите все ваши пожелания к заказу"
-                ></textarea>
+                <textarea class="field-additionally__field" name="addititonally to order" cols="30" rows="7" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </label>
               <div class="service-form__inner">
-                <span class="service-form__required-text">
-                  *Поля обязательны для заполнения
-                </span>
-                <button
-                  class="service-form__button button button--send-order"
-                  type="submit"
-                >
-                  отправить заказ
-                </button>
+                <span class="service-form__required-text">*Поля обязательны для заполнения</span>
+                <button class="service-form__button button button--send-order" type="submit">отправить заказ</button>
               </div>
             </div>
           </form>
@@ -368,47 +259,26 @@
       <div class="modal__window">
         <section class="modal__window-content">
           <h2 class="modal__window-title">Добавить в корзину</h2>
-          <form
-            class="modal__window-size size-product"
-            action="https://echo.htmlacademy.ru/"
-            method="post">
+          <form class="modal__window-size size-product" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="size-product__group-button">
-              <h3 class="size-product__legend-title">
-                Выберите размер:
-              </h3>
+              <h3 class="size-product__legend-title">Выберите размер:</h3>
               <ul class="size-product__list">
                 <li class="size-product__item">
                   <label class="size-product__check">
-                    <input
-                    class="size-product__check-radio"
-                    type="radio"
-                    name="size"
-                    value="S"
-                    checked
-                  />
-                  <span class="size-product__radiobox">s</span>
+                    <input class="size-product__check-radio" type="radio" name="size" value="S" checked/>
+                    <span class="size-product__radiobox">s</span>
                   </label>
                 </li>
                 <li class="size-product__item">
                   <label class="size-product__check">
-                    <input
-                    class="size-product__check-radio"
-                    type="radio"
-                    name="size"
-                    value="M"
-                  />
-                  <span class="size-product__radiobox">m</span>
+                    <input class="size-product__check-radio" type="radio" name="size" value="M"/>
+                    <span class="size-product__radiobox">m</span>
                   </label>
                 </li>
                 <li class="size-product__item">
                   <label class="size-product__check">
-                    <input
-                    class="size-product__check-radio"
-                    type="radio"
-                    name="size"
-                    value="L"
-                  />
-                  <span class="size-product__radiobox">l</span>
+                    <input class="size-product__check-radio" type="radio" name="size" value="L"/>
+                    <span class="size-product__radiobox">l</span>
                   </label>
                 </li>
               </ul>

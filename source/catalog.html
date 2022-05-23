@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#ffffff">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <link rel="preload" href="/build/fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="/build/js/mobile-menu.js" as="script" crossorigin="anonymous">
-    <link rel="preload" href="/build/js/modal.js" as="script" crossorigin="anonymous">
-    <link rel="preload" href="/build/css/style.min.css" as="style" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" sizes="32x32" href="/favicon.ico"/>
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png" />
@@ -25,21 +22,9 @@
         <div class="header__control-inner">
           <a class="header__logo" href="index.html">
             <picture>
-              <source
-                media="(min-width: 1150px)"
-                srcset="img/logo/mishka-logo-desktop.svg"
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="img/logo/mishka-logo-tablet.svg"
-              />
-              <img
-                class="header__logo-image"
-                src="img/logo/mishka-logo-mobile.svg"
-                width="86"
-                height="35"
-                alt="Пример"
-              />
+              <source media="(min-width: 1150px)" srcset="img/logo/mishka-logo-desktop.svg"/>
+              <source media="(min-width: 768px)" srcset="img/logo/mishka-logo-tablet.svg"/>
+              <img class="header__logo-image" src="img/logo/mishka-logo-mobile.svg" width="86" height="35" alt="Пример"/>
             </picture>
           </a>
         </div>
@@ -72,7 +57,7 @@
             </a>
           </li>
         </ul>
-        <ul class="header__stock-list">
+        <ul class="header__stock-list header__stock-list-catalog">
           <li class="header__stock-item">
             <a class="header__stock-link" href="#">Новые поступления</a>
           </li>
@@ -97,7 +82,6 @@
                     <source type="image/webp" media="(min-width: 1150px)" srcset="./img/Content/products-cards/photo-1-desktop@1x.webp 1x, ./img/Content/products-cards/photo-1-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)" srcset="./img/Content/products-cards/photo-1-tablet@1x.webp 1x, ./img/Content/products-cards/photo-1-tablet@2x.webp 2x">
                     <source type="image/webp" srcset="./img/Content/products-cards/photo-1-mobile@1x.webp 1x, ./img/Content/products-cards/photo-1-mobile@2x.webp 2x">
-
                     <source media="(min-width: 1150px)" srcset=" ./img/Content/products-cards/photo-1-desktop@1x.jpg 1x, ./img/Content/products-cards/photo-1-desktop@2x.jpg 2x"/>
                     <source media="(min-width: 768px)" srcset="./img/Content/products-cards/photo-1-tablet@1x.jpg 1x, ./img/Content/products-cards/photo-1-tablet@2x.jpg 2x"/>
                     <img class="card-list__image" src="./img/Content/products-cards/photo-1-mobile@1x.jpg" srcset="./img/Content/products-cards/photo-1-mobile@2x.jpg 2x" width="260" height="195" loading="lazy" alt="Зайчик-попрыгайчик"/>
@@ -136,7 +120,6 @@
                   <source type="image/webp" media="(min-width: 1150px)" srcset="./img/Content/products-cards/photo-2-desktop@1x.webp 1x, ./img/Content/products-cards/photo-2-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="./img/Content/products-cards/photo-2-tablet@1x.webp 1x, ./img/Content/products-cards/photo-2-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="./img/Content/products-cards/photo-2-mobile@1x.webp 1x, ./img/Content/products-cards/photo-2-mobile@2x.webp 2x">
-
                   <source media="(min-width: 1150px)" srcset="./img/Content/products-cards/photo-2-desktop@1x.jpg 1x, ./img/Content/products-cards/photo-2-desktop@2x.jpg 2x"/>
                   <source media="(min-width: 768px)" srcset="./img/Content/products-cards/photo-2-tablet@1x.jpg 1x, ./img/Content/products-cards/photo-2-tablet@2x.jpg 2x"/>
                   <img class="card-list__image" src="./img/Content/products-cards/photo-2-mobile@1x.jpg" srcset="./img/Content/products-cards/photo-2-mobile@2x.jpg 2x" width="260" height="195"  loading="lazy" alt="Корзинка для белья"/>
@@ -174,7 +157,6 @@
                   <source type="image/webp" media="(min-width: 1150px)" srcset="./img/Content/products-cards/photo-3-desktop@1x.webp 1x, ./img/Content/products-cards/photo-3-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="./img/Content/products-cards/photo-3-tablet@1x.webp 1x, ./img/Content/products-cards/photo-3-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="./img/Content/products-cards/photo-3-mobile@1x.webp 1x, ./img/Content/products-cards/photo-3-mobile@2x.webp 2x">
-
                   <source media="(min-width: 1150px)" srcset="./img/Content/products-cards/photo-3-desktop@1x.jpg 1x, ./img/Content/products-cards/photo-3-desktop@2x.jpg 2x"/>
                   <source media="(min-width: 768px)" srcset="./img/Content/products-cards/photo-3-tablet@1x.jpg 1x, ./img/Content/products-cards/photo-3-tablet@2x.jpg 2x"/>
                   <img class="card-list__image" src="./img/Content/products-cards/photo-3-mobile@1x.jpg" srcset=" ./img/Content/products-cards/photo-3-mobile@2x.jpg 2x" width="260" height="195" loading="lazy" alt="Большая корзинка для игрушек"/>
@@ -211,31 +193,21 @@
       </section>
       <section class="promo-video">
         <div class="promo-video__wrapper">
-          <h2 class="promo-video__title promo-video__title--icon-camera">
-            Процесс производства
-          </h2>
+          <h2 class="promo-video__title promo-video__title--icon-camera">Процесс производства</h2>
           <div class="promo-video__wrapper-images">
             <picture>
               <source type="image/webp" media="(min-width: 1150px)" srcset="./img/video/video-desktop@1x.webp 1x, ./img/video/video-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="./img/video/video-tablet@1x.webp 1x, ./img/video/video-tablet@2x.webp 2x">
               <source type="image/webp" srcset="./img/video/video-mobile@1x.webp 1x, ./img/video/video-mobile@2x.webp 2x">
-
               <source media="(min-width: 1150px)" srcset=" ./img/video/video-desktop@1x.jpg 1x, ./img/video/video-desktop@2x.jpg 2x"/>
               <source media="(min-width: 768px)" srcset="./img/video/video-tablet@1x.jpg 1x, ./img/video/video-tablet@2x.jpg 2x"/>
               <img class="promo-video__image" src="./img/video/video-mobile@1x.jpg" srcset="./img/video/video-mobile@2x.jpg 2x" width="260" height="150" alt="Видео производства"/>
             </picture>
-            <button class="promo-video__play" aria-label="Play"></button>
+            <button class="promo-video__play" aria-label="Play" type="button"></button>
           </div>
           <div class="promo-video__content-wrapper">
-            <p class="promo-video__description-text">
-            По просьбам наших любимых фолловеров мы сняли для вас подробное
-            видео о том, как появляются наши товары.
-            </p>
-            <button
-              class="promo-video__button button button--make-order"
-              type="button">
-              Сделать заказ
-            </button>
+            <p class="promo-video__description-text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <button class="promo-video__button button button--make-order" type="button">Сделать заказ</button>
           </div>
         </div>
       </section>
@@ -289,47 +261,26 @@
       <div class="modal__window">
         <section class="modal__window-content">
           <h2 class="modal__window-title">Добавить в корзину</h2>
-          <form
-            class="modal__window-size size-product"
-            action="https://echo.htmlacademy.ru/"
-            method="post">
+          <form class="modal__window-size size-product" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="size-product__group-button">
-              <h3 class="size-product__legend-title">
-                Выберите размер:
-              </h3>
+              <h3 class="size-product__legend-title">Выберите размер:</h3>
               <ul class="size-product__list">
                 <li class="size-product__item">
                   <label class="size-product__check">
-                    <input
-                    class="size-product__check-radio"
-                    type="radio"
-                    name="size"
-                    value="S"
-                    checked
-                  />
-                  <span class="size-product__radiobox">s</span>
+                    <input class="size-product__check-radio" type="radio" name="size" value="S" checked/>
+                    <span class="size-product__radiobox">s</span>
                   </label>
                 </li>
                 <li class="size-product__item">
                   <label class="size-product__check">
-                    <input
-                    class="size-product__check-radio"
-                    type="radio"
-                    name="size"
-                    value="M"
-                  />
-                  <span class="size-product__radiobox">m</span>
+                    <input class="size-product__check-radio" type="radio" name="size" value="M"/>
+                    <span class="size-product__radiobox">m</span>
                   </label>
                 </li>
                 <li class="size-product__item">
                   <label class="size-product__check">
-                    <input
-                    class="size-product__check-radio"
-                    type="radio"
-                    name="size"
-                    value="L"
-                  />
-                  <span class="size-product__radiobox">l</span>
+                    <input class="size-product__check-radio" type="radio" name="size" value="L"/>
+                    <span class="size-product__radiobox">l</span>
                   </label>
                 </li>
               </ul>

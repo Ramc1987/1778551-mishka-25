@@ -21,11 +21,11 @@
 
 .service-form__data-users {
   @media (min-width: $tablet) {
-    padding: 50px 0 0 0;
+    padding: 47px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 50px 0 0 0;
+    padding: 46px 0 0 0;
     width: 80.7%;
     max-width: 1050px;
   }
@@ -78,7 +78,7 @@
 
 .service-form__button {
   text-transform: uppercase;
-  margin-bottom: 55px;
+  margin-bottom: 56px;
 
   @media (min-width: $tablet) {
     margin-bottom: 48px;

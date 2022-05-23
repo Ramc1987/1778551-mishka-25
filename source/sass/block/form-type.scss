@@ -100,6 +100,10 @@
     outline-offset: 2px;
   }
 
+  &:disabled + .form-color__checkbox {
+    opacity: 0.3;
+  }
+
   @include font-title(17px, 18px);
 
   @media (min-width: $tablet) {

@@ -121,6 +121,10 @@
   appearance: none;
   position: absolute;
 
+  &:disabled + .form-color__checkbox {
+    opacity: 0.3;
+  }
+
   &:focus-visible + .form-color__checkbox {
     outline: 2px solid #46c1ae;
     outline-offset: 2px;

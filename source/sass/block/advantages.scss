@@ -12,7 +12,7 @@
     width: 91.3%;
     max-width: 1150px;
     display: flex;
-    margin-bottom: 29px;
+    margin-bottom: 30px;
   }
 }
 
@@ -48,12 +48,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    column-gap: 58px;
+    grid-template-columns: 290px 300px;
+    column-gap: 60px;
   }
 }
 
 .advantages__item {
   line-height: 20px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 
   &--eco-material {
     background: url("../img/icon/advantages/icon-1.svg");
@@ -64,6 +69,10 @@
       grid-column: 1;
       grid-row: 1;
       padding-right: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 0;
     }
   }
 
@@ -92,6 +101,14 @@
     background: url("../img/icon/advantages/icon-4.svg");
     background-repeat: no-repeat;
     background-position: 2px 3px;
+
+    @media (min-width: $tablet) {
+      padding-right: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 25px;
+    }
   }
 
   &--local-support {
