@@ -4,14 +4,14 @@
   padding: 0;
 
   @media (min-width: $tablet) {
-    width: 87%;
+    width: 88.6%;
     max-width: 680px;
     display: flex;
     flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
-    width: 91.3%;
+    width: 91.4%;
     max-width: 1050px;
   }
 }
