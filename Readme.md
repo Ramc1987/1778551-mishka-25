@@ -2,7 +2,7 @@
 
 * Студент: [Юра Кравченко](https://up.htmlacademy.ru/adaptive/25/user/1778551).
 * Наставник: `Микаел Магтесян`.
-* Демо проекта: [Мишка] (https://ramc1987.github.io/1778551-mishka-25/)
+* Демо проекта: [Мишка](https://ramc1987.github.io/1778551-mishka-25/).
 
 ---
 
