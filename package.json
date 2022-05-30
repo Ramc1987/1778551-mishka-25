@@ -2,6 +2,7 @@
   "name": "mishka-25",
   "private": true,
   "description": "Личный проект «Мишка» от HTML Academy",
+  "homepage": "https://ramc1987.github.io/1778551-mishka-25/",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.4.0",
@@ -51,6 +52,7 @@
   "type": "module",
   "dependencies": {
     "gh": "^2.8.9",
+    "gh-pages": "^4.0.0",
     "pages": "^0.0.16"
   }
 }
